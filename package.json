@@ -1,0 +1,15 @@
+{
+  "name": "advertisment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --no-source-maps --no-minify --public-url ."
+  },
+  "author": "bekAndMov",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.62.0"
+  }
+}
