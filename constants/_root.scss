@@ -42,6 +42,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
+    overflow: hidden;
 
     &__subdiv {
         width: 10px;
@@ -113,7 +114,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
                 background-color: transparent;
                 height: 100%;
                 width: 38px;
-                transition: 0.3s;
+                transition: 0.5s;
             }
             
             &:nth-child(2) {
@@ -123,7 +124,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
                 background-color: transparent;
                 height: 100%;
                 width: 38px;
-                transition: 0.3s;
+                transition: 0.5s;
             }
     
             &:nth-child(4) {
