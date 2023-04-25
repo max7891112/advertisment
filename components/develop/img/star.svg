@@ -1,0 +1,7 @@
+<svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="icon-star">
+  <linearGradient id="linear-gradient">
+    <stop offset="0%" stop-color="#D84343"/>
+    <stop offset="100%" stop-color="#605EE1"/>
+  </linearGradient>
+<path d="M17.917 16.207L30 15L17.917 13.7915L25.607 4.393L16.208 12.0835L15 0L13.7915 12.0835L4.393 4.393L12.083 13.7915L0 15L12.083 16.207L4.393 25.6065L13.7915 17.917L15 30L16.208 17.917L25.607 25.6065L17.917 16.207Z"/> 
+</svg>

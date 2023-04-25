@@ -8,26 +8,158 @@
     <link rel="stylesheet" href="./index.scss">
 </head>
 <body>
-    <div class="mainPage">
-        <div class="mainPage__body">
-            <h1 class="mainPage__title"><span>Реклама </span><span>в которую </span><span>Верят</span></h1>
-            <div class="mainPage__container">
-                <div class="mainPage__flex-container">
-                    <p class="mainPage__about-us">Мы — агентство инфлюенс-маркетинга. Мы помогаем бизнесу создавать рекламные кампании с блогерами, а блогерам — делать качественный контент  и зарабатывать.</p>
-                    <button class="mainPage__button blue-button">
-                        <div class="blue-button__subdiv"></div>
-                        <div class="blue-button__subdiv"></div>
-                        <div class="blue-button__subdiv"></div>
-                        <div class="blue-button__subdiv"></div>
-                        <p class="blue-button__p">Подробнее</p>
-                    </button>
+    <div class="menu-burger">
+        <div class="menu-burger__visible-elem">
+            <div class="menu-burger__icon">
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-burger__main-container">
+            <a href="#"><img src="./components/menuBurger/img/logo.svg" alt="logo" class="menu-burger__logo"></a> 
+            <nav class="menu-burger__navigation">
+                <ul class="menu-burger__container">
+                    <li class="menu-burger__item">Главная</li>
+                    <li class="menu-burger__item">Наши услуги</li>
+                    <li class="menu-burger__item">Почему мы?</li>
+                    <li class="menu-burger__item">Рекламодатели</li>
+                    <li class="menu-burger__item">Наша команда</li>
+                    <li class="menu-burger__item">Кейсы</li>
+                    <li class="menu-burger__item">Контакты</li>
+                </ul>
+            </nav>
+            <div class="menu-burger__copyright">
+                <div class="menu-burger__line"></div>
+                <div class="menu-burger__michael-container">
+                    <div class="menu-burger__img-container">
+                        <img src="./components/menuBurger/img/mich0.png" alt="michael" class="menu-burger__img">
+                        <img src="./components/menuBurger/img/mich1.png" alt="michael" class="menu-burger__img hidden">
+                        <img src="./components/menuBurger/img/mich2.png" alt="michael" class="menu-burger__img hidden">
+                        <img src="./components/menuBurger/img/mich3.png" alt="michael" class="menu-burger__img hidden">
+                        <img src="./components/menuBurger/img/mich4.png" alt="michael" class="menu-burger__img hidden">
+                    </div>
+                    <p class="menu-burger__michael-name">Michael</p>
                 </div>
+                <div class="menu-burger__line"></div>
             </div>
         </div>
     </div>
+    <div class="content">
 
-    <div class="our-service">
-        
+
+        <div class="modal-feedback">
+            <div class="modal-feedback__container">
+
+            </div>
+        </div>
+
+
+        <div class="mainPage">
+            <div class="mainPage__body">
+                <h1 class="mainPage__title mainPage__title_first">Реклама</h1>
+                <div class="mainPage__container">
+                    <div class="mainPage__flex-container">
+                        <p class="mainPage__about-us">Мы — агентство инфлюенс-маркетинга. Мы помогаем бизнесу создавать рекламные кампании с блогерами, а блогерам — делать качественный контент  и зарабатывать.</p>
+                        <button class="mainPage__button dinamic-button">
+                            <div class="dinamic-button__subdiv"></div>
+                            <div class="dinamic-button__subdiv"></div>
+                            <div class="dinamic-button__subdiv"></div>
+                            <div class="dinamic-button__subdiv"></div>
+                            <p class="dinamic-button__p">Подробнее</p>
+                        </button>
+                    </div>
+                </div>
+                <h1 class="mainPage__title mainPage__title_second">Верят</h1>
+                <p class="mainPage__title mainPage__title_third">в которую</p>
+            </div>
+        </div>
+
+
+        <div class="about-project">
+            <div class="about-project__container">
+                <div class="about-project__img-container">
+                    <img src="./components/aboutProject/img/skateboard.png" alt="skateboard" class="about-project__img">
+                </div>
+                
+                <div class="about-project__text-part">
+                    <h2 class="about-project__title">О проекте</h2>
+                    <h3 class="about-project__sub-title">Инфлюенс-маркетинг</h3>
+                    <p class="about-project__text">Это продвижение товаров и услуг через блогеров и селебрити с большой аудиторией в социальных сетях.</p>
+                    <p class="about-project__text">С нашей помощью, эти лидеры мнений привлекут внимание к вашему бренду, повысят его узнаваемость, создадут положительное мнение и лояльную аудиторию.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="develop">
+            <img src="./components/develop/img/jesus.png" alt="jesus" class="develop__img">
+            <img src="./components/develop/img/lineLeft.png" alt="line" class="img__line-left">
+            <img src="./components/develop/img/shadowLeft.png" alt="line" class="img__shadow-left">
+            <img src="./components/develop/img/lineRight.png" alt="line" class="img__line-right">
+            <img src="./components/develop/img/shadowRight.png" alt="line" class="img__shadow-right">
+            <div class="develop__container">
+                <div class="develop__title">
+                    <h2>Разработка</h2>
+                </div>
+                <ul class="develop__main-words">
+                    <svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="develop__icon-star" fill="currentColor">
+                        <linearGradient id="linear-gradient" x1="0%" y1="0%" x2="50%" y2="100%">
+                          <stop offset="0%" stop-color="#D84343"/>
+                          <stop offset="100%" stop-color="#605EE1"/>
+                        </linearGradient>
+                      <path d="M17.917 16.207L30 15L17.917 13.7915L25.607 4.393L16.208 12.0835L15 0L13.7915 12.0835L4.393 4.393L12.083 13.7915L0 15L12.083 16.207L4.393 25.6065L13.7915 17.917L15 30L16.208 17.917L25.607 25.6065L17.917 16.207Z"/> 
+                      </svg>
+                    <li class="develop__main-words-item">Стратегия</li>
+                    <svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="develop__icon-star" fill="currentColor">
+                      <path d="M17.917 16.207L30 15L17.917 13.7915L25.607 4.393L16.208 12.0835L15 0L13.7915 12.0835L4.393 4.393L12.083 13.7915L0 15L12.083 16.207L4.393 25.6065L13.7915 17.917L15 30L16.208 17.917L25.607 25.6065L17.917 16.207Z"/> 
+                      </svg>
+                      
+                    <li class="develop__main-words-item">реализация</li>
+                    <svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="develop__icon-star" fill="currentColor">
+                      <path d="M17.917 16.207L30 15L17.917 13.7915L25.607 4.393L16.208 12.0835L15 0L13.7915 12.0835L4.393 4.393L12.083 13.7915L0 15L12.083 16.207L4.393 25.6065L13.7915 17.917L15 30L16.208 17.917L25.607 25.6065L17.917 16.207Z"/> 
+                      </svg>
+                      
+                    <li class="develop__main-words-item develop__main-words-item_last-elem">аналитика</li>
+                    <svg width="30" height="30" viewbox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="develop__icon-star" fill="currentColor">
+                      <path d="M17.917 16.207L30 15L17.917 13.7915L25.607 4.393L16.208 12.0835L15 0L13.7915 12.0835L4.393 4.393L12.083 13.7915L0 15L12.083 16.207L4.393 25.6065L13.7915 17.917L15 30L16.208 17.917L25.607 25.6065L17.917 16.207Z"/> 
+                      </svg>
+                      
+                </ul>
+                <div class="develop__text-container">
+                    <div class="develop__left-text-part">
+                        <div class="develop__content-block content-block content-block_first">
+                            <h3 class="content-block__title">1. Заявка от бренда:</h3>
+                            <p class="content-block__text">Приходит заказ от бренда. Например, у него выходит новый продукт, который надо поддержать инфлюенс-маркетингом. </p>
+                        </div>
+                        <div class="develop__content-block content-block content-block_second">
+                            <h3 class="content-block__title">2. Разработка стратегии:</h3>
+                            <p class="content-block__text">Мы определяем, какие типы инфлюенсеров соответствуют задаче, аудитории и бренду клиента. Подбираем площадки и форматы рекламного материала.</p>
+                        </div>
+                        <div class="develop__content-block content-block content-block_third">
+                            <h3 class="content-block__title">3. Подборка блогеров:</h3>
+                            <p class="content-block__text">Мы подбираем блогеров с разными, но релевантными аудиториями, показываем и согласуем подборку с клиентом.</p>
+                        </div>
+                    </div>
+                    <div class="develop__right-text-part">
+                        <div class="develop__content-block content-block content-block_fourth">
+                            <h3 class="content-block__title">4. Старт рекламы: </h3>
+                            <p class="content-block__text">Вместе с выбранными блогерами создаем контент, согласуем и запускаем рекламную кампанию.</p>
+                        </div>
+                        <div class="develop__content-block content-block content-block_fifth">
+                            <h3 class="content-block__title">5. Аналитика:</h3>
+                            <p class="content-block__text">Собираем статистику по результатам, отчитываемся перед клиентом, расплачиваемся с инфлюенсерами.</p>
+                        </div>
+                    </div>
+                    <button class="develop__button dinamic-red-button develop__feedback-button" id="modal-record">
+                        <div class="dinamic-red-button__subdiv"></div>
+                        <div class="dinamic-red-button__subdiv"></div>
+                        <div class="dinamic-red-button__subdiv"></div>
+                        <div class="dinamic-red-button__subdiv"></div>
+                        <p class="dinamic-red-button__p">Оставить заявку</p>
+                    </button>
+                </div>
+            </div>
+            <div id="ROOT_MODAL"></div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

@@ -18,7 +18,7 @@ $color-light-red: #E03F4A;
 $color-white: #FFFFFF;
 $color-hard-red: #EE3434;
 $color-light-blue: #3446EE;
-$color-balck: #000000;
+$color-black: #000000;
 $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
 
 @mixin heading($f, $s, $h, $c) {
@@ -26,10 +26,10 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     font-size: $s;
     line-height: $h;
     color: $c
-    // @include heading(Montserrat, 24px, 79px)
+    // @include heading(Montserrat, 24px, 79px,red)
 }
 
-.blue-button{
+.dinamic-button{
     display: flex;
     align-content: space-between;
     justify-content: space-between;
@@ -51,36 +51,30 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         width: 95px;
         height: 18px;
         
-        &:nth-child(1) {
+        &:nth-child(n) {
             display: block;
-            border-left: 3px solid $color-light-blue;
-            border-top: 3px solid $color-light-blue;
             background-color: transparent;
             transition: 0.3s;
+        }
+
+        &:nth-child(1) {
+            border-left: 3px solid $color-light-blue;
+            border-top: 3px solid $color-light-blue;
         }
 
         &:nth-child(2) {
-            display: block;
             border-right: 3px solid $color-light-blue;
             border-top: 3px solid $color-light-blue;
-            background-color: transparent;
-            transition: 0.3s;
         }
         
         &:nth-child(3) {
-            display: block;
             border-left: 3px solid $color-light-blue;
             border-bottom: 3px solid $color-light-blue;
-            background-color: transparent;
-            transition: 0.3s;
         }
 
         &:nth-child(4) {
-            display: block;
             border-right: 3px solid $color-light-blue;
             border-bottom: 3px solid $color-light-blue;
-            background-color: transparent;
-            transition: 0.3s;
         }
 
         
@@ -95,12 +89,12 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
 
     &:hover {
 
-        .blue-button__p {
+        .dinamic-button__p {
             animation: moveP 0.2s linear;
         }
 
 
-        .blue-button__subdiv {
+        .dinamic-button__subdiv {
         
             &:nth-child(1) {
                display: none;
@@ -135,6 +129,118 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     }
 }
 
+
+.dinamic-red-button{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    color: $color-light-red;
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    overflow: hidden;
+
+    &__subdiv {
+        width: 10px;
+        height: 10px;
+        background-color: $color-light-red;
+        width: 95px;
+        height: 18px;
+        
+        &:nth-child(n) {
+            display: block;
+            background-color: transparent;
+            transition: 0.3s;
+        }
+
+        &:nth-child(1) {
+            border-left: 3px solid $color-light-red;
+            border-top: 3px solid $color-light-red;
+        }
+
+        &:nth-child(2) {
+            border-right: 3px solid $color-light-red;
+            border-top: 3px solid $color-light-red;
+        }
+        
+        &:nth-child(3) {
+            border-left: 3px solid $color-light-red;
+            border-bottom: 3px solid $color-light-red;
+        }
+
+        &:nth-child(4) {
+            border-right: 3px solid $color-light-red;
+            border-bottom: 3px solid $color-light-red;
+        }
+
+        
+    }
+
+    &__p {
+        position: absolute;
+        left: 37%;
+        top: 32%;
+        margin-left: -42px;
+    }
+
+    &:hover {
+
+        .dinamic-red-button__p {
+            animation: moveP 0.2s linear;
+        }
+
+
+        .dinamic-red-button__subdiv {
+        
+            &:nth-child(1) {
+               display: none;
+               transition: 0.3s;
+            }
+    
+            &:nth-child(3) {
+                border: none;
+                border-right: 3px solid $color-light-red;
+                border-bottom: 3px solid $color-light-red;
+                background-color: transparent;
+                height: 100%;
+                width: 38px;
+                transition: 0.5s;
+            }
+            
+            &:nth-child(2) {
+                border: none;
+                border-left: 3px solid $color-light-red;
+                border-top: 3px solid $color-light-red;
+                background-color: transparent;
+                height: 100%;
+                width: 38px;
+                transition: 0.5s;
+            }
+    
+            &:nth-child(4) {
+                display: none;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+
+.hidden{
+    display: none;
+}
+
+._container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 @keyframes moveP {
     0% {
         transform: translate(0, 0);
@@ -148,3 +254,4 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         transform: translate(0, 0);
     }
 }
+

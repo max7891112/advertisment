@@ -1,0 +1,176 @@
+.develop {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
+    background-size: cover;
+    position: relative;
+
+    &__container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__img{
+        position: absolute;
+        width: 617px;
+        top: 18%;
+        left: 31%;
+        z-index: 1;
+    }
+    
+    &__title {
+        position: relative;
+        h2{
+            @include heading('Arkhip', 64px, 77px, $color-light-blue);
+        }
+        padding: 30px 0 0 130px;
+    }
+
+    &__main-words {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 35px 0;
+        padding: 15px 0 10px 0;
+        color: white;
+        
+        &:hover{
+            .develop__main-words-item{
+                background-image: linear-gradient($color-gradient);
+                color: transparent; 
+            }    
+            .develop__icon-star{
+                fill: url(#linear-gradient);
+            }   
+
+        }
+        svg{
+            margin-top: -7px;
+        }
+    }
+
+    &__main-words-item {
+        
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 45px 0 45px;
+        @include heading('Arkhip', 16px, 19px, $color-white);
+        letter-spacing: 0.3em;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    &__text-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left-text-part {
+        width: 500px;
+        margin-left: 160px;
+    }
+
+    &__content-block {
+        margin-bottom: 70px;
+    }
+
+    &__right-text-part {
+        margin: 0 90px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__button {
+        position: absolute;
+        top: 87%;
+        left: 77%;
+    }
+}
+.content-block {
+    width: 350px;
+    transition: all .5s ease 0s;
+    &__title {
+        @include heading('Arkhip', 24px, 29px, $color-white);
+        padding-bottom: 5px;
+    }
+
+    &__text {
+        @include heading('Montserrat', 14px, 140%, $color-white);
+    }
+
+    &_first{
+        margin-left: 100px;
+        &:hover{
+            transform: translate(-20px, -20px);
+        }
+    }
+
+    &_second{
+        &:hover{
+            transform: translate(-20px, 20px);
+        }
+    }
+
+    &_third{
+        margin-left: 70px;
+        &:hover{
+            transform: translateY(20px);
+        }
+    }
+
+    &_fourth{
+        margin-right: 125px;
+        &:hover{
+            transform: translateY(-20px);
+        }
+    }
+
+    &_fifth{
+        margin-bottom: 135px;
+        .content-block__text{
+            width: 400px;
+        }
+        &:hover{
+            transform: translateX(20px);
+        }
+    }
+}
+
+.img {
+
+    &__line-left {
+        position: absolute;
+        top: 31%;
+        left: 17%;
+        width: 24%;
+    }
+
+    &__shadow-left {
+        position: absolute;
+        top: 28%;
+        left: 14%;
+        width: 28%;
+    }
+
+    &__line-right {
+        position: absolute;
+        top: 27%;
+        left: 55%;
+        width: 33%;
+    }
+
+    &__shadow-right {
+        position: absolute;
+        top: 22%;
+        left: 51%;
+        width: 39%;
+    }
+}
+
+// .develop__main-words{
+//     color: white;
+//     transition: all .5s ease 0s;
+//     &:hover{
+//         color: blue;
+//     }
+// }
