@@ -29,6 +29,10 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     // @include heading(Montserrat, 24px, 79px,red)
 }
 
+.hidden-opacity{
+    opacity: 0;
+}
+
 .dinamic-button{
     display: flex;
     align-content: space-between;
@@ -54,7 +58,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         &:nth-child(n) {
             display: block;
             background-color: transparent;
-            transition: 0.3s;
+            transition: .1s;
         }
 
         &:nth-child(1) {
@@ -90,7 +94,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     &:hover {
 
         .dinamic-button__p {
-            animation: moveP 0.2s linear;
+            // animation: moveP 0.2s linear;
         }
 
 
@@ -98,7 +102,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         
             &:nth-child(1) {
                display: none;
-               transition: 0.3s;
+            //    transition: 0.3s;
             }
     
             &:nth-child(3) {
@@ -108,7 +112,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
                 background-color: transparent;
                 height: 100%;
                 width: 38px;
-                transition: 0.5s;
+                // transition: 0.5s;
             }
             
             &:nth-child(2) {
@@ -118,12 +122,12 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
                 background-color: transparent;
                 height: 100%;
                 width: 38px;
-                transition: 0.5s;
+                // transition: 0.5s;
             }
     
             &:nth-child(4) {
                 display: none;
-                transition: 0.3s;
+                // transition: 0.3s;
             }
         }
     }
@@ -155,7 +159,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         &:nth-child(n) {
             display: block;
             background-color: transparent;
-            transition: 0.3s;
+            transition: 0.1s;
         }
 
         &:nth-child(1) {
@@ -191,7 +195,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     &:hover {
 
         .dinamic-red-button__p {
-            animation: moveP 0.2s linear;
+            // animation: moveP 0.2s linear;
         }
 
 
@@ -199,7 +203,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         
             &:nth-child(1) {
                display: none;
-               transition: 0.3s;
+            //    transition: 0.3s;
             }
     
             &:nth-child(3) {
@@ -209,7 +213,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
                 background-color: transparent;
                 height: 100%;
                 width: 38px;
-                transition: 0.5s;
+                // transition: 0.5s;
             }
             
             &:nth-child(2) {
@@ -219,12 +223,12 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
                 background-color: transparent;
                 height: 100%;
                 width: 38px;
-                transition: 0.5s;
+                // transition: 0.5s;
             }
     
             &:nth-child(4) {
                 display: none;
-                transition: 0.3s;
+                // transition: 0.3s;
             }
         }
     }
@@ -232,7 +236,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
 
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 ._container{
@@ -241,17 +245,17 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     padding: 0 10px;
 }
 
-@keyframes moveP {
-    0% {
-        transform: translate(0, 0);
-    }
+// @keyframes moveP {
+//     0% {
+//         transform: translate(0, 0);
+//     }
 
-    50% {
-        transform: translate(1px, -1px);
-    }
+//     50% {
+//         transform: translate(1px, -1px);
+//     }
 
-    100% {
-        transform: translate(0, 0);
-    }
-}
+//     100% {
+//         transform: translate(0, 0);
+//     }
+// }
 

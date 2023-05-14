@@ -1,27 +1,27 @@
 import Feedback from "../components/feedback/Feedback.js";
 class TechnicalFunctions {
 
-    formValidate(className,emailName) {
-        let error = 0;
-        let formReq = document.querySelectorAll(`.${className}`);
-        for(let i = 0; i< formReq.length; i++) {
-            let input = formReq[i];
-            this.formRemoveError(input);
+    // formValidate(className,emailName) {
+    //     let error = 0;
+    //     let formReq = document.querySelectorAll(`.${className}`);
+    //     for(let i = 0; i< formReq.length; i++) {
+    //         let input = formReq[i];
+    //         this.formRemoveError(input);
 
-            if(input.classList.contains(emailName)) {
-                 if(!this.emailTest(input)){
-                    this.formAddError(input);
-                    error++;
-                 };
-            } else {
-                if(input.value == '') {
-                    this.formAddError(input);
-                    error++;
-                };
-            };
-        };
-        return error;
-    };
+    //         if(input.classList.contains(emailName)) {
+    //              if(!this.emailTest(input)){
+    //                 this.formAddError(input);
+    //                 error++;
+    //              };
+    //         } else {
+    //             if(input.value == '') {
+    //                 this.formAddError(input);
+    //                 error++;
+    //             };
+    //         };
+    //     };
+    //     return error;
+    // };
 
     formRemoveError(input) {
         input.classList.remove('_error');
