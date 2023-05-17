@@ -1,0 +1,233 @@
+.our-team {
+
+    background: url('./components/MainPage/img/mainPageBac.jpg') no-repeat;
+
+    &__body {
+        
+    }
+
+    &__h2 {
+        @include heading('Arkhip', 64px, 77px, #3446EE);
+        padding: 65px 0 0 141px;
+    }
+
+    &__text-box {
+        display: block;
+        max-width: 820px;
+        @include heading('Montserrat', 24px, 140%, #000);
+        font-style: normal;
+        font-weight: 400;
+        margin: 0 auto;
+        text-align: center;
+        padding: 100px 0 25px 0;
+    }
+
+    &__items {
+        padding-left: 141px;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        position: relative;
+        // padding-right: 73px;
+        transition: all 6s;
+        overflow: hidden;
+        
+    }
+
+    &__img {
+
+        
+        transition: all 6s;
+        max-width: 413px;
+    }
+
+    &__item-info {
+        
+        padding-left: 153px;
+    }
+
+    &__btn {
+        // margin: 0 0 0 auto;
+        width: fit-content;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        right: 50px;
+        z-index: 9999;
+        right: 75px;
+        top: 50px;
+        
+    }
+
+    &__btn-close {
+        z-index: 999;
+    }
+
+    &__blogger-name {
+        @include heading('Arkhip', 48px, 58px, #3446EE);
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    &__blogger-info {
+        max-width: 526px;
+        @include heading('Montserrat', 24px, 140%, #000);
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    &__amount-followers {
+        @include heading('Montserrat', 24px, 140%, #000);
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    &__amount-social {
+        @include heading('Montserrat', 24px, 140%, #000);
+        text-align: center;
+
+        & span {
+            font-weight: 600;
+        }
+    }
+
+    &__social-labels {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    &__button {
+        margin-top: 83px;
+    }
+
+    // animation for our-team__item-wrapper  our-team__item-wrapper-animation
+
+    &__item-wrapper-animation {
+
+        transition: max-height 6s;
+
+        position: relative;
+        max-height: 141px;
+        overflow: hidden;
+        padding-right: 53px;
+
+        &>img {
+            transition: all 6s;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-597px);
+        }
+
+        & .our-team__item-info{
+            
+            position: absolute;
+            z-index: -1;
+            display: none;
+        }
+
+        & .our-team__img {
+            
+            max-width: none;
+        }
+    }
+}
+
+
+
+
+
+
+
+//////////////
+.svg {
+    fill: $color-hard-red;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+
+    :nth-child(n){
+        transition: all .6s ease 0s;
+    }
+
+    &__top-right-line {
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__right-top-line {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &__bottom-left-line {
+        position: absolute;
+        bottom: -3px;
+        right: 6px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__left-bottom-line {
+        position: absolute;
+        bottom: 9px;
+        right: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &:hover{
+
+        svg{
+            fill: $color-light-blue;
+
+            & path {
+                fill: $color-light-blue;
+            }
+        }
+
+        .svg__top-right-line,
+        .svg__right-top-line,
+        .svg__bottom-left-line,
+        .svg__left-bottom-line {
+            background-color: blue;
+        }
+
+        .svg__top-right-line{
+            top: 32px;
+        }
+
+        .svg__right-top-line{
+            transform: rotate(270deg);
+            top: 20px;
+        }
+
+        .svg__bottom-left-line{
+            bottom: 34px;
+        }
+
+        .svg__left-bottom-line{
+            bottom: 22px;
+        }
+    }
+}
