@@ -1,0 +1,1 @@
+export const REACT_COMPONENT = document.querySelector('.work-with-us__wrapper')
