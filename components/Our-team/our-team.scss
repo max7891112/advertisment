@@ -2,6 +2,7 @@
 
     background: url('./components/MainPage/img/mainPageBac.jpg') no-repeat;
 
+    min-height: 200px;
     &__body {
         
     }
@@ -23,28 +24,51 @@
     }
 
     &__items {
-        padding-left: 141px;
+        padding: 0 20px 0 141px;
     }
 
     &__item-wrapper {
-        display: flex;
         position: relative;
-        // padding-right: 73px;
-        transition: all 6s;
+        transition: all .5s;
         overflow: hidden;
+        min-height: 1000px;
         
+    }
+
+    &__prev-info {
+        position: absolute;
+        z-index: 99999;
+        padding: 58px 0 0 10px;
+        display: none;
+    }
+    &__prev-name {
+        @include heading('Montserrat', 24px, 29px, $color-white);
+        font-weight: 700;
+        padding-bottom: 15px;
+    }
+    &__prev-follows {
+        @include heading('Montserrat', 20px, 24px, $color-white);
+        font-weight: 400;
+    }
+
+    &__img-wrapper {
+        position: absolute;
+        width: 413px;
+        height: 634px;
+
+        transition: all .5s;
     }
 
     &__img {
-
-        
-        transition: all 6s;
-        max-width: 413px;
+        transition: all .5s;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
     }
 
     &__item-info {
-        
-        padding-left: 153px;
+        padding-left: 445px;
     }
 
     &__btn {
@@ -62,7 +86,6 @@
         z-index: 9999;
         right: 75px;
         top: 50px;
-        
     }
 
     &__btn-close {
@@ -105,38 +128,33 @@
     }
 
     &__button {
-        margin-top: 83px;
+        margin: 47px 0 36px 0;
     }
 
     // animation for our-team__item-wrapper  our-team__item-wrapper-animation
 
     &__item-wrapper-animation {
 
-        transition: max-height 6s;
+        width: 1300px;
+        height: 143px;
+        transition: all .5s;
 
-        position: relative;
-        max-height: 141px;
-        overflow: hidden;
-        padding-right: 53px;
-
-        &>img {
-            transition: all 6s;
-            width: 100%;
-            height: 100%;
-            transform: translateY(-597px);
+        & img {
+            transition: all .5s;
+            object-fit: cover;
+            object-position: 0 -597px;
+            transition: all .5s;
         }
 
-        & .our-team__item-info{
-            
-            position: absolute;
+        &__item-info {
             z-index: -1;
             display: none;
         }
 
-        & .our-team__img {
-            
-            max-width: none;
+        &__prev-info {
+            display: block;
         }
+
     }
 }
 
@@ -231,3 +249,38 @@
         }
     }
 }
+
+
+// .try-img {
+
+//     height: 650px;
+//     background-color: #d09393;
+//     &__wrapper {
+//         width: 1300px;
+//         height: 141px;
+//         border: 3px solid #845214;
+//         transition: all 2s;
+
+//     }
+    
+//     & img {
+//         width: 100%;
+//         height: 100%;
+//         object-fit: cover;
+//         object-position: 0 -570px;
+
+//         transition: all 2s;
+//     }
+    
+//     &__wrapper-animation-img {
+//         object-position: 0 0 !important;
+//         transition: 2s !important;
+    
+//     }
+
+//     &__wrapper-animation-wrap {
+//         width: 413px !important;
+//         height: 634px !important;
+//         transition: all 2s !important;
+//     }
+// }
