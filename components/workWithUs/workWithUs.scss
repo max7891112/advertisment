@@ -6,7 +6,7 @@
     position: relative;
 
     &__body{
-        width: 1400px;
+        max-width: 1400px;
         margin: 0 0 0 auto;
         display: flex;
     }
@@ -36,6 +36,8 @@
     &__item {
         margin-bottom: 30px;
         width: max-content;
+        position: relative;
+        z-index: 50;
         &:hover{
             transform: translate(2px, -2px);
         }
@@ -49,17 +51,24 @@
             }
         }
     }
+
+   
 }
 .react-component {
+    // position: relative;
 
     &__dinamic-block-container {
         display: flex;
         flex-wrap: wrap;
+        position: relative;
     }
 
     &__img-strata {
-        margin-right: 25px;
-        max-width: 350px
+        // margin-right: 25px;
+        // max-width: 350px
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     &__video-container {
@@ -70,18 +79,35 @@
         align-items: center;
     }
 
-    &__video {
+    &__link{
         width: 100%;
-        // padding-top: 56.25%;
         position: relative;
+        display: block;
     }
 
-    &__video-youtube{
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
+    &__img-wrapper{
+        max-width: 350px;
+        margin-right: 25px;
     }
+
+	// &__img {
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: contain;
+	// }
+
+	&__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        transition: transform .2s ease;
+        &:hover{
+            transform: translate(-50%, -50%) scale(1.2);
+            filter: saturate(1.5);
+        }
+	}
 
     &__text {
         @include heading(Montserrat, 20px, 28px, $color-white);
@@ -97,6 +123,7 @@
         left: 0;
         margin: 50px 0 0 176px;
     }
+    
 }
 
 .react-component._open{

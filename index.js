@@ -16,6 +16,7 @@ TechnicalFunctions.addListenerDataClose()
 TechnicalFunctions.addListenerForFeedback()
 TechnicalFunctions.addListenerForDataInput()
 WorkWithUs.addListenerForChangingComponents()
+
 })
 
 

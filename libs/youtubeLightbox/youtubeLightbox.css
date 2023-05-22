@@ -1,7 +1,7 @@
 /* Parent element can be any width and height */
 .youtubelightbox{
     z-index: 999;
-	position: fixed;
+	position: absolute;
 	width: 100%; /* can be any width */
 	height: 100%;
 	left: 0;
@@ -11,31 +11,34 @@
 }
 
 .youtubelightbox:before{ /* pseudo element to force vertical centering of child element */
-	content: '';
+	/* content: '';
 	display: inline-block;
 	height: 100%;
-	vertical-align: middle;
+	vertical-align: middle; */
 }
 
 .youtubelightbox:after{ /* pseudo element to create overlay */
-	background: black;
-	content: '';
+	/* background: black; */
+	content: '';	
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	opacity: 0.8;
+	/* opacity: 0.8; */
 	z-index: 10;
-}
+ }
 
 /* Centered child element can be any width and height */
 .youtubelightbox__centeredchild{
-	position: relative; /* position element to participate in z-indexing */
+	position: absolute; /* position element to participate in z-indexing */
 	z-index: 20; /* higher z-index than overlay */
 	display: inline-block;
 	vertical-align: middle;
-	width: 80%; /* can be any width */
+	width: 57%; /* can be any width */
+	top: 59%;
+	right: 0%;
+	transform: translateY(-50%);
 }
 
 /* Video container to maintain Youtube 16:9 aspect ratio */
