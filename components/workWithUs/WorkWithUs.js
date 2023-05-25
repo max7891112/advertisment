@@ -24,7 +24,7 @@ class WorkWithUs {
                 <div class="react-component__video-container"  id="maybe">
                     <a href=${path} class="react-component__link" data-youtubeLightbox>
                         <img src=${image} alt="#" class="react-component__img">
-                        <img src=${playIcon} alt="#" class="react-component__icon">
+                        <img src=${playIcon} alt="#" class="_icon">
                     </a>
                 </div>
                 <p class="react-component__text">${text}</p>

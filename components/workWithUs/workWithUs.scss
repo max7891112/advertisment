@@ -90,25 +90,6 @@
         margin-right: 25px;
     }
 
-	// &__img {
-    //     width: 100%;
-    //     height: 100%;
-    //     object-fit: contain;
-	// }
-
-	&__icon {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        transition: transform .2s ease;
-        &:hover{
-            transform: translate(-50%, -50%) scale(1.2);
-            filter: saturate(1.5);
-        }
-	}
-
     &__text {
         @include heading(Montserrat, 20px, 28px, $color-white);
         font-weight: 400;

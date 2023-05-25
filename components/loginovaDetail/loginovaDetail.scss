@@ -1,0 +1,244 @@
+.loginova-detail {
+    
+    width: 100%;
+    // height: 100vh;
+    background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
+    background-size: cover;
+    position: relative;
+
+    &__wrapper {
+        // margin-left: 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img-container {
+        max-width: 33%;
+        padding-top: 50px;
+        // max-height: 600px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text-container{
+        max-width: 70%;
+        & p:nth-child(1){
+            padding: 50px 0 10px 0;
+        }
+        & p:nth-child(2){
+            padding-bottom: 5px;
+        }
+    }
+
+    &__text {
+        @include heading('Montserrat', 24px, 140%, $color-white);
+        font-weight: 400;
+        text-align: center;
+        span{
+            font-weight: 600;
+        };
+    }
+
+    &__svg-container {
+        margin: 50px 0 100px 0;
+        display: flex;
+    }
+
+    &__swiper-slider {
+    }
+}
+
+.svg {
+    fill: $color-hard-red;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+
+    :nth-child(n){
+        transition: all .6s ease 0s;
+    }
+
+    &__top-right-line {
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__right-top-line {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &__bottom-left-line {
+        position: absolute;
+        bottom: -3px;
+        right: 6px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__left-bottom-line {
+        position: absolute;
+        bottom: 9px;
+        right: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &:hover{
+
+        svg{
+            fill: $color-light-blue;
+
+            & path {
+                fill: $color-light-blue;
+            }
+        }
+
+        .svg__top-right-line,
+        .svg__right-top-line,
+        .svg__bottom-left-line,
+        .svg__left-bottom-line {
+            background-color: blue;
+        }
+
+        .svg__top-right-line{
+            top: 32px;
+        }
+
+        .svg__right-top-line{
+            transform: rotate(270deg);
+            top: 20px;
+        }
+
+        .svg__bottom-left-line{
+            bottom: 34px;
+        }
+
+        .svg__left-bottom-line{
+            bottom: 22px;
+        }
+    }
+}
+
+.slider {
+    max-width: 1300px;
+    &__wrapper {
+        display: flex;
+        margin-bottom: 50px;
+        img{
+            display: block;
+            transition: all .3s linear;
+        }
+    }
+
+    &__first-img-container {
+        margin-right: 20px;
+        overflow: hidden;
+        animation: reverseWidthFirst .3s linear forwards;
+    }
+
+    &__video-section-container {
+        position: relative;
+        margin-right: 20px;
+        width: 424px;
+        height: 650px;
+        transition: all .3s linear;
+        .slider__video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__third-img-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 276px;
+        transition: all .3s linear;
+    }
+
+    &__third-top-img-container {
+        margin-bottom: 30px;
+    }
+
+    &__third-bottom-img-container {
+    }
+}
+
+
+.slider__first-img-container._animation{
+    overflow: hidden;
+    animation: changingWidthFirst .3s linear forwards;
+    .slider__wrapper{
+        transform: translate(100px 0);
+    }
+}
+
+.slider__third-img-container._animation{
+    width: 128px;
+    img{
+        object-position: -100px 0;
+    }
+}
+
+.slider__video-section-container._animation{
+    width: 1004px;
+    height: 650px;
+}
+
+
+@keyframes changingWidthFirst {
+    0% {
+        width: 572px;
+    }
+    100%{
+        width: 128px;
+    }
+}
+
+@keyframes reverseWidthFirst {
+    0% {
+        width: 128px;
+    }
+    100%{
+        width: 572px;
+    }
+}
+
+@keyframes changingWidthThird {
+    0% {
+        width: 276px;
+    }
+    100%{
+        width: 128px;
+    }
+}
+
+@keyframes reverseWidthThird {
+    0% {
+        width: 128px;
+    }
+    100%{
+        width: 276px;
+    }
+}
+// animation: fadeReverse .3s linear forwards;

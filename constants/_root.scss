@@ -240,3 +240,16 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     margin: 0 auto;
     padding: 0 10px;
 }
+
+._icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    transition: transform .2s ease;
+    &:hover{
+        transform: translate(-50%, -50%) scale(1.2);
+        filter: saturate(1.5);
+    }
+}
