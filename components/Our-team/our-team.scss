@@ -3,6 +3,15 @@
     background: url('./components/MainPage/img/mainPageBac.jpg') no-repeat;
 
     min-height: 200px;
+    padding-bottom: 67px;
+
+    // .position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
+    //     img {
+    //         object-position: 0 -1055px;
+    //         transition: all .5s;
+    //     }
+    // }
+
     &__body {
         
     }
@@ -20,18 +29,21 @@
         font-weight: 400;
         margin: 0 auto;
         text-align: center;
-        padding: 100px 0 25px 0;
+        padding: 100px 0 5px 0;
     }
 
     &__items {
-        padding: 0 20px 0 141px;
+        // padding: 0 20px 0 141px;
+        margin: 0 20px 0 141px;
     }
 
     &__item-wrapper {
         position: relative;
         transition: all .5s;
         overflow: hidden;
-        min-height: 1000px;
+        height: 634px;
+
+        transition: height .5s;
         
     }
 
@@ -51,10 +63,12 @@
         font-weight: 400;
     }
 
+
     &__img-wrapper {
         position: absolute;
         width: 413px;
         height: 634px;
+        margin-top: 20px;
 
         transition: all .5s;
     }
@@ -86,6 +100,7 @@
         z-index: 9999;
         right: 75px;
         top: 50px;
+        transition: all .5s;
     }
 
     &__btn-close {
@@ -131,6 +146,7 @@
         margin: 47px 0 36px 0;
     }
 
+
     // animation for our-team__item-wrapper  our-team__item-wrapper-animation
 
     &__item-wrapper-animation {
@@ -139,11 +155,41 @@
         height: 143px;
         transition: all .5s;
 
+        &__wrapper-item {
+            height: 143px;
+            transition: height .5s;
+        }
+
         & img {
             transition: all .5s;
             object-fit: cover;
-            object-position: 0 -597px;
+            object-position: 0 -597px;/////////////////////////////////////////////////////////////////////////////
             transition: all .5s;
+        }
+
+        &.position-alice {
+
+            & img {
+                object-position: 0 -597px;    
+            }
+        }
+        &.position-sofia {
+
+            & img {
+                object-position: 0 -1055px;    
+            }
+        }
+        &.position-bogdan {
+
+            & img {
+                object-position: 0 -692px;    
+            }
+        }
+        &.position-yaroslav {
+
+            & img {
+                object-position: 0 -607px;    
+            }
         }
 
         &__item-info {
@@ -155,8 +201,102 @@
             display: block;
         }
 
+        &__close-btn {
+            transform: rotate(45deg);
+            transition: all .5s;
+
+            & path {
+                fill: $color-hard-red;
+            }
+        }
+
+        &__position-alice { //our-team__
+            object-position: 0 -597px;
+            transition: all .5s;
+        } 
+    
+        &__position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
+            object-position: 0 -1055px;
+            transition: all .5s;
+        }
+    
+        &__position-bogdan {
+            object-position: 0 -692px;
+            transition: all .5s;
+        }
+    
+        &__position-yaroslav {
+            object-position: 0 -607px;
+            transition: all .5s;
+        }
+
+    }
+
+    &__btn-detail {
+        margin: 50px 53px 0 auto;
+        color: #EE3434;
+
+        & .blue-button__subdiv:nth-child(1) {
+            border-left: 3px solid #EE3434;
+            border-top: 3px solid #EE3434;
+        }
+
+        & .blue-button__subdiv:nth-child(2) {
+            border-right: 3px solid #EE3434;
+            border-top: 3px solid #EE3434;
+        }
+        & .blue-button__subdiv:nth-child(3) {
+            border-left: 3px solid #EE3434;
+            border-bottom: 3px solid #EE3434;
+        }
+
+        & .blue-button__subdiv:nth-child(4) {
+            border-right: 3px solid #EE3434;
+            border-bottom: 3px solid #EE3434;
+        }
+
+        &:hover {
+    
+            .blue-button__subdiv {
+            
+        
+                &:nth-child(3) {
+                    border-right: 3px solid #EE3434;
+                    border-bottom: 3px solid #EE3434;
+                }
+                
+                &:nth-child(2) {
+                    border-left: 3px solid #EE3434;
+                    border-top: 3px solid #EE3434;
+                }
+        
+            }
+        }
     }
 }
+
+
+// .position-alice { //our-team__
+//     object-position: 0 -597px;
+//     transition: all .5s;
+// } 
+
+// .position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
+//     img {
+//         object-position: 0 -1055px;
+//         transition: all .5s;
+//     }
+// }
+
+// .position-bogdan {
+//     object-position: 0 -692px;
+//     transition: all .5s;
+// }
+
+// .position-yaroslav {
+//     object-position: 0 -607px;
+//     transition: all .5s;
+// }
 
 
 
@@ -251,6 +391,11 @@
 }
 
 
+
+
+//////
+/// 
+/// 
 // .try-img {
 
 //     height: 650px;

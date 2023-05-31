@@ -88,9 +88,13 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
 
     &__p {
         position: absolute;
-        left: 50%;
-        top: 34%;
-        margin-left: -42px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: fit-content;
+        width: fit-content;
+        margin: auto;
     }
 
     &:hover {

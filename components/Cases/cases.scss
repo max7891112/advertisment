@@ -1,0 +1,106 @@
+.cases {
+
+    background: url('./components/MainPage/img/mainPageBac.jpg') no-repeat;
+    padding-bottom: 83px;
+
+    &__body {
+
+    }
+
+    &__h2 {
+        @include heading('Arkhip', 64px, 77px, #3446EE);
+        margin: 0  0 50px 165px;
+    }
+
+    &__items {
+        display: flex;
+        margin: 0 auto;
+        gap: 20px;
+        max-width: 1164px;
+        // overflow: hidden;
+    }
+
+    &__wrapper-block {
+        transition: all .5s;
+        position: relative;
+        width: 276px;
+        height: 800px;
+        flex-shrink: 1;
+
+    }
+    
+    & .submassive { // для корректного анимирования флекс-элементов. Обратить внимание на transition .submassive и .&__wrapper-block
+        transition: none;
+        position: relative;
+        width: 276px;
+        height: 800px;
+        flex-shrink: 1;
+    }
+
+    &__name {
+        @include heading('Arkhip', 64px, 77px, #FFFFFF);
+        position: absolute;
+        writing-mode: vertical-rl;
+        margin: 0 0 0 auto;
+        right: 10px;
+        top: 60px;
+        transition: color .5s;
+    }
+
+    &__wrapper-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__arrow {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        transform: rotate(0deg);
+        transition: transform .5s;
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-right: 163px;
+        margin-top: 50px;
+    }
+}
+
+.cases-animation { //cases-animation__wrapper-block-active
+
+    &__wrapper-block-active { // cases-animation__wrapper-block-active
+        width: 452px;
+        flex-shrink: 0;
+        transition: all .5s;
+    }
+
+    &__wrapper-block-submassive{ // cases-animation__wrapper-block-submassive
+        flex-shrink: 1;
+    }
+
+    &__wrapper-block-immutable { // cases-animation__wrapper-block-immutable
+        flex-shrink: 0;
+        // transition: all 2s;
+    }
+
+    &__name {
+        color: #EE3434;
+        transition: all .5s;
+    }
+
+    &__arrow {
+        path {
+            fill: #EE3434;
+        }
+        transition: all .5s;
+        transform: rotate(-45deg);
+    }
+
+}

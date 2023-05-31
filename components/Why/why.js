@@ -16,7 +16,7 @@ class Why {
         });
 
         for(let i = 0; i < items.length; i++) {
-            items[i].addEventListener('click', (event) => {
+            items[i].addEventListener('click', () => {
 
                 if( !items[i].classList.contains('why__item-active')) {
                     for(let item of items) {
@@ -30,8 +30,7 @@ class Why {
                     pluse[i].classList.add('why__pluse-rotate');
     
                     items[i].classList.add('why__item-active');
-
-                    console.log(777);
+                    
                 } else {
                     items[i].classList.remove('why__item-active');
                     pluse[i].classList.remove('why__pluse-rotate');

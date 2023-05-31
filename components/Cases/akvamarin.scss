@@ -1,0 +1,104 @@
+.cases-child-akva {
+
+    background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
+    min-height: 100vh;
+
+    &__body {
+    }
+
+    &__container {
+    }
+
+    &__up-part {
+        width: 1430px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 36px;
+    }
+
+    &__wrapper-up-img {
+        max-width: 1430px;
+    }
+
+    &__up-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__h2 {
+        @include heading('Arkhip', 64px, 77px, #FFFFFF);
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    &__main-box {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 158px;
+    }
+
+    &__left-part {
+        padding-top: 106px;
+        padding-left: 160px;
+        padding-right: 90px;
+    }
+
+    &__img-wrapper {
+        width: 363px;
+        height: 615px;
+    }
+
+    &__img-l-p {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__right-part {
+        padding-bottom: 135px;
+    }
+
+    &__name {
+        @include heading('Arkhip', 128px, 154px, #FFFFFF);
+        padding-top: 113px;  
+        text-align: end;
+    }
+
+    &__r-p-up-text {
+        @include heading('Montserrat', 20px, 140%, #FFFFFF);
+        max-width: 473px;
+        padding-top: 38px;
+        margin-left: 130px;
+    }
+
+    &__r-p-down-p {
+        display: flex;
+        flex-direction: row;
+        padding-top: 57px;
+    }
+
+    &__r-p-d-text {
+        width: 307px;
+        @include heading('Montserrat', 20px, 140%, #FFFFFF);
+        padding-top: 43px;
+        margin-right: 108px;
+    }
+
+    &__img-down-wrapper {
+        width: 316px;
+        height: 501px;
+    }
+
+    &__img-down {
+        width: 100%;
+        height: 100%;
+    }
+}

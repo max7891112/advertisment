@@ -1,0 +1,58 @@
+.cases-child-raw {
+
+    background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
+    min-height: 100vh;
+
+    &__body {
+    }
+
+    &__container {
+        display: flex;
+        margin: 0 158px;
+        justify-content: space-between;
+    }
+
+    &__left-part {
+        padding-top: 50px;
+        max-width: 720px;
+    }
+
+    &__l-up {
+        display: flex;
+    }
+
+    &__img-wrapper {
+        width: 415px;
+        height: 824px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__h2 {
+        @include heading('Arkhip', 128px, 154px, #fff);
+        writing-mode: vertical-rl;
+        text-align: end;
+    }
+
+    &__l-text {
+        max-width: 720px;
+        @include heading('Montserrat', 20px, 140%, #fff);
+        font-weight: 400;
+        padding-top: 140px;
+        text-align: start;
+    }
+
+    &__right-part {
+        max-width: 415px;
+        padding: 167px 0 50px 0;
+    }
+
+    &__r-text {
+        padding-bottom: 180px;
+        @include heading('Montserrat', 20px, 140%, #fff);
+    }
+}
