@@ -30,6 +30,7 @@ class MenuBurger {
             func(this.imgContainer.children[i], i + 1) 
         }
     }
+    
 }
 
 export default new MenuBurger();

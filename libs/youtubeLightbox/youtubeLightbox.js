@@ -1,14 +1,10 @@
-strata.addEventListener('click', () => {
-	setTimeout(() => {
-		// let link = document.getElementById('maybe')
-		// link.addEventListener('click', (event) => {
-		// 	event.preventDefault()
-		// 	link.classList.add('_resize')
-			// reactComponentImg.classList.add('_resizer')
-		// })
+class YoutubeLightbox {
 
-		setTimeout(() => {
-			const linksBtnsSelector = 'a[data-youtubeLightbox]';
+	constructor() {
+		this.onYouTubeIframeAPIReady = '';
+	}
+	connect(youtubelightboxId, youtubelightboxPlayer, youtubelightboxCenteredChild,) {
+		const linksBtnsSelector = 'a[data-youtubeLightbox]';
 			// const linksBtnsSelector = '.lightbox';
 			// load Youtube API code asynchronously
 			var tag = document.createElement('script');
@@ -19,7 +15,7 @@ strata.addEventListener('click', () => {
 	
 			var isiOS = navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)/i) != null; //boolean check for iOS devices
 	
-			var youtubelightbox = document.getElementById('youtubelightbox');
+			var youtubelightbox = document.getElementById(youtubelightboxId);
 			var player; // variable to hold new YT.Player() instance
 	
 			// Hide lightbox when clicked on
@@ -36,7 +32,7 @@ strata.addEventListener('click', () => {
 	
 			// Exclude youtube iframe from above action
 			youtubelightbox
-				.querySelector('.youtubelightbox__centeredchild')
+				.querySelector(youtubelightboxCenteredChild)
 				.addEventListener(
 					'click',
 					function (e) {
@@ -46,14 +42,10 @@ strata.addEventListener('click', () => {
 				);
 	
 			// define onYouTubeIframeAPIReady() function and initialize lightbox when API is ready
-			function onYouTubeIframeAPIReady() {
+			this.onYouTubeIframeAPIReady = () => {
 				createlightbox();
-				console.log(youtubelightbox.getAttribute('data-playing'))
-				youtubelightbox.setAttribute('data-playing', true)
-				console.log(youtubelightbox.getAttribute('data-playing'))
-			}
-			onYouTubeIframeAPIReady()
-	
+			}		
+
 			document.addEventListener('keydown', (event) => {
 				if(event.code == 'Escape') {
 					if(youtubelightbox && player) {
@@ -79,7 +71,7 @@ strata.addEventListener('click', () => {
 	
 			// Creates a new YT.Player() instance
 			function createyoutubeplayer(videourl) {
-				player = new YT.Player('youtubelightboxPlayer', {
+				player = new YT.Player(youtubelightboxPlayer, {
 					videoId: videourl,
 					playerVars: { autoplay: 1 },
 				});
@@ -109,15 +101,15 @@ strata.addEventListener('click', () => {
 							}
 							e.preventDefault();
 						},
-						false
-					);
-				};
+					false
+				);
 			};
-		},200)
-		
+		};
+	}
 
-		
-	},100);
+	start() {
+		this.onYouTubeIframeAPIReady()
+	}
+}
 
-});
-
+export default new YoutubeLightbox()

@@ -12,12 +12,15 @@ class Feedback {
                             <input class="modal__input modal__input_name _modal-req" placeholder="Имя" data-input="true">
                             <input class="modal__input modal__input_phone _modal-req" placeholder="Телефон" type="tel" data-input="true" maxlength="15">
                             <textarea class="modal__input modal__input_textarea _modal-req" placeholder="Сообщение" maxlength="140" data-input="true"></textarea>
-                            <button class="modal__dinamic-button dinamic-red-button">
-                                <div class="dinamic-red-button__subdiv"></div>
-                                <div class="dinamic-red-button__subdiv"></div>
-                                <div class="dinamic-red-button__subdiv"></div>
-                                <div class="dinamic-red-button__subdiv"></div>
-                                <p class="dinamic-red-button__p">Оставить заявку</p>
+                            <button class="button-dinamic modal__dinamic-button" id="modal-submit">Оставить заявку
+                                <div class="button-dinamic__1"></div>
+                                <div class="button-dinamic__2"></div>
+                                <div class="button-dinamic__3"></div>
+                                <div class="button-dinamic__4"></div>
+                                <div class="button-dinamic__5"></div>
+                                <div class="button-dinamic__6"></div>
+                                <div class="button-dinamic__7"></div>
+                                <div class="button-dinamic__8"></div>
                             </button>
                         </form>
                     </div>
@@ -58,13 +61,13 @@ class Feedback {
 
 
     sendForm() {
-        
             let form = document.getElementById('form-free-lesson');
             let container = document.getElementById('modal-container')
+            let modalSubmit = document.getElementById('modal-submit')
 
-            form.addEventListener('submit', formSend);
-
+            modalSubmit.addEventListener('click', formSend);
             function formSend (event){  // async
+
                 event.preventDefault();
 
                 let error = formValidate(form)
@@ -115,10 +118,10 @@ class Feedback {
                 let formReq = document.querySelectorAll('._modal-req')
                 for(let i = 0; i< formReq.length; i++) {
                     let input = formReq[i];
-                    TechnicalFunctions.formRemoveError(input);
+                    input.classList.remove('_error');
 
                     if(input.classList.contains('_modal-email')) {
-                         if(!TechnicalFunctions.emailTest(input)){
+                         if(!this.emailTest(input)){
                             formAddError(input);
                             error++
                          }
@@ -132,7 +135,7 @@ class Feedback {
                 return error;
             }
             function formAddError(input) {
-                input.classList.add('_error')
+                input.classList.add('_error');
                 if(input.placeholder == 'Имя' || input.placeholder == 'Введите имя') {
                     input.placeholder = 'Введите имя';
                 } else if (input.placeholder == 'Телефон' || input.placeholder == 'Введите номер телефона') {
@@ -140,8 +143,46 @@ class Feedback {
                 } else {
                     input.placeholder = 'Введите ваше сообщение';
                 }
-            }
+            };
     }
-}
+
+    buttonInit() {
+        document.addEventListener('click', (event) => {
+            let target = event.target;
+            if(target.closest('[data-feedback-open="true"]')) {
+                this.open();
+                this.sendForm();
+                document.addEventListener('keydown', (event) => {
+                    if(event.code.toLowerCase() == 'escape') {
+                        this.close();
+                    };
+                });
+                let inputTel = document.querySelector('.modal__input_phone');
+                inputTel.addEventListener('keyup', function(event) {
+                    if(event.key != 'Backspace' && (inputTel.value.length === 1 || inputTel.value.length === 5 || inputTel.value.length === 9 || inputTel.value.length === 12)) {
+                        inputTel.value += '-';
+                    };
+                });
+            };
+        });
+    };
+
+    addListenerForDataInput() {
+        document.addEventListener('click', function(event) {
+            let target = event.target;
+            if(!target.hasAttribute('data-input')) return;
+            target.classList.remove('_error');
+        });
+    };
+
+    addListenerDataClose() {
+        document.addEventListener('click', (event) => {
+            let target = event.target;
+            if(target.dataset.close) {
+                this.close();
+            };
+        });
+    };
+};
 
 export default new Feedback()

@@ -33,199 +33,110 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     opacity: 0;
 }
 
-.dinamic-button{
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    color: $color-light-blue;
-    width: 200px;
-    height: 50px;
-    background: transparent;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 16px;
-    overflow: hidden;
-
-    &__subdiv {
-        width: 10px;
-        height: 10px;
-        background-color: $color-light-blue;
-        width: 95px;
-        height: 18px;
-        
-        &:nth-child(n) {
-            display: block;
-            background-color: transparent;
-            transition: .1s;
-        }
-
-        &:nth-child(1) {
-            border-left: 3px solid $color-light-blue;
-            border-top: 3px solid $color-light-blue;
-        }
-
-        &:nth-child(2) {
-            border-right: 3px solid $color-light-blue;
-            border-top: 3px solid $color-light-blue;
-        }
-        
-        &:nth-child(3) {
-            border-left: 3px solid $color-light-blue;
-            border-bottom: 3px solid $color-light-blue;
-        }
-
-        &:nth-child(4) {
-            border-right: 3px solid $color-light-blue;
-            border-bottom: 3px solid $color-light-blue;
-        }
-
-        
-    }
-
-    &__p {
-        position: absolute;
-        left: 50%;
-        top: 34%;
-        margin-left: -42px;
-        color: $color-light-blue;
-    }
-
-    &:hover {
-
-        .dinamic-button__p {
-            // animation: moveP 0.2s linear;
-        }
-
-
-        .dinamic-button__subdiv {
-        
-            &:nth-child(1) {
-               display: none;
-            //    transition: 0.3s;
-            }
-    
-            &:nth-child(3) {
-                border: none;
-                border-right: 3px solid $color-light-blue;
-                border-bottom: 3px solid $color-light-blue;
-                background-color: transparent;
-                height: 100%;
-                width: 38px;
-                // transition: 0.5s;
-            }
-            
-            &:nth-child(2) {
-                border: none;
-                border-left: 3px solid $color-light-blue;
-                border-top: 3px solid $color-light-blue;
-                background-color: transparent;
-                height: 100%;
-                width: 38px;
-                // transition: 0.5s;
-            }
-    
-            &:nth-child(4) {
-                display: none;
-                // transition: 0.3s;
-            }
-        }
-    }
-}
-
-
-.dinamic-red-button{
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
+.button-dinamic{
+    padding: 17px 25px;
     color: $color-light-red;
-    width: 200px;
-    height: 50px;
-    background: transparent;
-    font-weight: 700;
     font-size: 16px;
-    line-height: 16px;
-    overflow: hidden;
+    font-weight: 700;
+    background-color: transparent;
+    position: relative;
+    width: 200px;
+    height: 53px;
+    transition: all .3s ease;
 
-    &__subdiv {
-        width: 10px;
-        height: 10px;
-        background-color: $color-light-red;
-        width: 95px;
-        height: 18px;
-        
-        &:nth-child(n) {
-            display: block;
-            background-color: transparent;
-            transition: 0.1s;
-        }
-
-        &:nth-child(1) {
-            border-left: 3px solid $color-light-red;
-            border-top: 3px solid $color-light-red;
-        }
-
-        &:nth-child(2) {
-            border-right: 3px solid $color-light-red;
-            border-top: 3px solid $color-light-red;
-        }
-        
-        &:nth-child(3) {
-            border-left: 3px solid $color-light-red;
-            border-bottom: 3px solid $color-light-red;
-        }
-
-        &:nth-child(4) {
-            border-right: 3px solid $color-light-red;
-            border-bottom: 3px solid $color-light-red;
-        }
-
-        
-    }
-
-    &__p {
+    div:nth-child(n) {
         position: absolute;
-        left: 37%;
-        top: 32%;
-        margin-left: -42px;
+        transition: all .3s ease;
+        background-color: $color-light-red;
     }
 
-    &:hover {
-
-        .dinamic-red-button__p {
+    &:hover{
+        .button-dinamic__1{
+            width: 0;
         }
+        .button-dinamic__2{
+            width: 38px;
+        }
+        .button-dinamic__3{
+            height: 53px;
+        }
+        .button-dinamic__4{
+            height: 0;
+        }
+        .button-dinamic__5{
+            width: 0;
+        }
+        .button-dinamic__6{
+            width: 38px;
+        }
+        .button-dinamic__7{
+            height: 53px;
+        }
+        .button-dinamic__8{
+            height: 0;
+        }
+    }
 
+    &__1 {
+        top: 0;
+        left: 0;
+        width: 95px;
+        height: 3px;
+    }
 
-        .dinamic-red-button__subdiv {
-        
-            &:nth-child(1) {
-               display: none;
-            }
-    
-            &:nth-child(3) {
-                border: none;
-                border-right: 3px solid $color-light-red;
-                border-bottom: 3px solid $color-light-red;
-                background-color: transparent;
-                height: 100%;
-                width: 38px;
-            }
-            
-            &:nth-child(2) {
-                border: none;
-                border-left: 3px solid $color-light-red;
-                border-top: 3px solid $color-light-red;
-                background-color: transparent;
-                height: 100%;
-                width: 38px;
-            }
-    
-            &:nth-child(4) {
-                display: none;
-            }
+    &__2 {
+        top: 0;
+        right: 0;
+        width: 95px;
+        height: 3px;
+    }
+
+    &__3 {
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &__4 {
+        bottom: 0;
+        right: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &__5 {
+        bottom: 0;
+        right: 0;
+        width: 95px;
+        height: 3px;
+    }
+
+    &__6 {
+        bottom: 0;
+        left: 0;
+        width: 95px;
+        height: 3px;
+    }
+
+    &__7 {
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &__8 {
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &_blue{
+        color: $color-light-blue;
+        div:nth-child(n) {
+            background-color: $color-light-blue;
         }
     }
 }
@@ -251,5 +162,127 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     &:hover{
         transform: translate(-50%, -50%) scale(1.2);
         filter: saturate(1.5);
+    }
+}
+
+.svg {
+    fill: $color-hard-red;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+
+    :nth-child(n){
+        transition: all .2s ease 0s;
+    }
+
+    &__top-right-line {
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__right-top-line {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &__bottom-left-line {
+        position: absolute;
+        bottom: -3px;
+        right: 6px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__left-bottom-line {
+        position: absolute;
+        bottom: 9px;
+        right: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &:hover{
+
+        svg{
+            fill: $color-light-blue;
+
+            & path {
+                fill: $color-light-blue;
+            }
+        }
+
+        .svg__top-right-line,
+        .svg__right-top-line,
+        .svg__bottom-left-line,
+        .svg__left-bottom-line {
+            background-color: blue;
+        }
+
+        .svg__top-right-line{
+            top: 32px;
+        }
+
+        .svg__right-top-line{
+            transform: rotate(270deg);
+            top: 20px;
+        }
+
+        .svg__bottom-left-line{
+            bottom: 34px;
+        }
+
+        .svg__left-bottom-line{
+            bottom: 22px;
+        }
+    }
+}
+
+
+.comeback{
+    &__svg-container {
+        position: relative;
+        width: 91px;
+        height: 60px;
+        cursor: pointer;
+        &:hover{
+            .comeback__svg-circle{
+                transform: rotate(180deg);
+                fill: $color-hard-red;
+            }
+
+            .comeback__svg-line{
+                fill: $color-hard-red;
+                left: -25%;
+            }
+        }
+    }
+
+    &__svg-circle {
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        fill: $color-white;
+        transition: all .3s ease;
+    }
+
+    &__svg-line {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        fill: $color-white;
+        transition: all .3s ease;
     }
 }

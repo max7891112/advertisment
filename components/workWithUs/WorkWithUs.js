@@ -1,4 +1,5 @@
 import {REACT_COMPONENT} from '../../constants/var.js';
+import youtubeLightbox from '../../libs/youtubeLightbox/youtubeLightbox.js';
 import strataLogo from './img/strata.png';
 import dreamGirl from './img/dreamGirl.jpg';
 import skate from './img/skate.jpg';
@@ -22,19 +23,22 @@ class WorkWithUs {
             </div>
                 
                 <div class="react-component__video-container"  id="maybe">
-                    <a href=${path} class="react-component__link" data-youtubeLightbox>
+                    <a href=${path} class="react-component__link" data-youtubeLightbox="true">
                         <img src=${image} alt="#" class="react-component__img">
                         <img src=${playIcon} alt="#" class="_icon">
                     </a>
                 </div>
                 <p class="react-component__text">${text}</p>
-                <a href="./components/workWithUs/loginova/loginova.html" class="hidden-loginova__button dinamic-button react-component__btn"">
-                    <div class="dinamic-button__subdiv"></div>
-                    <div class="dinamic-button__subdiv"></div>
-                    <div class="dinamic-button__subdiv"></div>
-                    <div class="dinamic-button__subdiv"></div>
-                    <p class="dinamic-button__p">Подробнее</p>
-                </a>
+                <button class="button-dinamic button-dinamic_blue react-component__btn">Подробнее
+                    <div class="button-dinamic__1"></div>
+                    <div class="button-dinamic__2"></div>
+                    <div class="button-dinamic__3"></div>
+                    <div class="button-dinamic__4"></div>
+                    <div class="button-dinamic__5"></div>
+                    <div class="button-dinamic__6"></div>
+                    <div class="button-dinamic__7"></div>
+                    <div class="button-dinamic__8"></div>
+                </button>
             </div>
             <div id="youtubelightbox" class="youtubelightbox" data-playing="false">
                 <div class="youtubelightbox__centeredchild">
@@ -83,6 +87,19 @@ class WorkWithUs {
             this.open(japan, eye, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk')
         });
     };
+
+    addListenerForConnectLightBox() {
+        
+        strata.addEventListener('click', () => {
+            setTimeout(() => {
+                setTimeout(() => {
+                        youtubeLightbox.connect('youtubelightbox','youtubelightboxPlayer','.youtubelightbox__centeredchild')
+                    },200)	
+            },100);
+        });
+
+
+    }
 };
 
 export default new WorkWithUs();
