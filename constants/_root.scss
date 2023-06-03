@@ -134,7 +134,8 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     }
 
     &_blue{
-        color: $color-light-blue;
+        color: $color-light-blue !important;
+        text-align: center;
         div:nth-child(n) {
             background-color: $color-light-blue;
         }
@@ -252,6 +253,7 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
 
 
 .comeback{
+
     &__svg-container {
         position: relative;
         width: 91px;
@@ -284,5 +286,16 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         left: 4%;
         fill: $color-white;
         transition: all .3s ease;
+    }
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    a{
+        display: block;
     }
 }

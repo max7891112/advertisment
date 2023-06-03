@@ -13,10 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     LoginovaDetail.addListenerForAnimationSlider()
     
     // work with youtube video
-    WorkWithUs.addListenerForConnectLightBox()
-    youtubeLightbox.connect('youtubelightboxLoginova', 'youtubelightboxPlayerLoginova', '.youtubelightboxLoginova__centeredchild')
+    // WorkWithUs.addListenerForConnectLightBox()
+    // youtubeLightbox.connect('youtubelightboxLoginova', 'youtubelightboxPlayerLoginova', '.youtubelightboxLoginova__centeredchild')
     // add swiper
-    // MySwiper.addListenerForOpenSwiper()
     MySwiper.open()
     MySwiper.close()
 

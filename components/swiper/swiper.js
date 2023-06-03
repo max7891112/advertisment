@@ -5,15 +5,17 @@ import firstLoginova from './img/firstLoginova.png';
 import secondLoginova from './img/secondLoginova.png';
 import thirdLoginova from './img/thirdLoginova.png';
 import vector from './img/Vector.svg';
-import shoesImg from '../workWithUs/levinaImg/shoes.png';
-import smileImg from '../workWithUs/levinaImg/smile.png';
-import ultrafioletImg from '../workWithUs/levinaImg/ultrafiolet.png';
-import michael from '../workWithUs/larionovImg/michael.png';
-import uglyGuy from '../workWithUs/larionovImg/uglyGuy.png';
-import singingAfro from '../workWithUs/larionovImg/singingAfro.png';
-import guitar from '../workWithUs/belovImg/guitar.png';
-import crazy from '../workWithUs/belovImg/crazy.png';
-import perfectGuy from '../workWithUs/belovImg/perfectGuy.png';
+import shoesImg from '../workWithUs/levina/img/shoes.png';
+import smileImg from '../workWithUs/levina/img/smile.png';
+import ultrafioletImg from '../workWithUs/levina/img/ultrafiolet.png';
+import michael from '../workWithUs/larionov/img/michael.png';
+import uglyGuy from '../workWithUs/larionov/img/uglyGuy.png';
+import singingAfro from '../workWithUs/larionov/img/singingAfro.png';
+import guitar from '../workWithUs/belov/img/guitar.png';
+import crazy from '../workWithUs/belov/img/crazy.png';
+import perfectGuy from '../workWithUs/belov/img/perfectGuy.png';
+
+
 
 class MySwiper {
     render(firstImg, SecondImg, thirdImg) {
@@ -87,8 +89,9 @@ class MySwiper {
             </div>   
         </div>
         `;
-    
+
         ROOT_SWIPER_LOGINOVA.innerHTML = htmlContent;
+        
     };
 
     addInitialization() {     
@@ -118,7 +121,7 @@ class MySwiper {
                 } else if (event.target.closest('[data-belov="true"]')) {
                     this.render(guitar, perfectGuy, crazy)
                 };
-                this.addInitialization();
+                this.addInitialization();   
                 document.getElementById('sliderLoginova').classList.add('_open');
             });
         };
@@ -130,7 +133,7 @@ class MySwiper {
             if(target.closest('[data-closer="true"]')) {
                 document.getElementById('sliderLoginova').classList.remove('_open') 
                 setTimeout( ()=> {
-                    ROOT_SWIPER_LOGINOVA.innerHTML = '';
+                    ROOT_SWIPER_LOGINOVA.innerHTML = "";
                 },300);
             };
         });

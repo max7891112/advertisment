@@ -1,5 +1,5 @@
 import close from '../feedback//img/close.svg';
-import TechnicalFunctions from '../../technicalFunctions/TechnicalFunctions.js';
+import { ROOT_MODALS } from '../../constants/var';
 class Feedback {
     render() {
         let htmlContent = ` 
@@ -32,8 +32,10 @@ class Feedback {
                     ${htmlContent}
                 </div>
             `;
-    
-            ROOT_MODAL.innerHTML = htmlWrapper;
+
+            for(let ROOT_MODAL of ROOT_MODALS ) {
+                ROOT_MODAL.innerHTML = htmlWrapper;
+            }
     }
     
     open() {
@@ -54,7 +56,9 @@ class Feedback {
             setTimeout(() => {
                 modalWindow.classList.remove('disappearance');
                 modalWindow.parentElement.classList.remove('disappearance');
-                ROOT_MODAL.innerHTML = ''
+                for(let ROOT_MODAL of ROOT_MODALS ) {
+                    ROOT_MODAL.innerHTML = '';
+                }
             },300);
         };
     }; 
@@ -102,7 +106,9 @@ class Feedback {
                                 setTimeout(() => {
                                     modalWindow.classList.remove('disappearance');
                                     modalWindow.parentElement.classList.remove('disappearance');
-                                    ROOT_MODAL.innerHTML = ''
+                                    for(let ROOT_MODAL of ROOT_MODALS ) {
+                                        ROOT_MODAL.innerHTML = '';
+                                    }
                                 },300);
                             }; // дублирование кода
 
