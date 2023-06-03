@@ -1,0 +1,66 @@
+.questions {
+
+    &__body {
+        padding-bottom: 20px;
+    }
+
+    &__h2 {
+        padding: 45px 0 0 142px;
+        text-align: left;
+    }
+
+    &__text-box {
+        @include heading('Montserrat', 24px, 140%, #fff);
+        max-width: 856px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 186px 0 60px 0
+    }
+
+    &__box-items {
+    }
+
+    &__item {
+        position: relative;
+        background-image: url('./components/MainPage/img/mainPageBac.jpg');
+        border: none;
+        margin-bottom: 30px;
+    }
+
+    &__item-up {
+
+        margin-left: 30px;
+
+        & p {
+            @include heading('Montserrat', 20px, 130%, #000);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.3);
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__item-ttl {
+    }
+
+    &__pluse {
+        z-index: 4;
+        margin-right: 10px;
+    }
+
+    &__item-info {
+        @include heading('Montserrat', 20px, 130%, #000);
+        text-align: left;
+        margin: 0;
+        margin-left: 30px;
+    }
+}

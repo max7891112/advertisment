@@ -4,6 +4,10 @@ import WorkWithUs from "./components/workWithUs/WorkWithUs";
 import LoginovaDetail from "./components/loginovaDetail/LoginovaDetail";
 import youtubeLightbox from "./libs/youtubeLightbox/youtubeLightbox";
 import MySwiper from "./components/swiper/swiper";
+import Why from "./components/Why/why";
+import OurTeam from "./components/Our-team/ourTeam";
+import Cases from "./components/Cases/cases";
+import Footer from './components/Footer/footer';
 document.addEventListener('DOMContentLoaded', () => {
     
     MenuBurger.clickOnBurger();
@@ -23,7 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
     Feedback.addListenerDataClose()
     Feedback.addListenerForDataInput()
     Feedback.buttonInit()
+    Why.searchElem();
+    OurTeam.addEL();
+    Cases.addEventListener();
+    Cases.addELClick();
+    Footer.addEventListener();
 })
+
+
 
 
 

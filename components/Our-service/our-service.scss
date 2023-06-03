@@ -1,0 +1,72 @@
+.our-service {
+    position: relative;
+    overflow: hidden;
+    background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
+    padding-bottom: 468px;
+    
+    &__body {
+        // height: 790px;
+        // background-color: #000;
+        // z-index: -6;
+        // position: relative;
+    }
+
+    &__img-grek {
+        background-image: url('./components/Our-service/img/grek.png');
+        width: 684px;
+        height: 806px;
+        position: absolute;
+        background-size: cover;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__img-elipse {
+        background-image: url('./components/Our-service/img/elips.png');
+        position: absolute;
+        width: 833px;
+        height: 628px;
+        top: 58px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__h2 {
+        @include heading('Arkhip', 64px, 77px, #3446EE);
+        padding: 50px 0 0 130px;
+    }
+
+    &__items {
+        padding-left: 130px;
+        color: #ffffff;
+        display: flex;
+    }
+
+    &__item-left {
+        max-width: 745px;
+        padding-top: 130px;
+    }
+
+    &__subtitle {
+        @include heading('Arkhip', 32px, 38px, #fff);
+        padding-bottom: 15px;
+    }
+
+    &__item-positions {
+        padding: 0  0 50px 15px;
+    }
+
+    &__ol {
+    }
+
+    &__ol-li {
+    }
+
+    &__button {
+    }
+
+    &__item-right {
+        padding: 250px 0 0 35%;
+    }
+}

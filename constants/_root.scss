@@ -1,45 +1,4 @@
-<<<<<<< HEAD
-html{
-    font-size: 10px;
-}
 
-* {
-    font-family: 'Montserrat', sans-serif;
-}
-
-body{
-    overflow-x: hidden;
-}
-
-a{
-    cursor: pointer;
-}
-
-$color-light-red: #E03F4A;
-$color-white: #FFFFFF;
-$color-hard-red: #EE3434;
-$color-light-blue: #3446EE;
-$color-balck: #000000;
-$color-gradient: 180deg, #D84343 0%, #605EE1 100%;
-
-@mixin heading($f, $s, $h, $c) {
-    font-family: $f;
-    font-size: $s;
-    line-height: $h;
-    color: $c
-    // @include heading(Montserrat, 24px, 79px)
-}
-
-.blue-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color-light-blue;
-    padding: 17px 48px 17px 48px;
-    border: 3px solid $color-light-blue;
-    background: transparent;
-    font-weight: 700;
-=======
 html{
     font-size: 10px;
 }
@@ -68,8 +27,20 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     font-size: $s;
     line-height: $h;
     color: $c
-    // @include heading(Montserrat, 24px, 79px,red)
+    // @include heading(Montserrat, 24px, 79px)
 }
+
+.blue-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-light-blue;
+    padding: 17px 48px 17px 48px;
+    border: 3px solid $color-light-blue;
+    background: transparent;
+    font-weight: 700;
+}
+
 
 .hidden-opacity{
     opacity: 0;
@@ -340,5 +311,4 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     a{
         display: block;
     }
->>>>>>> mov4
 }

@@ -1,0 +1,51 @@
+.footer {
+
+    background-color: #000;
+    padding-top: 95px;
+    &__body {
+    }
+
+    &__container {
+    }
+
+    &__map {
+        // padding-top: 95px;
+        position: relative;
+    }
+
+    &__map-logo {
+        position: absolute;
+        left: 34.1%;
+        top: 27%;
+    }
+
+    &__map-opacity {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .5);
+        position: absolute;
+    }
+
+    &__down-part {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        padding: 56px 0 106px 0;
+    }
+
+    &__label {
+        @include heading('Arkhip', 16px, 19px, #fff);
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+    }
+
+    &__label-text {
+    }
+
+    &__d-p-item {
+        @include heading('Montserrat', 18px, 22px, #fff);
+    }
+}

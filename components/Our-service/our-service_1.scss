@@ -1,0 +1,71 @@
+.our-service { 
+
+    &.next {
+        padding-bottom: 0;
+    }
+
+    &__body {
+    }
+
+    &__img-fon {
+    }
+
+    &__img-grek {
+
+        &.next {
+            transform: scale(-1, 1) translateX(-43%);
+        }
+    }
+
+    &__img-elipse {
+    }
+
+    &__h2 {
+    }
+}
+
+.our-service-1 {
+
+    &__items {
+        padding-top: 50px;
+        padding-left: 130px;
+
+        &.bus {
+            padding-top: 225px;
+        }
+    }
+
+    &__item {
+        max-width: 775px;
+        padding-bottom: 50px;
+
+        &.first {
+          margin-left: 170px;  
+        }
+
+        &.second {
+
+        }
+
+        &.third {
+            margin-left: 140px;
+        }
+
+        &.fourth {
+
+        }
+        
+        &.fifth {
+            margin-left: 50px;
+        }
+    }
+
+    &__subtitle-item {
+        @include heading('Montserrat', 20px, 140%, #fff);
+        font-weight: 700;
+    }
+
+    &__text-item {
+        @include heading('Montserrat', 20px, 140%, #fff);
+    }
+}
