@@ -138,6 +138,17 @@ class Cases {
             };
         };
     }
+
+    addELClick () {
+        const item = document.querySelector('.cases__items');
+        const block = document.querySelector('.cases__wrapper-block');
+
+        item.addEventListener('click', event => {
+            console.log(event);
+        })
+
+
+    }
 }
 
 export default new Cases();

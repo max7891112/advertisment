@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./index.scss">
 </head>
 <body>
-    <div class="mainPage">
-        <div class="mainPage__body">
-            <h1 class="mainPage__title"><span>Реклама </span><span>в которую </span><span>Верят</span></h1>
-            <div class="mainPage__container">
-                <div class="mainPage__flex-container">
-                    <p class="mainPage__about-us">Мы — агентство инфлюенс-маркетинга. Мы помогаем бизнесу создавать рекламные кампании с блогерами, а блогерам — делать качественный контент  и зарабатывать.</p>
-                    <button class="mainPage__button blue-button">
-                        <div class="blue-button__subdiv"></div>
-                        <div class="blue-button__subdiv"></div>
-                        <div class="blue-button__subdiv"></div>
-                        <div class="blue-button__subdiv"></div>
-                        <p class="blue-button__p">Подробнее</p>
-                    </button>
+    <div class="main-page">
+        <div class="main-page__body">
+            <div class="main-page__container">
+                <div class="main-page__left-p">
+                    <p class="main-page__l-p-u">Реклама</p>
+                    <div class="main-page__img-wrapper">
+                        <img src="./components/MainPage/img/Rectangle.png" alt="" class="main-page__img">
+                        <p class="main-page__text">Мы — агентство инфлюенс-маркетинга. Мы помогаем бизнесу создавать рекламные кампании с блогерами, а блогерам — делать качественный контент и зарабатывать.</p>
+                    </div>
+                    <p class="main-page__l-p-d">Верят</p>
+                </div>
+                <div class="main-page__right-p">
+                    <p class="main-page__r-p-text">в которую</p>
                 </div>
             </div>
         </div>
@@ -28,8 +28,9 @@
 
     <div class="our-service">
         <div class="our-service__body">
-            <img class="our-service__img-fon" src="./components/Our-service/img/fon.png" alt="#">
-            <img class="our-service__img-grek" src="./components/Our-service/img/grek.png" alt="#">
+            <div class="our-service__img-fon"></div>
+            <div class="our-service__img-grek"></div>
+            <div class="our-service__img-elipse"></div>
             <h2 class="our-service__h2">Наши услуги</h2>
             <div class="our-service__items">
                 <div class="our-service__item-left">
@@ -167,9 +168,7 @@
                     </div>
 
                     <div class="our-team__item-info our-team__item-wrapper-animation__item-info">
-                        <!-- <div class="our-team__btn">
-                            <img src="./components/Our-team/img/crest.svg" alt="" class="our-team__btn-close">
-                        </div> -->
+                        
                         <p class="our-team__blogger-name">Алиса Логинова</p>
                         <p class="our-team__blogger-info">Российский видеоблогер, певица, композитор, актриса и модель. На июль 2021 года имела более 1,48 миллиона подписчиков на своём основном канале София Левина и более 159 тысяч на англоязычном канале SOFY.</p>
                         <p class="our-team__amount-followers">1.600.000 подписчиков</p>
@@ -232,9 +231,7 @@
                     </div>
 
                     <div class="our-team__item-info our-team__item-wrapper-animation__item-info">
-                        <!-- <div class="our-team__btn">
-                            <img src="./components/Our-team/img/crest.svg" alt="" class="our-team__btn-close">
-                        </div> -->
+                        
                         <p class="our-team__blogger-name">София Левина</p>
                         <p class="our-team__blogger-info">Российский видеоблогер, певица, композитор, актриса и модель. На июль 2021 года имела более 1,48 миллиона подписчиков на своём основном канале София Левина и более 159 тысяч на англоязычном канале SOFY.</p>
                         <p class="our-team__amount-followers">1.600.000 подписчиков</p>
@@ -297,9 +294,7 @@
                     </div>
 
                     <div class="our-team__item-info our-team__item-wrapper-animation__item-info">
-                        <!-- <div class="our-team__btn">
-                            <img src="./components/Our-team/img/crest.svg" alt="" class="our-team__btn-close">
-                        </div> -->
+                
                         <p class="our-team__blogger-name">Богдан Ларионов</p>
                         <p class="our-team__blogger-info">Российский видеоблогер, певица, композитор, актриса и модель. На июль 2021 года имела более 1,48 миллиона подписчиков на своём основном канале София Левина и более 159 тысяч на англоязычном канале SOFY.</p>
                         <p class="our-team__amount-followers">2.600.000 подписчиков</p>
@@ -362,9 +357,6 @@
                     </div>
 
                     <div class="our-team__item-info our-team__item-wrapper-animation__item-info">
-                        <!-- <div class="our-team__btn">
-                            <img src="./components/Our-team/img/crest.svg" alt="" class="our-team__btn-close">
-                        </div> -->
                         <p class="our-team__blogger-name">Ярослав Белов</p>
                         <p class="our-team__blogger-info">Российский видеоблогер, певица, композитор, актриса и модель. На июль 2021 года имела более 1,48 миллиона подписчиков на своём основном канале София Левина и более 159 тысяч на англоязычном канале SOFY.</p>
                         <p class="our-team__amount-followers">1.900.000 подписчиков</p>
@@ -430,7 +422,9 @@
 
         <div class="cases__items">
 
-            <div class="cases__wrapper-block cases-animation__wrapper-block-immutable">
+            <!-- <a href="./components/Cases/rusalka.html">
+            </a> -->
+            <a href="./components/Cases/rusalka.html" class="cases__wrapper-block cases-animation__wrapper-block-immutable">
                 
                 <div class="cases__name">“Русалка”</div>
 
@@ -443,9 +437,11 @@
                         <path d="M17.0616 29.0839L29.9718 16.5773C30.1674 16.3878 30.3063 16.1825 30.3885 15.9614C30.4693 15.7404 30.5098 15.5035 30.5098 15.2508C30.5098 14.9982 30.4693 14.7613 30.3885 14.5402C30.3063 14.3191 30.1674 14.1139 29.9718 13.9244L17.0616 1.41771C16.703 1.07031 16.255 0.888391 15.7178 0.871968C15.1792 0.856809 14.7143 1.03872 14.3231 1.41771C13.9318 1.76512 13.7278 2.19906 13.7108 2.71954C13.6952 3.24128 13.8829 3.69165 14.2742 4.07064L23.859 13.3559H1.99965C1.44542 13.3559 0.98052 13.5372 0.604949 13.8997C0.230682 14.2636 0.0435477 14.7139 0.0435477 15.2508C0.0435477 15.7877 0.230682 16.2375 0.604949 16.6C0.98052 16.9639 1.44542 17.1458 1.99965 17.1458H23.859L14.2742 26.431C13.9155 26.7784 13.7278 27.2206 13.7108 27.7575C13.6952 28.2944 13.8829 28.7365 14.2742 29.0839C14.6328 29.4629 15.0892 29.6524 15.6434 29.6524C16.1977 29.6524 16.6704 29.4629 17.0616 29.0839V29.0839Z" fill="white"/>
                     </svg>
                 </div>
-            </div>
+            </a>
 
-            <div class="cases__wrapper-block cases-animation__wrapper-block-immutable">
+            <!-- <a href="./components/Cases/crush.html">
+            </a> -->
+            <a href="./components/Cases/crush.html" class="cases__wrapper-block cases-animation__wrapper-block-immutable">
                 
                 <div class="cases__name">“CRUSH”</div>
 
@@ -458,9 +454,11 @@
                         <path d="M17.0616 29.0839L29.9718 16.5773C30.1674 16.3878 30.3063 16.1825 30.3885 15.9614C30.4693 15.7404 30.5098 15.5035 30.5098 15.2508C30.5098 14.9982 30.4693 14.7613 30.3885 14.5402C30.3063 14.3191 30.1674 14.1139 29.9718 13.9244L17.0616 1.41771C16.703 1.07031 16.255 0.888391 15.7178 0.871968C15.1792 0.856809 14.7143 1.03872 14.3231 1.41771C13.9318 1.76512 13.7278 2.19906 13.7108 2.71954C13.6952 3.24128 13.8829 3.69165 14.2742 4.07064L23.859 13.3559H1.99965C1.44542 13.3559 0.98052 13.5372 0.604949 13.8997C0.230682 14.2636 0.0435477 14.7139 0.0435477 15.2508C0.0435477 15.7877 0.230682 16.2375 0.604949 16.6C0.98052 16.9639 1.44542 17.1458 1.99965 17.1458H23.859L14.2742 26.431C13.9155 26.7784 13.7278 27.2206 13.7108 27.7575C13.6952 28.2944 13.8829 28.7365 14.2742 29.0839C14.6328 29.4629 15.0892 29.6524 15.6434 29.6524C16.1977 29.6524 16.6704 29.4629 17.0616 29.0839V29.0839Z" fill="white"/>
                     </svg>
                 </div>
-            </div>
+            </a>
 
-            <div class="cases__wrapper-block cases-animation__wrapper-block-immutable">
+            <!-- <a href="./components/Cases/raw.html">
+            </a> -->
+            <a href="./components/Cases/raw.html" class="cases__wrapper-block cases-animation__wrapper-block-immutable">
                 
                 <div class="cases__name">“RAW”</div>
 
@@ -473,9 +471,11 @@
                         <path d="M17.0616 29.0839L29.9718 16.5773C30.1674 16.3878 30.3063 16.1825 30.3885 15.9614C30.4693 15.7404 30.5098 15.5035 30.5098 15.2508C30.5098 14.9982 30.4693 14.7613 30.3885 14.5402C30.3063 14.3191 30.1674 14.1139 29.9718 13.9244L17.0616 1.41771C16.703 1.07031 16.255 0.888391 15.7178 0.871968C15.1792 0.856809 14.7143 1.03872 14.3231 1.41771C13.9318 1.76512 13.7278 2.19906 13.7108 2.71954C13.6952 3.24128 13.8829 3.69165 14.2742 4.07064L23.859 13.3559H1.99965C1.44542 13.3559 0.98052 13.5372 0.604949 13.8997C0.230682 14.2636 0.0435477 14.7139 0.0435477 15.2508C0.0435477 15.7877 0.230682 16.2375 0.604949 16.6C0.98052 16.9639 1.44542 17.1458 1.99965 17.1458H23.859L14.2742 26.431C13.9155 26.7784 13.7278 27.2206 13.7108 27.7575C13.6952 28.2944 13.8829 28.7365 14.2742 29.0839C14.6328 29.4629 15.0892 29.6524 15.6434 29.6524C16.1977 29.6524 16.6704 29.4629 17.0616 29.0839V29.0839Z" fill="white"/>
                     </svg>
                 </div>
-            </div>
+            </a>
 
-            <div class="cases__wrapper-block cases-animation__wrapper-block-immutable">
+            <!-- <a href="./components/Cases/akvamarin.html">
+            </a> -->
+            <a href="./components/Cases/akvamarin.html" class="cases__wrapper-block cases-animation__wrapper-block-immutable">
                 
                 <div class="cases__name">“Аквамарин”</div>
 
@@ -488,7 +488,7 @@
                         <path d="M17.0616 29.0839L29.9718 16.5773C30.1674 16.3878 30.3063 16.1825 30.3885 15.9614C30.4693 15.7404 30.5098 15.5035 30.5098 15.2508C30.5098 14.9982 30.4693 14.7613 30.3885 14.5402C30.3063 14.3191 30.1674 14.1139 29.9718 13.9244L17.0616 1.41771C16.703 1.07031 16.255 0.888391 15.7178 0.871968C15.1792 0.856809 14.7143 1.03872 14.3231 1.41771C13.9318 1.76512 13.7278 2.19906 13.7108 2.71954C13.6952 3.24128 13.8829 3.69165 14.2742 4.07064L23.859 13.3559H1.99965C1.44542 13.3559 0.98052 13.5372 0.604949 13.8997C0.230682 14.2636 0.0435477 14.7139 0.0435477 15.2508C0.0435477 15.7877 0.230682 16.2375 0.604949 16.6C0.98052 16.9639 1.44542 17.1458 1.99965 17.1458H23.859L14.2742 26.431C13.9155 26.7784 13.7278 27.2206 13.7108 27.7575C13.6952 28.2944 13.8829 28.7365 14.2742 29.0839C14.6328 29.4629 15.0892 29.6524 15.6434 29.6524C16.1977 29.6524 16.6704 29.4629 17.0616 29.0839V29.0839Z" fill="white"/>
                     </svg>
                 </div>
-            </div>
+            </a>
 
             
         </div>
@@ -566,6 +566,29 @@
             </button>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__container">
+                <div class="footer__map">
+                    <div class="footer__map-opacity"></div>
+                    <img src="./components/Footer/img/map-label.png" alt="" class="footer__map-logo">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae370e4fa2500d314bbe4fa5942e87a233ea92c7a69d0441b962d4ed097801446&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+
+                <div class="footer__down-part">
+                    <div class="footer__label">
+                        <img src="./components/Footer/img/label.svg" alt="" class="footer__img">
+                        <p class="footer__label-text">NFLUENCE</p>
+                    </div>
+                    <p class="footer__d-p-item">info@nfluence.ru</p>
+                    <p class="footer__d-p-item">Москва, ул.Константина Царева, 44</p>
+                    <p class="footer__d-p-item">+7(499)123-45-67</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!-- <div class="try-img">
 
         <div class="try-img__wrapper">

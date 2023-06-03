@@ -1,41 +1,55 @@
-.mainPage {
-    width: 100%;
-    height: 100vh;
-    background: url('./components/MainPage/img/mainPageBac.jpg') no-repeat;
-    background-size: cover;
+.main-page {
+
+    background-image: url('./components/MainPage/img/mainPageBac.jpg');
     &__body {
-
-    }
-
-    &__title {
-        font-family: 'Arkhip';
-        span{
-            @include heading('Arkhip', 64px, 154px, $color-light-blue);
-        }
-        
-        
+        padding-bottom: 90px;
     }
 
     &__container {
-        max-width: 1122px;
-        height: 522px;
-        background: url(./components/MainPage/img/Rectangle.png) no-repeat;
         display: flex;
-        justify-content: end;
-        align-items: center;
     }
 
-    &__flex-container{
+    &__left-p {
+        max-width: 1122px;
+    }
+
+    &__l-p-u {
+        @include heading('Arkhip', 128px, 154px, #3446EE);
+        text-align: right;
+    }
+
+    &__img-wrapper {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__text {
+        position: absolute;
+        top: 124px;
+        right: 50px;
+        @include heading('Montserrat', 24px, 140%, #fff);
+        max-width: 503px;
+    }
+
+    &__l-p-d {
+        @include heading('Arkhip', 128px, 154px, #3446EE);
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    &__right-p {
 
     }
 
-    &__about-us {
-        max-width: 500px;
-        max-height: 170px;
-        @include heading(Montserrat, 24px, 140%, $color-white);
-        margin: 120px 50px 50px 0;
-    }
-
-    &__button {
+    &__r-p-text {
+        @include heading('Arkhip', 128px, 154px, #3446EE);
+        writing-mode: vertical-rl;
+        padding-top: 41px;
+        min-height: 814px;
     }
 }
