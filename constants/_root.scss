@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
     font-size: 10px;
 }
@@ -38,4 +39,306 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     border: 3px solid $color-light-blue;
     background: transparent;
     font-weight: 700;
+=======
+html{
+    font-size: 10px;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    cursor: pointer;
+}
+
+$color-light-red: #E03F4A;
+$color-white: #FFFFFF;
+$color-hard-red: #EE3434;
+$color-light-blue: #3446EE;
+$color-black: #000000;
+$color-gradient: 180deg, #D84343 0%, #605EE1 100%;
+
+@mixin heading($f, $s, $h, $c) {
+    font-family: $f;
+    font-size: $s;
+    line-height: $h;
+    color: $c
+    // @include heading(Montserrat, 24px, 79px,red)
+}
+
+.hidden-opacity{
+    opacity: 0;
+}
+
+.button-dinamic{
+    padding: 17px 25px;
+    color: $color-light-red;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    position: relative;
+    width: 200px;
+    height: 53px;
+    transition: all .3s ease;
+
+    div:nth-child(n) {
+        position: absolute;
+        transition: all .3s ease;
+        background-color: $color-light-red;
+    }
+
+    &:hover{
+        .button-dinamic__1{
+            width: 0;
+        }
+        .button-dinamic__2{
+            width: 38px;
+        }
+        .button-dinamic__3{
+            height: 53px;
+        }
+        .button-dinamic__4{
+            height: 0;
+        }
+        .button-dinamic__5{
+            width: 0;
+        }
+        .button-dinamic__6{
+            width: 38px;
+        }
+        .button-dinamic__7{
+            height: 53px;
+        }
+        .button-dinamic__8{
+            height: 0;
+        }
+    }
+
+    &__1 {
+        top: 0;
+        left: 0;
+        width: 95px;
+        height: 3px;
+    }
+
+    &__2 {
+        top: 0;
+        right: 0;
+        width: 95px;
+        height: 3px;
+    }
+
+    &__3 {
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &__4 {
+        bottom: 0;
+        right: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &__5 {
+        bottom: 0;
+        right: 0;
+        width: 95px;
+        height: 3px;
+    }
+
+    &__6 {
+        bottom: 0;
+        left: 0;
+        width: 95px;
+        height: 3px;
+    }
+
+    &__7 {
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &__8 {
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 18px;
+    }
+
+    &_blue{
+        color: $color-light-blue !important;
+        text-align: center;
+        div:nth-child(n) {
+            background-color: $color-light-blue;
+        }
+    }
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+._container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+._icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    transition: transform .2s ease;
+    &:hover{
+        transform: translate(-50%, -50%) scale(1.2);
+        filter: saturate(1.5);
+    }
+}
+
+.svg {
+    fill: $color-hard-red;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+
+    :nth-child(n){
+        transition: all .2s ease 0s;
+    }
+
+    &__top-right-line {
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__right-top-line {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &__bottom-left-line {
+        position: absolute;
+        bottom: -3px;
+        right: 6px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__left-bottom-line {
+        position: absolute;
+        bottom: 9px;
+        right: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &:hover{
+
+        svg{
+            fill: $color-light-blue;
+
+            & path {
+                fill: $color-light-blue;
+            }
+        }
+
+        .svg__top-right-line,
+        .svg__right-top-line,
+        .svg__bottom-left-line,
+        .svg__left-bottom-line {
+            background-color: blue;
+        }
+
+        .svg__top-right-line{
+            top: 32px;
+        }
+
+        .svg__right-top-line{
+            transform: rotate(270deg);
+            top: 20px;
+        }
+
+        .svg__bottom-left-line{
+            bottom: 34px;
+        }
+
+        .svg__left-bottom-line{
+            bottom: 22px;
+        }
+    }
+}
+
+
+.comeback{
+
+    &__svg-container {
+        position: relative;
+        width: 91px;
+        height: 60px;
+        cursor: pointer;
+        &:hover{
+            .comeback__svg-circle{
+                transform: rotate(180deg);
+                fill: $color-hard-red;
+            }
+
+            .comeback__svg-line{
+                fill: $color-hard-red;
+                left: -25%;
+            }
+        }
+    }
+
+    &__svg-circle {
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        fill: $color-white;
+        transition: all .3s ease;
+    }
+
+    &__svg-line {
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        fill: $color-white;
+        transition: all .3s ease;
+    }
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    a{
+        display: block;
+    }
+>>>>>>> mov4
 }

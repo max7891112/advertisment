@@ -1,0 +1,252 @@
+.loginova-detail {
+    width: 100%;
+    background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
+    background-size: cover;
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img-container {
+        max-width: 33%;
+        padding-top: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text-container{
+        max-width: 70%;
+        & p:nth-child(1){
+            padding: 50px 0 10px 0;
+        }
+        & p:nth-child(2){
+            padding-bottom: 5px;
+        }
+    }
+
+    &__text {
+        @include heading('Montserrat', 24px, 140%, $color-white);
+        font-weight: 400;
+        text-align: center;
+        span{
+            font-weight: 600;
+        };
+    }
+
+    &__svg-container {
+        margin: 50px 0 100px 0;
+        display: flex;
+    }
+
+    &__swiper-slider {
+    }
+}
+
+
+
+.slider {
+    max-width: 1300px;
+    min-width: 0;
+    &__wrapper {
+        display: flex;
+        margin-bottom: 50px;
+        img{
+            display: block;
+            transition: all .3s linear;
+        }
+    }
+
+    &_levina{
+        max-width: 1164px;
+    }
+
+    &__first-img-container {
+        margin-right: 20px;
+        overflow: hidden;
+        animation: reverseWidthFirst .3s linear forwards;
+        
+        &_levina{
+            animation: reverseWidthFirst_levina .3s linear forwards;
+        }
+    }
+
+    &__video-section-container {
+        display: block;
+        position: relative;
+        margin-right: 20px;
+        width: 424px;
+        height: 650px;
+        transition: all .3s linear;
+
+        .slider__video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__third-img-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 276px;
+        transition: all .3s linear;
+    }
+
+    &__third-top-img-container {
+        margin-bottom: 30px;
+    }
+
+    &__third-bottom-img-container {
+    }
+
+    &__feedback-button{
+        margin-bottom: 100px;
+    }
+
+    &__svg{
+        margin: 0 0 30px 40px;
+    }
+}
+
+
+.slider__first-img-container._animation{
+    overflow: hidden;
+    animation: changingWidthFirst .3s linear forwards;
+    .slider__wrapper{
+        transform: translate(100px 0);
+    }
+}
+
+.slider__first-img-container._animation.slider__first-img-container_levina{
+    overflow: hidden;
+    animation: changingWidthFirst_levina .3s linear forwards;
+    .slider__wrapper{
+        transform: translate(100px 0);
+    }
+}
+
+.slider__third-img-container._animation{
+    width: 128px;
+    img{
+        object-position: -100px 0;
+    }
+}
+
+.slider__video-section-container._animation{
+    width: 1004px;
+    height: 650px;
+}
+
+
+@keyframes changingWidthFirst {
+    0% {
+        width: 572px;
+    }
+    100%{
+        width: 128px;
+    }
+}
+
+@keyframes changingWidthFirst_levina {
+    0% {
+        width: 424px;
+    }
+    100%{
+        width: 128px;
+    }
+}
+
+@keyframes reverseWidthFirst {
+    0% {
+        width: 128px;
+    }
+    100%{
+        width: 572px;
+    }
+}
+
+@keyframes reverseWidthFirst_levina {
+    0% {
+        width: 128px;
+    }
+    100%{
+        width: 424px;
+    }
+}
+
+@keyframes changingWidthThird {
+    0% {
+        width: 276px;
+    }
+    100%{
+        width: 128px;
+    }
+}
+
+@keyframes reverseWidthThird {
+    0% {
+        width: 128px;
+    }
+    100%{
+        width: 276px;
+    }
+}
+
+.youtubelightboxLoginova{
+    z-index: 999;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
+	text-align: center;
+
+    &::after{
+        content: '';	
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        /* opacity: 0.8; */
+        z-index: 10;
+    }
+
+    &__centeredchild{
+        position: absolute;
+        z-index: 20; /* higher z-index than overlay */
+        display: inline-block;
+        vertical-align: middle;
+        width: 57%; /* can be any width */
+        top: 59%;
+        right: 0%;
+        transform: translateY(-50%);
+    }
+
+    &__videowrapper{
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+    }
+
+    &__videowrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
