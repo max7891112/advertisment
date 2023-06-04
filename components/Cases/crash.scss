@@ -48,6 +48,7 @@
 
     &__part-down {
         padding-top: 50px;
+        position: relative;
     }
 
     &__img-down-wrapper {
@@ -64,5 +65,10 @@
         @include heading('Montserrat', 20px, 140%, #fff);
         text-align: center;
         padding-bottom: 243px;
+    }
+
+    &__arrow-comeback {
+        position: absolute;
+        bottom: 30px;
     }
 }

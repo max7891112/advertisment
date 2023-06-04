@@ -21,16 +21,20 @@
         border-top: 1px solid #fff;
         max-height: 78px;
         overflow: hidden;
-        transition: 1s;
+        transition: .3s;
 
         &-bottom {
             border-bottom: 1px solid #fff;
+        }
+
+        &:hover {
+            cursor: pointer;
         }
     }
 
     &__item-active {
         max-height: 228px;
-        transition: 1s;
+        transition: .3s;
     }
 
     &__item-up {
@@ -49,11 +53,13 @@
     }
 
     &__pluse {
-        transition: 1s;
+        transition: .3s;
+        font-size: 0px;
+        line-height: 0px;
     }
 
     &__pluse-rotate {
-        transition: 1s;
+        transition: .3s;
         transform: rotate(45deg);
 
         & path {

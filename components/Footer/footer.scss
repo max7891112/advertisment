@@ -31,6 +31,16 @@
         justify-content: center;
         gap: 90px;
         padding: 56px 0 106px 0;
+
+        & a {
+            color: #fff;
+            transition: all .3s;
+
+            &:hover {
+                color: #E03F4A;
+                transition: all .3s;
+            }
+        }
     }
 
     &__label {

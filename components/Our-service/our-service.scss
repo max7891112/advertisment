@@ -13,12 +13,12 @@
 
     &__img-grek {
         background-image: url('./components/Our-service/img/grek.png');
-        width: 684px;
-        height: 806px;
+        width: 559px;
+        height: 658px;
         position: absolute;
-        background-size: cover;
+        background-size: contain;
         bottom: 0;
-        left: 50%;
+        left: 44%;
         transform: translateX(-50%);
     }
 
@@ -44,8 +44,18 @@
     }
 
     &__item-left {
-        max-width: 745px;
+        min-width: 745px;
         padding-top: 130px;
+    }
+
+    &__content-box-l {
+        transform: translate(0, 0);
+        transition: all .3s;
+
+        &:hover {
+            transform: translate(-20px, -20px);
+            transition: all .5s;
+        }
     }
 
     &__subtitle {
@@ -55,18 +65,33 @@
 
     &__item-positions {
         padding: 0  0 50px 15px;
+        @include heading('Montserrat', 20px, 140%, #fff);
     }
 
     &__ol {
+        list-style: decimal;
     }
 
     &__ol-li {
+
     }
 
     &__button {
     }
 
     &__item-right {
-        padding: 250px 0 0 35%;
+        padding: 331px 0 0 0;
+        min-width: 517px;
+    }
+
+    &__content-box-r {
+
+        transform: translate(0, 0);
+        transition: all .5s;
+
+        &:hover {
+            transform: translate(20px, -20px);
+            transition: all .5s;
+        }
     }
 }

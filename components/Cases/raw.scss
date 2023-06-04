@@ -15,6 +15,7 @@
     &__left-part {
         padding-top: 50px;
         max-width: 720px;
+        position: relative;
     }
 
     &__l-up {
@@ -46,9 +47,14 @@
         text-align: start;
     }
 
+    &__arrow-comeback { 
+        position: absolute;
+        bottom: 30px;
+    }
+
     &__right-part {
         max-width: 415px;
-        padding: 167px 0 50px 0;
+        padding: 167px 0 50px 10px;
     }
 
     &__r-text {

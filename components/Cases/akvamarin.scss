@@ -49,6 +49,7 @@
         padding-top: 106px;
         padding-left: 160px;
         padding-right: 90px;
+        position: relative;
     }
 
     &__img-wrapper {
@@ -60,6 +61,11 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+    &__arrow-comeback {
+        position: absolute;
+        bottom: 30px;
     }
 
     &__right-part {

@@ -1,16 +1,7 @@
 .our-team {
 
     background: url('./components/MainPage/img/mainPageBac.jpg') no-repeat;
-
-    min-height: 200px;
     padding-bottom: 67px;
-
-    // .position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
-    //     img {
-    //         object-position: 0 -1055px;
-    //         transition: all .5s;
-    //     }
-    // }
 
     &__body {
         
@@ -96,9 +87,8 @@
         justify-content: center;
         border-radius: 50%;
         position: absolute;
-        right: 50px;
         z-index: 9999;
-        right: 75px;
+        right: 95px;
         top: 50px;
         transition: all .5s;
     }
@@ -145,7 +135,6 @@
     &__button {
         margin: 47px 0 36px 0;
     }
-
 
     // animation for our-team__item-wrapper  our-team__item-wrapper-animation
 
@@ -233,7 +222,7 @@
     }
 
     &__btn-detail {
-        margin: 50px 53px 0 auto;
+        margin: 50px 95px 0 auto;
         color: #EE3434;
 
         & .blue-button__subdiv:nth-child(1) {
