@@ -20,6 +20,11 @@
 
     &__img-wrapper {
         position: relative;
+        a{
+            position: absolute;
+            top: 53%;
+            left: 35%;
+        }
     }
 
     &__img {

@@ -3,6 +3,7 @@
     &__body {
         min-height: 100vh;
         background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
+        padding-bottom: 120px;
     }
 
     &__h2 {
@@ -68,46 +69,8 @@
         padding: 20px 0 20px 0;
     }
 
-    &__btn {
-        margin: 50px 175px 0 auto;
-        color: #EE3434;
-
-        & .blue-button__subdiv:nth-child(1) {
-            border-left: 3px solid #EE3434;
-            border-top: 3px solid #EE3434;
-        }
-
-        & .blue-button__subdiv:nth-child(2) {
-            border-right: 3px solid #EE3434;
-            border-top: 3px solid #EE3434;
-        }
-        & .blue-button__subdiv:nth-child(3) {
-            border-left: 3px solid #EE3434;
-            border-bottom: 3px solid #EE3434;
-        }
-
-        & .blue-button__subdiv:nth-child(4) {
-            border-right: 3px solid #EE3434;
-            border-bottom: 3px solid #EE3434;
-        }
-
-        &:hover {
-    
-            .blue-button__subdiv {
-            
-        
-                &:nth-child(3) {
-                    border-right: 3px solid #EE3434;
-                    border-bottom: 3px solid #EE3434;
-                }
-                
-                &:nth-child(2) {
-                    border-left: 3px solid #EE3434;
-                    border-top: 3px solid #EE3434;
-                }
-        
-            }
-        }
-
+    &__button{
+        float: right;
+        margin-top: 50px;
     }
 }
