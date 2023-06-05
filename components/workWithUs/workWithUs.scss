@@ -1,6 +1,6 @@
 .work-with-us {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
     background-size: cover;
     position: relative;
@@ -54,30 +54,61 @@
 
    
 }
+.work-with-us._increase{
+    padding-bottom: 150px;
+}
 .react-component {
-    // position: relative;
 
     &__dinamic-block-container {
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    &__dinamic-block-container._increase{
+
+        .react-component__video-container{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        .react-component__img{
+            width: 840px;
+            height: 470px;
+        }
+
+        .react-component__btn{
+            transform: translate(135px, 237px);
+        }
+
+        .work-with-us{
+            padding-bottom: 150px;
+        }
+
+        .react-component__img-wrapper{
+            opacity: 0;
+        }
+
+        .react-component__text{
+            opacity: 0;
+        }
     }
 
     &__img-strata {
-        // margin-right: 25px;
-        // max-width: 350px
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 
     &__video-container {
-        width: 100%;
-        max-width: 420px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
     }
+
+
 
     &__link{
         width: 100%;
@@ -97,12 +128,18 @@
         text-align: center;
         padding-top: 35px;
     }
+    &__img{
+        transition: all .08s ease; 
+        width: 424px;
+        height: 266px;
+    }
 
     &__btn {
         position: relative;
         top: 0;
         left: 0;
         margin: 50px 0 0 176px;
+        transform: translate(0, 0);
     }
     
 }

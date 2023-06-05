@@ -22,24 +22,24 @@
             <a href="#"><img src="./components/menuBurger/img/logo.svg" alt="logo" class="menu-burger__logo"></a> 
             <nav class="menu-burger__navigation">
                 <ul class="menu-burger__container">
-                    <li class="menu-burger__item">Главная</li>
-                    <li class="menu-burger__item">Наши услуги</li>
-                    <li class="menu-burger__item">Почему мы?</li>
-                    <li class="menu-burger__item">Рекламодатели</li>
-                    <li class="menu-burger__item">Наша команда</li>
-                    <li class="menu-burger__item">Кейсы</li>
-                    <li class="menu-burger__item">Контакты</li>
+                    <li class="menu-burger__item"><span>Главная</span></li>
+                    <li class="menu-burger__item"><span>Наши услуги</span></li>
+                    <li class="menu-burger__item"><span>Почему мы?</span></li>
+                    <li class="menu-burger__item"><span>Рекламодатели</span></li>
+                    <li class="menu-burger__item"><span>Наша команда</span></li>
+                    <li class="menu-burger__item"><span>Кейсы</span></li>
+                    <li class="menu-burger__item"><span>Контакты</span></li>
                 </ul>
             </nav>
             <div class="menu-burger__copyright">
                 <div class="menu-burger__line"></div>
                 <div class="menu-burger__michael-container">
-                    <div class="menu-burger__img-container">
-                        <img src="./components/menuBurger/img/mich0.png" alt="michael" class="menu-burger__img">
+                    <div class="menu-burger__img-container" data-mich-container="true">
+                        <img src="./components/menuBurger/img/mich0.png" alt="michael" class="menu-burger__img" id="startMich">
                         <img src="./components/menuBurger/img/mich1.png" alt="michael" class="menu-burger__img hidden">
                         <img src="./components/menuBurger/img/mich2.png" alt="michael" class="menu-burger__img hidden">
                         <img src="./components/menuBurger/img/mich3.png" alt="michael" class="menu-burger__img hidden">
-                        <img src="./components/menuBurger/img/mich4.png" alt="michael" class="menu-burger__img hidden">
+                        <img src="./components/menuBurger/img/mich4.png" alt="michael" class="menu-burger__img hidden" id="finishMich">
                     </div>
                     <p class="menu-burger__michael-name">Michael</p>
                 </div>
@@ -52,7 +52,7 @@
         <div class="root_swiper_loginova swiper-loginova"></div>
         <div class="ROOT_MODAL"></div>
 
-        <section class="main-page">
+        <section class="main-page hidden">
             <div class="main-page__body">
                 <div class="main-page__container">
                     <div class="main-page__left-p">
@@ -80,7 +80,7 @@
             </div>
         </section>
     
-        <section class="our-service">
+        <section class="our-service hidden">
             <div class="our-service__body">
                 <div class="our-service__img-fon"></div>
                 <div class="our-service__img-grek"></div>
@@ -136,13 +136,13 @@
             </div>
         </section>
 
-        <section class="modal-feedback">
+        <section class="modal-feedback hidden">
             <div class="modal-feedback__container">
 
             </div>
         </section>
 
-        <section class="about-project">
+        <section class="about-project hidden">
             <div class="about-project__container">
                 <div class="about-project__img-container">
                     <img src="./components/aboutProject/img/skateboard.png" alt="skateboard" class="about-project__img">
@@ -157,7 +157,7 @@
             </div>
         </section>
 
-        <section class="why">
+        <section class="why hidden">
             <div class="why__body">
                 <h2 class="why__h2">Почему мы?</h2>
                 <div class="why__box-items">
@@ -228,7 +228,7 @@
             </div>
         </section>
 
-        <section class="develop">
+        <section class="develop hidden">
             <img src="./components/develop/img/jesus.png" alt="jesus" class="develop__img">
             <img src="./components/develop/img/lineLeft.png" alt="line" class="img__line-left">
             <img src="./components/develop/img/shadowLeft.png" alt="line" class="img__shadow-left">
@@ -302,7 +302,7 @@
             
         </section>
 
-        <section class="our-team">
+        <section class="our-team hidden">
             <div class="our-team__body">
                 <h2 class="our-team__h2">Наша команда</h2>
                 <p class="our-team__text-box">Мы сотрудничаем с более 100 лидерами мнений, общая аудитория которых насчитывает более 50 миллионов подписчиков в российских и международных социальных сетях. Вот некоторые из наших блогеров:  </p>
@@ -607,7 +607,7 @@
             </div>
         </div>
 
-        <section class="cases">
+        <section class="cases hidden">
             <div class="cases__body">
                 <h2 class="cases__h2">Кейсы</h2>
             </div>
@@ -697,7 +697,7 @@
             </a>
         </section>
 
-        <section class="why questions">
+        <section class="why questions hidden">
             <div class="why__body questions__body">
                 <h2 class="why__h2 questions__h2">Остались вопросы</h2>
                 <p class="questions__text-box">Мы поможем вам разобраться с инфлюенсер-маркетингом, поделимся опытом, дадим советы, расскажем о вас миру через лидеров мнений.</p>
@@ -765,7 +765,7 @@
             </div>
         </section>
     
-        <footer class="footer">
+        <footer class="footer hidden">
             <div class="footer__body">
                 <div class="footer__container">
                     <div class="footer__map">
@@ -786,7 +786,7 @@
                 </div>
             </div>
         </footer>
-
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script> 
 </body>

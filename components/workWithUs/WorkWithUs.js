@@ -21,28 +21,27 @@ class WorkWithUs {
         htmlContent = ` 
         <div class="work-with-us__react-container react-component _invisible" id="strataComponent">
             <div class="react-component__dinamic-block-container">
-            <div class="react-component__img-wrapper">
-                <img src=${logo} alt="" class="react-component__img-strata">
-            </div>
+                <div class="react-component__img-wrapper">
+                    <img src=${logo} alt="" class="react-component__img-strata">
+                </div>
                 
-                <div class="react-component__video-container"  id="maybe">
+                <div class="react-component__video-container">
                     <a href=${path} class="react-component__link" data-youtubeLightbox="true">
                         <img src=${image} alt="#" class="react-component__img">
                         <img src=${playIcon} alt="#" class="_icon">
                     </a>
                 </div>
                 <p class="react-component__text">${text}</p>
-                    <a href=${href} class="button-dinamic button-dinamic_blue react-component__btn">Подробнее
-                        <div class="button-dinamic__1"></div>
-                        <div class="button-dinamic__2"></div>
-                        <div class="button-dinamic__3"></div>
-                        <div class="button-dinamic__4"></div>
-                        <div class="button-dinamic__5"></div>
-                        <div class="button-dinamic__6"></div>
-                        <div class="button-dinamic__7"></div>
-                        <div class="button-dinamic__8"></div>
-                    </a>
-
+                <a href=${href} class="button-dinamic button-dinamic_blue react-component__btn">Подробнее
+                    <div class="button-dinamic__1"></div>
+                    <div class="button-dinamic__2"></div>
+                    <div class="button-dinamic__3"></div>
+                    <div class="button-dinamic__4"></div>
+                    <div class="button-dinamic__5"></div>
+                    <div class="button-dinamic__6"></div>
+                    <div class="button-dinamic__7"></div>
+                    <div class="button-dinamic__8"></div>
+                </a>
             </div>
             <div id="youtubelightbox" class="youtubelightbox" data-playing="false">
                 <div class="youtubelightbox__centeredchild">
@@ -60,6 +59,8 @@ class WorkWithUs {
     open(logo, image, text, path, href) {
         this.render(logo, image, text, path, href);
         document.querySelector('.react-component').classList.add('_open');
+        this.addListenerForPrepareLightBox()
+        youtubeLightbox.connect('youtubelightbox', 'youtubelightboxPlayer', '.youtubelightbox__centeredchild')
     }
 
     addListenerForChangingComponents() {
@@ -95,18 +96,21 @@ class WorkWithUs {
         });
     };
 
-    // addListenerForConnectLightBox() {
-        
-    //     strata.addEventListener('click', () => {
-    //         setTimeout(() => {
-    //             setTimeout(() => {
-    //                     youtubeLightbox.connect('youtubelightbox','youtubelightboxPlayer','.youtubelightbox__centeredchild')
-    //                 },200)	
-    //         },100);
-    //     });
-
-
-    // }
+    addListenerForPrepareLightBox() {
+        let target = document.querySelector('.react-component__link')
+        target.addEventListener('click', () => {
+            document.querySelector('.react-component__dinamic-block-container')
+            .classList.add('_increase');
+            document.querySelector('.work-with-us')
+            .classList.add('_increase');
+        });
+        target.addEventListener('dblclick', () => {
+            document.querySelector('.react-component__dinamic-block-container')
+            .classList.remove('_increase');
+            document.querySelector('.work-with-us')
+            .classList.remove('_increase');
+        });
+    }
 };
 
 export default new WorkWithUs();

@@ -45,7 +45,7 @@ class YoutubeLightbox {
 			this.onYouTubeIframeAPIReady = () => {
 				createlightbox();
 			}		
-
+			this.onYouTubeIframeAPIReady()
 			document.addEventListener('keydown', (event) => {
 				if(event.code == 'Escape') {
 					if(youtubelightbox && player) {
