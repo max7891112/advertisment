@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     MenuBurger.clickOnBurger();
     MenuBurger.removeBurger();
     MenuBurger.changeImg()
+    MenuBurger.smoothNavigation()
 
     WorkWithUs.addListenerForChangingComponents()
     LoginovaDetail.addListenerForAnimationSlider()

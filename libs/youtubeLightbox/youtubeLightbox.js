@@ -1,3 +1,5 @@
+import {REACT_COMPONENT} from '../../constants/var.js';
+import WorkWithUs from '../../components/workWithUs/WorkWithUs.js';
 class YoutubeLightbox {
 
 	constructor() {
@@ -24,6 +26,10 @@ class YoutubeLightbox {
 				 () => {
 					youtubelightbox.style.display = 'none';
 					player.stopVideo();
+					document.querySelector('.react-component__dinamic-block-container')
+						.classList.remove('_increase');
+						document.querySelector('.work-with-us')
+						.classList.remove('_increase');
 				},
 				false
 			);
@@ -31,7 +37,7 @@ class YoutubeLightbox {
 	
 	
 			// Exclude youtube iframe from above action
-			youtubelightbox
+			document
 				.querySelector(youtubelightboxCenteredChild)
 				.addEventListener(
 					'click',

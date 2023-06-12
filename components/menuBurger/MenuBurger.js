@@ -18,51 +18,79 @@ class MenuBurger {
         });
     };
     changeImg() {  
-        startMich.addEventListener('mouseover', (event) => {
-            if(!this.michIsReady) {
-                console.log(event.target)
-                setTimeout(() => {
-                    this.imgs[0].classList.add('hidden')
-                    this.imgs[1].classList.remove('hidden')
-                },50)
-                setTimeout(() => {
-                    this.imgs[1].classList.add('hidden')
-                    this.imgs[2].classList.remove('hidden')
-                },100)
-                setTimeout(() => {
-                    this.imgs[2].classList.add('hidden')
-                    this.imgs[3].classList.remove('hidden')
-                },150)
-                setTimeout(() => {
-                    this.imgs[3].classList.add('hidden')
-                    this.imgs[4].classList.remove('hidden')
-                    this.michIsReady = true
-                },200)
-            };
-        });
+        let startLinks = document.querySelectorAll('._startMich')
+        let finishLinks = document.querySelectorAll('._finishMich')
+        for(let link of startLinks) {
+            link.addEventListener('mouseover', (event) => {
+                if(!this.michIsReady) {
+                    setTimeout(() => {
+                        this.imgs[0].classList.add('hidden')
+                        this.imgs[1].classList.remove('hidden')
+                    },50)
+                    setTimeout(() => {
+                        this.imgs[1].classList.add('hidden')
+                        this.imgs[2].classList.remove('hidden')
+                    },100)
+                    setTimeout(() => {
+                        this.imgs[2].classList.add('hidden')
+                        this.imgs[3].classList.remove('hidden')
+                    },150)
+                    setTimeout(() => {
+                        this.imgs[3].classList.add('hidden')
+                        this.imgs[4].classList.remove('hidden')
+                        this.michIsReady = true
+                    },200)
+                };
+            });
+        }
 
-        finishMich.addEventListener('mouseout', (event) => {
-            if(this.michIsReady) {
-                console.log(event.target)
-                setTimeout(() => {
-                    this.imgs[4].classList.add('hidden')
-                    this.imgs[3].classList.remove('hidden')
-                },50)
-                setTimeout(() => {
-                    this.imgs[3].classList.add('hidden')
-                    this.imgs[2].classList.remove('hidden')
-                },100)
-                setTimeout(() => {
-                    this.imgs[2].classList.add('hidden')
-                    this.imgs[1].classList.remove('hidden')
-                },150)
-                setTimeout(() => {
-                    this.imgs[1].classList.add('hidden')
-                    this.imgs[0].classList.remove('hidden')
-                    this.michIsReady = false
-                },200)
-            };
-        });
+        for(let link of finishLinks) {
+            link.addEventListener('mouseout', (event) => {
+                if(this.michIsReady) {
+                    setTimeout(() => {
+                        this.imgs[4].classList.add('hidden')
+                        this.imgs[3].classList.remove('hidden')
+                    },50)
+                    setTimeout(() => {
+                        this.imgs[3].classList.add('hidden')
+                        this.imgs[2].classList.remove('hidden')
+                    },100)
+                    setTimeout(() => {
+                        this.imgs[2].classList.add('hidden')
+                        this.imgs[1].classList.remove('hidden')
+                    },150)
+                    setTimeout(() => {
+                        this.imgs[1].classList.add('hidden')
+                        this.imgs[0].classList.remove('hidden')
+                        this.michIsReady = false
+                    },200)
+                };
+            });
+        }
+        
+
+        
+    };
+
+    smoothNavigation() {
+        let menuLinks = document.querySelectorAll('._smooth-link[data-goto]');
+        if(menuLinks.length != 0) {
+            for(let menuLink of menuLinks) {
+                menuLink.addEventListener('click', (event) => {
+                    let target = event.target;
+                    if(target.dataset.goto) {
+                        const gotoBlock = document.querySelector(target.dataset.goto)
+                        const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+
+                        window.scrollTo({
+                            top: gotoBlockValue,
+                            behavior: 'smooth'
+                        })
+                        event.preventDefault();
+                    }
+                })              
+            }
+        }
     };
 };
 

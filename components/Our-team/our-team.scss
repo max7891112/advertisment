@@ -5,13 +5,6 @@
     min-height: 200px;
     padding-bottom: 67px;
 
-    // .position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
-    //     img {
-    //         object-position: 0 -1055px;
-    //         transition: all .5s;
-    //     }
-    // }
-
     &__body {
         
     }
@@ -33,7 +26,6 @@
     }
 
     &__items {
-        // padding: 0 20px 0 141px;
         margin: 0 20px 0 141px;
     }
 
@@ -86,7 +78,6 @@
     }
 
     &__btn {
-        // margin: 0 0 0 auto;
         width: fit-content;
         width: 50px;
         height: 50px;
@@ -234,198 +225,5 @@
 
     &__btn-detail {
         margin: 50px 53px 0 auto;
-        color: #EE3434;
-
-        & .blue-button__subdiv:nth-child(1) {
-            border-left: 3px solid #EE3434;
-            border-top: 3px solid #EE3434;
-        }
-
-        & .blue-button__subdiv:nth-child(2) {
-            border-right: 3px solid #EE3434;
-            border-top: 3px solid #EE3434;
-        }
-        & .blue-button__subdiv:nth-child(3) {
-            border-left: 3px solid #EE3434;
-            border-bottom: 3px solid #EE3434;
-        }
-
-        & .blue-button__subdiv:nth-child(4) {
-            border-right: 3px solid #EE3434;
-            border-bottom: 3px solid #EE3434;
-        }
-
-        &:hover {
-    
-            .blue-button__subdiv {
-            
-        
-                &:nth-child(3) {
-                    border-right: 3px solid #EE3434;
-                    border-bottom: 3px solid #EE3434;
-                }
-                
-                &:nth-child(2) {
-                    border-left: 3px solid #EE3434;
-                    border-top: 3px solid #EE3434;
-                }
-        
-            }
-        }
     }
 }
-
-
-// .position-alice { //our-team__
-//     object-position: 0 -597px;
-//     transition: all .5s;
-// } 
-
-// .position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
-//     img {
-//         object-position: 0 -1055px;
-//         transition: all .5s;
-//     }
-// }
-
-// .position-bogdan {
-//     object-position: 0 -692px;
-//     transition: all .5s;
-// }
-
-// .position-yaroslav {
-//     object-position: 0 -607px;
-//     transition: all .5s;
-// }
-
-
-
-
-
-
-
-//////////////
-.svg {
-    fill: $color-hard-red;
-    margin: 15px;
-    cursor: pointer;
-    position: relative;
-    width: fit-content;
-
-    :nth-child(n){
-        transition: all .6s ease 0s;
-    }
-
-    &__top-right-line {
-        position: absolute;
-        top: -5px;
-        left: 5px;
-        width: 27px;
-        height: 3px;
-        background-color: $color-hard-red;
-    }
-
-    &__right-top-line {
-        position: absolute;
-        top: 7px;
-        left: 20px;
-        width: 27px;
-        height: 3px;
-        background-color: $color-hard-red;
-        transform: rotate(90deg);
-    }
-
-    &__bottom-left-line {
-        position: absolute;
-        bottom: -3px;
-        right: 6px;
-        width: 27px;
-        height: 3px;
-        background-color: $color-hard-red;
-    }
-
-    &__left-bottom-line {
-        position: absolute;
-        bottom: 9px;
-        right: 20px;
-        width: 27px;
-        height: 3px;
-        background-color: $color-hard-red;
-        transform: rotate(90deg);
-    }
-
-    &:hover{
-
-        svg{
-            fill: $color-light-blue;
-
-            & path {
-                fill: $color-light-blue;
-            }
-        }
-
-        .svg__top-right-line,
-        .svg__right-top-line,
-        .svg__bottom-left-line,
-        .svg__left-bottom-line {
-            background-color: blue;
-        }
-
-        .svg__top-right-line{
-            top: 32px;
-        }
-
-        .svg__right-top-line{
-            transform: rotate(270deg);
-            top: 20px;
-        }
-
-        .svg__bottom-left-line{
-            bottom: 34px;
-        }
-
-        .svg__left-bottom-line{
-            bottom: 22px;
-        }
-    }
-}
-
-
-
-
-//////
-/// 
-/// 
-// .try-img {
-
-//     height: 650px;
-//     background-color: #d09393;
-//     &__wrapper {
-//         width: 1300px;
-//         height: 141px;
-//         border: 3px solid #845214;
-//         transition: all 2s;
-
-//     }
-    
-//     & img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         object-position: 0 -570px;
-
-//         transition: all 2s;
-//     }
-    
-//     &__wrapper-animation-img {
-//         object-position: 0 0 !important;
-//         transition: 2s !important;
-    
-//     }
-
-//     &__wrapper-animation-wrap {
-//         width: 413px !important;
-//         height: 634px !important;
-//         transition: all 2s !important;
-//     }
-// }

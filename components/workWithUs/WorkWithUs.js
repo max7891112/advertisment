@@ -60,7 +60,7 @@ class WorkWithUs {
         this.render(logo, image, text, path, href);
         document.querySelector('.react-component').classList.add('_open');
         this.addListenerForPrepareLightBox()
-        youtubeLightbox.connect('youtubelightbox', 'youtubelightboxPlayer', '.youtubelightbox__centeredchild')
+        youtubeLightbox.connect('youtubelightbox', 'youtubelightboxPlayer', '.react-component__video-container')
     }
 
     addListenerForChangingComponents() {
