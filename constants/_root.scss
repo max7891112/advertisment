@@ -30,6 +30,22 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     // @include heading(Montserrat, 24px, 79px)
 }
 
+* {
+    scrollbar-color: rgba(grey, .8);
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(grey, .8);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color:  transparent;
+}
+
 .blue-button{
     display: flex;
     align-items: center;
@@ -300,4 +316,8 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         fill: $color-white;
         transition: all .3s ease;
     }
+}
+
+._active{
+    color: $color-hard-red;
 }
