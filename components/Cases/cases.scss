@@ -7,9 +7,15 @@
 
     }
 
+    &__container {
+        max-width: 1164px;
+        margin: 0 auto;
+    }
+
     &__h2 {
         @include heading('Arkhip', 64px, 77px, #3446EE);
         margin: 0  0 50px 165px;
+        padding-top: 47px;
     }
 
     &__items {
@@ -68,7 +74,6 @@
 
     &__button {
         margin-left: auto;
-        margin-right: 185px;
         margin-top: 50px;
     }
 }
@@ -101,6 +106,40 @@
         }
         transition: all .5s;
         transform: rotate(-45deg);
+    }
+
+}
+
+
+
+@media (max-width: 1190px) {
+    
+    .cases {
+
+		&__items {
+            justify-content: center;
+		}
+
+		&__wrapper-block {
+            width: 200px;
+		}
+
+    }
+
+}
+
+@media (max-width: 950px) {
+    
+    .cases {
+
+		&__items {
+            justify-content: center;
+		}
+
+		&__wrapper-block {
+            width: 150px;
+		}
+
     }
 
 }

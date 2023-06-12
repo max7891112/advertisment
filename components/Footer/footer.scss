@@ -2,14 +2,12 @@
 
     background-color: #000;
     padding-top: 95px;
+    min-height: 681px;
+    height: 100vh;
     &__body {
     }
 
-    &__container {
-    }
-
     &__map {
-        // padding-top: 95px;
         position: relative;
     }
 
@@ -49,13 +47,24 @@
         align-items: center;
     }
 
-    &__img {
-    }
-
-    &__label-text {
-    }
-
     &__d-p-item {
         @include heading('Montserrat', 18px, 22px, #fff);
     }
+}
+
+
+@media (max-width: 1030px) {
+    
+    .footer {
+
+		&__down-part {
+            align-items: center;
+            gap: 55px;
+		}
+
+		&__d-p-item {
+            font-size: 14px;
+		}
+    }
+
 }

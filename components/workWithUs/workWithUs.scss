@@ -135,3 +135,81 @@
         opacity: 0;
     }
 }
+
+
+@media (max-width: 1370px) {
+    
+    .work-with-us {
+
+        &__react-container {
+            margin: 95px 0 0 40px;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 1270px) {
+    
+    .work-with-us {
+
+		&__title {
+		}
+
+		&__body {
+		}
+
+		&__ul-container {
+		}
+
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__wrapper {
+            margin: 0 auto;
+		}
+
+        &__react-container {
+            margin: 95px 0 0 40px;
+        }
+    }
+
+    .react-component {
+    
+        &__dinamic-block-container {
+            flex-direction: column;
+        }
+    
+        &__img-wrapper {
+            display: none;
+        }
+    
+        &__img-strata {
+        }
+    
+        &__video-container {
+        }
+    
+        &__link {
+        }
+    
+        &__img {
+            width: 350px;
+        }
+    
+        &__text {
+            margin: 0 auto;
+        }
+    
+        &__btn {
+            margin: 50px auto;
+        }
+    }
+
+
+}

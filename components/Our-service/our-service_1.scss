@@ -4,12 +4,6 @@
         padding-bottom: 0;
     }
 
-    &__body {
-    }
-
-    &__img-fon {
-    }
-
     &__img-grek {
 
         &.next {
@@ -17,11 +11,6 @@
         }
     }
 
-    &__img-elipse {
-    }
-
-    &__h2 {
-    }
 }
 
 .our-service-1 {
@@ -32,6 +21,7 @@
 
         &.bus {
             padding-top: 225px;
+            padding-bottom: 60px;
         }
     }
 
@@ -43,16 +33,8 @@
           margin-left: 170px;  
         }
 
-        &.second {
-
-        }
-
         &.third {
-            margin-left: 140px;
-        }
-
-        &.fourth {
-
+            margin-left: 95px;
         }
         
         &.fifth {
@@ -67,5 +49,9 @@
 
     &__text-item {
         @include heading('Montserrat', 20px, 140%, #fff);
+    }
+
+    &__arrow {
+        left: 3%;
     }
 }

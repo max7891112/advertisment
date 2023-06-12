@@ -4,8 +4,14 @@
         padding-bottom: 20px;
     }
 
+    &__container {
+        max-width: 1164px;
+        margin-left: 142px;
+        margin-right: 10px;
+    }
+
     &__h2 {
-        padding: 45px 0 0 142px;
+        padding: 45px 0 0 0;
         text-align: left;
     }
 
@@ -66,6 +72,6 @@
     }
 
     &__btn-detail {
-        margin: 50px 190px 45px auto;
+        margin: 50px 0 45px auto;
     }
 }

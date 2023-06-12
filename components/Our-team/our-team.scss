@@ -7,9 +7,16 @@
         
     }
 
+    &__container {
+        max-width: 1300px;
+        overflow: hidden;
+        margin-left: 141px;
+        margin-right: 10px;
+    }
+
     &__h2 {
         @include heading('Arkhip', 64px, 77px, #3446EE);
-        padding: 65px 0 0 141px;
+        padding: 65px 0 0 0;
     }
 
     &__text-box {
@@ -21,11 +28,6 @@
         margin: 0 auto;
         text-align: center;
         padding: 100px 0 5px 0;
-    }
-
-    &__items {
-        // padding: 0 20px 0 141px;
-        margin: 0 20px 0 141px;
     }
 
     &__item-wrapper {
@@ -77,7 +79,6 @@
     }
 
     &__btn {
-        // margin: 0 0 0 auto;
         width: fit-content;
         width: 50px;
         height: 50px;
@@ -88,8 +89,8 @@
         border-radius: 50%;
         position: absolute;
         z-index: 9999;
-        right: 95px;
-        top: 50px;
+        right: 30px;
+        top: 57px;
         transition: all .5s;
     }
 
@@ -136,7 +137,6 @@
         margin: 47px 0 36px 0;
     }
 
-    // animation for our-team__item-wrapper  our-team__item-wrapper-animation
 
     &__item-wrapper-animation {
 
@@ -152,7 +152,7 @@
         & img {
             transition: all .5s;
             object-fit: cover;
-            object-position: 0 -597px;/////////////////////////////////////////////////////////////////////////////
+            object-position: 0 -597px;
             transition: all .5s;
         }
 
@@ -199,12 +199,12 @@
             }
         }
 
-        &__position-alice { //our-team__
+        &__position-alice {
             object-position: 0 -597px;
             transition: all .5s;
         } 
     
-        &__position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
+        &__position-sofia {
             object-position: 0 -1055px;
             transition: all .5s;
         }
@@ -222,7 +222,7 @@
     }
 
     &__btn-detail {
-        margin: 50px 95px 0 auto;
+        margin: 50px 0 0 auto;
         color: #EE3434;
 
         & .blue-button__subdiv:nth-child(1) {
@@ -262,38 +262,12 @@
             }
         }
     }
+
+    &__btn-items {
+        margin: auto auto 0 0;
+    }
 }
 
-
-// .position-alice { //our-team__
-//     object-position: 0 -597px;
-//     transition: all .5s;
-// } 
-
-// .position-sofia { //our-team__position-sofia //////////////////asdasd//////////asdasd//////////////////
-//     img {
-//         object-position: 0 -1055px;
-//         transition: all .5s;
-//     }
-// }
-
-// .position-bogdan {
-//     object-position: 0 -692px;
-//     transition: all .5s;
-// }
-
-// .position-yaroslav {
-//     object-position: 0 -607px;
-//     transition: all .5s;
-// }
-
-
-
-
-
-
-
-//////////////
 .svg {
     fill: $color-hard-red;
     margin: 15px;
@@ -379,42 +353,53 @@
     }
 }
 
-
-
-
-//////
-/// 
-/// 
-// .try-img {
-
-//     height: 650px;
-//     background-color: #d09393;
-//     &__wrapper {
-//         width: 1300px;
-//         height: 141px;
-//         border: 3px solid #845214;
-//         transition: all 2s;
-
-//     }
+@media (max-width: 1212px) {
     
-//     & img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//         object-position: 0 -570px;
+    .our-team {
 
-//         transition: all 2s;
-//     }
-    
-//     &__wrapper-animation-img {
-//         object-position: 0 0 !important;
-//         transition: 2s !important;
-    
-//     }
+		&__blogger-name {
+            @include heading('Arkhip', 35px, 58px, #3446EE);
+            padding: 93px 0;
+		}
 
-//     &__wrapper-animation-wrap {
-//         width: 413px !important;
-//         height: 634px !important;
-//         transition: all 2s !important;
-//     }
-// }
+		&__blogger-info {
+            @include heading('Montserrat', 18px, 140%, #000);
+            padding-bottom: 30px;
+		}
+
+		&__amount-followers {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+
+		&__amount-social {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+    }
+
+}
+
+@media (max-width: 972px) {
+    
+    .our-team {
+
+		&__blogger-name {
+            @include heading('Arkhip', 35px, 58px, #3446EE);
+            padding: 93px 0 0 0;
+		}
+
+		&__blogger-info {
+            @include heading('Montserrat', 17px, 140%, #000);
+            padding-bottom: 0;
+		}
+
+		&__amount-followers {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+
+		&__amount-social {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+
+    }
+
+}

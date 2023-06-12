@@ -58,3 +58,127 @@
         min-height: 814px;
     }
 }
+
+
+@media (max-width: 1274px) {
+    .main-page {
+
+		&__body {
+            padding-bottom: 0;
+		}
+
+		&__left-p {
+            max-width: 900px;
+            height: fit-content;
+		}
+
+		&__l-p-u {
+            @include heading('Arkhip', 105px, 140px, #3446EE); 
+		}
+
+		&__img {
+            object-fit: contain;
+		}
+
+		&__text {
+            @include heading('Montserrat', 20px, 140%, #fff);
+            max-width: 400px;
+            top: 75px;
+            right: 10px;
+		}
+
+		&__l-p-d {
+            @include heading('Arkhip', 105px, 154px, #3446EE);
+            padding-top: 0;
+		}
+
+		&__right-p {
+            height: fit-content;
+		}
+
+		&__r-p-text {
+            @include heading('Arkhip', 105px, 154px, #3446EE);
+            letter-spacing: 1px;
+            height: fit-content;
+            display: block;
+		}
+    }
+}
+
+
+@media (max-width: 1073px) {
+    .main-page {
+
+		&__left-p {
+            max-width: 900px;
+		}
+
+		&__l-p-u {
+            @include heading('Arkhip', 80px, 90px, #3446EE);
+		}
+
+		&__img-wrapper {
+            max-width: 755.6px;
+		}
+
+		&__img {
+            object-fit: contain;
+		}
+
+		&__text {
+            @include heading('Montserrat', 17px, 140%, #fff);
+            max-width: 400px;
+            top: 70px;
+            right: -10px;
+            max-width: 330px;
+		}
+
+		&__l-p-d {
+            @include heading('Arkhip', 80px, 90px, #3446EE);
+            padding-top: 0;
+		}
+
+		&__right-p {
+		}
+
+		&__r-p-text {
+            @include heading('Arkhip', 80px, 90px, #3446EE);
+            letter-spacing: 3px;
+            padding-top: 20px;
+		}
+      }
+}
+
+@media (max-width: 844px) {
+    .main-page {
+
+		&__left-p {
+            max-width: 900px;
+		}
+
+		&__l-p-u {
+            @include heading('Arkhip', 105px, 140px, #3446EE); 
+		}
+
+		&__img {
+            object-fit: contain;
+		}
+
+		&__text {
+            @include heading('Montserrat', 105px, 140%, #fff);
+            max-width: 400px;
+            top: 75px;
+            right: 10px;
+		}
+
+		&__l-p-d {
+            @include heading('Arkhip', 105px, 154px, #3446EE);
+            padding-top: 0;
+		}
+
+		&__r-p-text {
+            @include heading('Arkhip', 105px, 154px, #3446EE);
+            letter-spacing: 1px;
+		}
+      }
+}

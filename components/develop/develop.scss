@@ -174,3 +174,239 @@
 //         color: blue;
 //     }
 // }
+
+@media (max-width: 1320px) {
+    .develop {
+
+		&__img {
+
+		}
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__main-words {
+		}
+
+		&__icon-star {
+		}
+
+		&__main-words-item {
+
+			&_last-elem {
+			}
+		}
+
+		&__text-container {
+		}
+
+		&__left-text-part {
+		}
+
+		&__content-block {
+		}
+
+		&__right-text-part {
+            margin: 0;
+            max-width: 400px;
+		}
+
+		&__button {
+		}
+}
+.img {
+
+		&__line-left {
+		}
+
+		&__shadow-left {
+		}
+
+		&__line-right {
+		}
+
+		&__shadow-right {
+		}
+    }
+
+}
+
+@media (max-width: 1010px) {
+    .develop {
+
+		&__img {
+            left: 23%;
+		}
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__main-words {
+		}
+
+		&__icon-star {
+		}
+
+		&__main-words-item {
+
+			&_last-elem {
+			}
+		}
+
+		&__text-container {
+		}
+
+		&__left-text-part {
+		}
+
+		&__content-block {
+		}
+
+		&__right-text-part {
+        
+		}
+
+		&__button {
+            left: 75%;
+		}
+}
+.img {
+
+		&__line-left {
+		}
+
+		&__shadow-left {
+		}
+
+		&__line-right {
+		}
+
+		&__shadow-right {
+		}
+    }
+
+.content-block {
+
+    width: 277px;
+
+		&_first {
+		}
+
+		&_second {
+		}
+
+		&_third {
+		}
+
+		&_fourth {
+            margin-right: 0;
+		}
+
+		&_fifth {
+		}
+
+		&__title {
+		}
+
+		&__text {
+            max-width: 248px;
+		}
+}
+
+
+}
+
+@media (max-width: 845px) {
+    .develop {
+
+		&__img {
+
+		}
+
+		&__container {
+		}
+
+		&__title {
+		}
+
+		&__main-words {
+		}
+
+		&__icon-star {
+		}
+
+		&__main-words-item {
+
+			&_last-elem {
+			}
+		}
+
+		&__text-container {
+		}
+
+		&__left-text-part {
+		}
+
+		&__content-block {
+		}
+
+		&__right-text-part {
+        
+		}
+
+		&__button {
+		}
+}
+.img {
+
+		&__line-left {
+		}
+
+		&__shadow-left {
+		}
+
+		&__line-right {
+		}
+
+		&__shadow-right {
+		}
+    }
+    
+.content-block {
+
+		&_first {
+		}
+
+		&_second {
+		}
+
+		&_third {
+		}
+
+		&_fourth {
+		}
+
+		&_fifth {
+		}
+
+		&__title {
+		}
+
+		&__text {
+            max-width: 250px;
+		}
+}
+
+
+}
+
+@media (max-width: 844px) {
+
+   
+}

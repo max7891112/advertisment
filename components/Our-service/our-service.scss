@@ -5,10 +5,7 @@
     padding-bottom: 468px;
     
     &__body {
-        // height: 790px;
-        // background-color: #000;
-        // z-index: -6;
-        // position: relative;
+    
     }
 
     &__img-grek {
@@ -72,13 +69,6 @@
         list-style: decimal;
     }
 
-    &__ol-li {
-
-    }
-
-    &__button {
-    }
-
     &__item-right {
         padding: 331px 0 0 0;
         min-width: 517px;
@@ -94,4 +84,69 @@
             transition: all .5s;
         }
     }
+}
+
+
+@media (max-width: 1395px) {
+
+    .our-service {
+
+		&__img-grek {
+            left: 39%;
+		}
+
+		&__item-left {
+            min-width: 600px;
+		}
+
+		&__item-positions {
+            @include heading('Montserrat', 16px, 140%, #fff);
+		}
+
+    }
+
+}
+
+
+@media (max-width: 1240px) {
+
+    .our-service {
+
+		&__img-grek {
+            left: 39%;
+		}
+
+		&__item-left {
+            min-width: 473px;
+		}
+
+		&__item-positions {
+            @include heading('Montserrat', 13px, 140%, #fff);
+		}
+
+    }
+    
+}
+
+@media (max-width: 1028px) {
+
+    .our-service {
+
+		&__img-grek {
+            left: 9%;
+		}
+
+		&__item-left {
+            min-width: 330px;
+		}
+
+		&__item-positions {
+            @include heading('Montserrat', 11px, 140%, #fff);
+		}
+    }
+   
+}
+
+@media (max-width: 844px) {
+   
 }
