@@ -5,6 +5,7 @@ import LoginovaDetail from "../../loginovaDetail/LoginovaDetail";
 
 MenuBurger.clickOnBurger();
 MenuBurger.removeBurger();
+MenuBurger.changeImg()
 
 MySwiper.open()
 MySwiper.close()
