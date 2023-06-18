@@ -3,6 +3,7 @@ import MySwiper from "../../swiper/swiper";
 import Feedback from "../../feedback/Feedback";
 import LoginovaDetail from "../../loginovaDetail/LoginovaDetail";
 
+MenuBurger.render()
 MenuBurger.clickOnBurger();
 MenuBurger.removeBurger();
 MenuBurger.changeImg()

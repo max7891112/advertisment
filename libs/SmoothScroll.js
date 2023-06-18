@@ -1,7 +1,7 @@
 import SmoothScroll from "smoothscroll-for-websites";
 class MySmoothScroll {
     render() {
-        SmoothScroll({ animationTime    : 600, // [ms]
+        SmoothScroll({ animationTime    : 300, // [ms]
         stepSize         : 100, // [px]
     
         // Acceleration
