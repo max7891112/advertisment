@@ -9,6 +9,7 @@ import OurTeam from "./components/Our-team/ourTeam";
 import Cases from "./components/Cases/cases";
 import Footer from './components/Footer/footer';
 import MySmoothScroll from './libs/SmoothScroll.js'
+import developM from "./components-m/develop-m/develop-m";
 document.addEventListener('DOMContentLoaded', () => {
     
     MenuBurger.clickOnBurger();
@@ -38,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     Footer.addEventListener();
 
     MySmoothScroll.render()
+
+    // mobile code
+    developM.addEvListener()
 })
 
 

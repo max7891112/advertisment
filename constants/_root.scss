@@ -321,3 +321,8 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
 ._active{
     color: $color-hard-red;
 }
+
+.content-m{
+    background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
+    background-size: contain;
+}

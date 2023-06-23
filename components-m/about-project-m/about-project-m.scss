@@ -1,0 +1,133 @@
+.about-project-m {
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
+    background-size: cover;
+    position: relative;
+
+    &__title {
+        @include heading(Arkhip, 24px, 29px, $color-light-blue);
+        margin-bottom: 50px;
+    }
+
+    &__sub-title {
+        @include heading(Arkhip, 20px, 24px, $color-white);
+        text-align: center;
+    }
+
+    &__top-container {
+        margin-top: 30px;
+        @media (max-width: 375px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (min-width: 450px) and (max-width:844px) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    &__top-text {
+        @include heading(Montserrat, 14px, 140%, $color-white);
+       
+        @media (min-width: 375px) and (max-width: 450px) {
+            padding: 62px 0 0 0;
+            max-width: 80%
+        }
+        
+        @media (max-width: 375px) {
+            padding: 0;
+            max-width: 100%;
+            text-align: center;
+        }
+        @media (min-width: 450px) {
+            padding: 10px 0 0 0;
+        }
+    }
+
+    &__top-img-container {
+        margin: 10px;
+        
+        @media (min-width: 375px) and (max-width: 450px) {
+            width: 200px;
+            float: right;
+        }
+        
+        @media (min-width: 450px) and (max-width:844px) {
+            width: 600px;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__bottom-container {
+        margin-top: 10px;
+        @media (max-width: 375px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width: 375px) and (max-width: 844px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__bottom-text {
+        @include heading(Montserrat, 14px, 140%, $color-white);
+        text-align: end;
+        @media (max-width: 375px) {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+    }
+
+    &__bottom-img-container {
+        margin: 10px 25px 10px 10px;
+        width: 130px;
+
+        @media (min-width: 375px) and (max-width: 844px){
+            width: 600px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__cross{
+        position: absolute;
+        width: 32px;
+        height: 45px;
+        top: 57%;
+        right: 20px;
+        @media (min-width: 1px) and (max-width: 400px){
+            display: none;
+        }
+        @media (min-width: 401px) and (max-width: 650px){
+            display: block;
+        }
+        @media (min-width: 651px) and (max-width: 844px){
+            display: block;
+            width: 32px;
+            height: 60px;
+        }
+    }
+}
