@@ -6,6 +6,9 @@
     &__title {
         @include heading(Arkhip, 24px, 29px, $color-light-blue);
         padding-bottom: 30px;
+        @media (min-width:651px) and (max-width: 844px) {
+            font-size: 30px;
+        }
     }
 
     &__menu {
@@ -21,22 +24,39 @@
         span{
             @include heading(Arkhip, 14px, 29px, $color-white);
             position: relative;
+            @media (min-width:500px) and (max-width: 650px) {
+                font-size: 20px;
+            }
+
+            @media (min-width:651px) and (max-width: 844px) {
+                font-size: 24px;
+            }
             
         }
         svg{
             position: absolute;
-            top: 4px;
+            top: 50%;
             right: -10px;
             fill: white;
             transition: all .3s ease;
+            transform: translateY(-50%);
+        }
+        @media (min-width:500px) and (max-width: 650px) {
+            font-size: 20px;
         }
     }
     &__card-container{
         transform: translateY(20px);
         min-height: 80px;
-        transition: all .3s ease;
+        
         @media (min-width:240px) and (max-width:330px) {
             min-height: 40px;
+        }
+    }
+
+    &__wrapper{
+        &._open{
+            animation: visible .7s linear forwards;
         }
     }
 
@@ -74,13 +94,9 @@
         }
     }
 
-    &__interstage{
-        opacity: 0;
-    }
-
     .develop-m__menu-item.develop-m__item-active{
         svg{
-            transform: rotate(90deg);
+            transform: rotate(90deg) translateX(-50%);
             fill: $color-light-blue;
         }
     }

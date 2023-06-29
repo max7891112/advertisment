@@ -64,12 +64,12 @@ class WorkWithUs {
     }
 
     addListenerForChangingComponents() {
-        let strata = document.getElementById('strata');
-        let manue = document.getElementById('manue');
-        let serenity = document.getElementById('serenity');
-        let prostor = document.getElementById('prostor');
-        let malina = document.getElementById('malina');
-        let dragon = document.getElementById('dragon');
+        let strata = document.querySelector('.strata');
+        let manue = document.querySelector('.manue');
+        let serenity = document.querySelector('.serenity');
+        let prostor = document.querySelector('.prostor');
+        let malina = document.querySelector('.malina');
+        let dragon = document.querySelector('.dragon');
         let allButtons = document.querySelectorAll('.work-with-us__item')
         strata.addEventListener('click', () => {
             for(let button of allButtons) {

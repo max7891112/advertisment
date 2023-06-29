@@ -12,7 +12,7 @@
 </head>
 <body>
     
-    <div class="menu-burger hidden">
+    <div class="menu-burger">
         <div class="menu-burger__visible-elem">
             <div class="menu-burger__icon">
                 <span></span>
@@ -601,14 +601,14 @@
                 
                 <div class="work-with-us__ul-container">
                     
-                <ul class="work-with-us__list">
-                    <li class="work-with-us__item" id="strata"><span>STRATA</span></li>
-                    <li class="work-with-us__item" id="manue"><span>MANUE</span></li>
-                    <li class="work-with-us__item" id="serenity"><span>SERENITY SPA</span></li>
-                    <li class="work-with-us__item" id="prostor"><span>PROSTOR</span></li>
-                    <li class="work-with-us__item" id="malina"><span>MALINA</span></li>
-                    <li class="work-with-us__item" id="dragon"><span>DRAGON</span></li>
-                </ul>
+                    <ul class="work-with-us__list">
+                        <li class="work-with-us__item strata"><span>STRATA</span></li>
+                        <li class="work-with-us__item manue"><span>MANUE</span></li>
+                        <li class="work-with-us__item serenity"><span>SERENITY SPA</span></li>
+                        <li class="work-with-us__item prostor"><span>PROSTOR</span></li>
+                        <li class="work-with-us__item malina"><span>MALINA</span></li>
+                        <li class="work-with-us__item dragon"><span>DRAGON</span></li>
+                    </ul>
                 </div>
                 <div class="work-with-us__wrapper"></div>
                 
@@ -789,8 +789,9 @@
                             <p class="footer__label-text _smooth-link" data-goto=".main-page">NFLUENCE</p>
                         </a>
                         <a href="mailto:info@nfluence.rux" class="footer__d-p-item">info@nfluence.ru</a>
-                        <a class="footer__d-p-item">Москва, ул.Константина Царева, 44</a>
+                        <a class="footer__d-p-item">Санкт-Петербург, Литейный проспект, 3</a>
                         <a href="tel:+7(499)123-45-67" class="footer__d-p-item">+7(499)123-45-67</a>
+                        <p class="footer-m__copyright">© Copyright Bek&Mov&Mich 2023</p>
                     </div>
                 </div>
             </div>
@@ -798,10 +799,20 @@
     </div>
 
     <div class="content-m">
-        <header class="header-m"></header>
+        <div class="header-m__react-menu"></div>
+        <header class="header-m">
+            <div class="header-m__logo footer-m__logo">
+                <img src="./components/Footer/img/label.svg" alt="logo">
+                <p>NFLUENCE</p>
+            </div>
+            <div class="header-m__icon">
+                <span></span>
+            </div>
+            
+        </header>
         <section class="main-page-m"></section>
         <section class="our-service-m"></section>
-        <section class="about-project-m hidden">
+        <section class="about-project-m">
             <h2 class="about-project-m__title">О проекте</h2>
             <h3 class="about-project-m__sub-title">Инфлюенс-маркетинг</h3>
             <div class="about-project-m__top-container">
@@ -848,10 +859,62 @@
 \
         </section>
         <section class="our-team-m"></section>
-        <section class="work-with-us-m"></section>
-        <section class="cases-m"></section>
+        <section class="work-with-us-m">
+            <h2 class="work-with-us-m__title">С нами работают</h2>
+            <img src="./components-m/about-project-m/img/text.svg" alt="" class="work-with-us-m__cross">
+            
+            <div class="work-with-us-m__ul-container">
+                    
+                <ul class="work-with-us-m__list">
+                    <li class="work-with-us-m__item strata" id="strataM"><span>STRATA</span></li>
+                    <li class="work-with-us-m__item manue" id="manueM"><span>MANUE</span></li>
+                    <li class="work-with-us-m__item serenity" id="serenityM"><span>SERENITY SPA</span></li>
+                    <li class="work-with-us-m__item prostor" id="prostorM"><span>PROSTOR</span></li>
+                    <li class="work-with-us-m__item malina" id="malinaM"><span>MALINA</span></li>
+                    <li class="work-with-us-m__item dragon" id="dragonM"><span>DRAGON</span></li>
+                </ul>
+
+                <div class="work-with-us-m__content-container">
+                    
+                </div>
+            </div>
+           
+        </section>
+        <section class="cases-m">
+            <h2 class="cases-m__title">Кейсы</h2>
+            <div class="cases-m__img-container">
+                <a href="#" class="cases-m__item cases-m__item_1">
+                    <h3 class="cases-m__item-title-1">“Русалка”</h3>
+                    <img src="./components-m/cases-m/img/redGirl.png" alt="" >
+                </a>
+                <a href="#" class="cases-m__item cases-m__item_2">
+                    <h3 class="cases-m__item-title-2">“RAW”</h3>
+                    <img src="./components-m/cases-m/img/box.png" alt="">
+                </a>
+                <a href="#" class="cases-m__item cases-m__item_3">
+                    <h3 class="cases-m__item-title-3">“CRUSH”</h3>
+                    <img src="./components-m/cases-m/img/legs.png" alt="">
+                </a>
+                <a href="#" class="cases-m__item cases-m__item_4">
+                    <h3 class="cases-m__item-title-4">“Аквамарин”</h3>
+                    <img src="./components-m/cases-m/img/skyskrapers.png" alt="">
+                </a>
+            </div>
+        </section>
         <section class="questions-m"></section>
-        <footer class="footer-m"></footer>
+        <footer class="footer-m">
+            <img src="./components-m/footer-m/img/text.svg" alt="cross" class="footer-m__cross">
+            <a class="footer-m__logo">
+                <img src="./components/Footer/img/label.svg" alt="logo">
+                <p>NFLUENCE</p>
+            </a>
+            <ul class="footer-m__list">
+                <li><a href="mailto:info@nfluence.rux">info@nfluence.ru</a></li>
+                <li><a href="#">Санкт-Петербург, Литейный проспект, 3</a></li>
+                <li><a href="tel:+7(499)123-45-67">+7(499)123-45-67</a></li>
+            </ul>
+            <p class="footer-m__copyright">© Copyright Bek&Mov&Mich 2023</p>
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script> 
