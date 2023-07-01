@@ -8,11 +8,26 @@
         max-width: 1164px;
         margin-left: 142px;
         margin-right: 10px;
+        @media (min-width: 240px) and (max-width: 844px) {
+            margin: 0 auto;
+        }
     }
 
     &__h2 {
         padding: 45px 0 0 0;
         text-align: left;
+        @media (min-width: 240px) and (max-width: 844px) {
+            padding: 20px 0 0 0;
+            text-align: center;
+            font-size: 45px;
+        }
+        @media (min-width: 500px) and (max-width: 844px) {
+            font-size: 45px;
+        }
+        @media (min-width: 240px) and (max-width: 499px) {
+            font-size: 30px;
+            line-height: normal;
+        }
     }
 
     &__text-box {
@@ -20,7 +35,18 @@
         max-width: 856px;
         text-align: center;
         margin: 0 auto;
-        padding: 186px 0 60px 0
+        padding: 186px 0 60px 0;
+        @media (min-width: 240px) and (max-width: 844px) {
+            padding: 50px 0 30px 0;
+            font-size: 20px;
+        }
+        @media (min-width: 500px) and (max-width: 844px) {
+            font-size: 20px
+        }
+        @media (min-width: 240px) and (max-width: 499px) {
+            font-size: 18px;
+            padding: 25px 0 15px 0;
+        }
     }
 
     &__box-items {
@@ -31,15 +57,28 @@
         background-image: url('./components/MainPage/img/mainPageBac.jpg');
         border: none;
         margin-bottom: 30px;
+        @media (min-width: 240px) and (max-width: 844px) {
+            margin: 0 15px 30px 15px;
+        }
     }
 
     &__item-up {
 
         margin-left: 30px;
         padding-top: 27px;
+        @media (min-width: 240px) and (max-width: 499px) {
+            margin-left: 15px;
+            margin-right: 20px;
+        }
 
         & p {
             @include heading('Montserrat', 20px, 130%, #000);
+            @media (min-width: 240px) and (max-width: 499px) {
+                font-size: 16px;
+            }
+            @media (min-width: 240px) and (max-width: 260px) {
+                font-size: 14px;
+            }
         }
 
         &::after {
@@ -60,8 +99,10 @@
     }
 
     &__pluse {
+        position: absolute;
         z-index: 4;
-        margin-right: 10px;
+        top: 31px;
+        right: 10px;
     }
 
     &__item-info {
@@ -69,9 +110,21 @@
         text-align: left;
         margin: 0;
         margin-left: 30px;
+        @media (min-width: 240px) and (max-width: 499px) {
+            font-size: 16px;
+            margin-left: 15px;
+        }
+        @media (min-width: 240px) and (max-width: 300px) {
+            font-size: 14px;
+            margin-left: 5px;
+            text-align: center;
+        }
     }
 
     &__btn-detail {
         margin: 50px 0 45px auto;
+        @media (min-width: 240px) and (max-width: 844px) {
+            margin: 50px auto 45px auto;
+        }
     }
 }

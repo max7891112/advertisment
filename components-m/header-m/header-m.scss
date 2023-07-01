@@ -38,6 +38,9 @@
         max-width: 350px;
         height: fit-content;
         background: url('./components/MainPage/img/mainPageBac.jpg');
+        @media (min-width:240px) and (max-width: 400px){
+            max-width: 220px;
+        }
     }
 
     &__logo-burger{
@@ -45,16 +48,25 @@
     }
 
     &__navigation {
+        @media (min-width:240px) and (max-width: 400px){
+            max-width: 220px;
+        }
     }
 
     &__list {
         text-align: center;
         li{
-        margin: 30px 0;
+        margin: 25px 0;
         position: relative;
             span{
                 @include heading('Arkhip', 32px, 29px, $color-black);
                 padding: 10px;
+                @media (min-width:240px) and (max-width: 400px){
+                    font-size: 20px;
+                }
+            }
+            @media (min-width:240px) and (max-width: 400px){
+                margin: 20px 0;
             }
         }
     }
@@ -62,6 +74,9 @@
     &__copyright {
         display: flex;
         align-items: center;
+        @media (min-width:240px) and (max-width: 400px){
+            max-width: 220px;
+        }
     }
 
     &__line {
@@ -128,18 +143,30 @@
             top: 50%;
             transform: scale(1) translate(0px, -50%);
         }
+        @media (min-width:240px) and (max-width: 400px){
+            transform: translate(-60%, -50%);
+        }
+        @media (min-width:600px) and (max-width: 844px){
+            transform: translate(-130%, -50%);
+        }
 	}
 
     &__icon._moving{
         top: 55%;
-        right: 10%;
+        right: 50%;
         z-index: 100000000;
-        transform: rotate(-90deg);
+        transform: rotate(-90deg) translateY(850%);
+        @media (min-width:240px) and (max-width: 400px){
+            transform: rotate(-90deg) translateY(580%);
+        }
         span{
             background-color: $color-light-red;
         }
         &::before, &::after{
             background-color: $color-light-red;
         }
+    }
+    @media (min-width:845px) {
+        display: none;
     }
 }

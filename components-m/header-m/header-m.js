@@ -61,12 +61,8 @@ class HeaderM {
                 setTimeout(() => {
                     this.REACT_MENU.innerHTML = ''
                 }, 300)
-                
-            }
-        })
-    }
-    removeBurger() {
-
+            };
+        });
     };
 };
 

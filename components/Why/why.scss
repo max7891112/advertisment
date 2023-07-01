@@ -4,6 +4,9 @@
         min-height: 100vh;
         background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
         padding-bottom: 120px;
+        @media (min-width: 240px) and (max-width: 844px) {
+            background-image: none;
+        }
     }
 
     &__h2 {
@@ -35,7 +38,13 @@
 
     &__item-active {
         max-height: 228px;
-        transition: .3s;
+        @media (min-width: 600px) and (max-width: 844px) {
+            max-height: 300px;
+        }
+        @media (min-width: 240px) and (max-width: 599px) {
+            max-height: 530px;
+        }
+
     }
 
     &__item-up {
@@ -61,7 +70,7 @@
 
     &__pluse-rotate {
         transition: .3s;
-        transform: rotate(45deg);
+        transform:rotate(45deg);
 
         & path {
             fill: #EE3434;
@@ -74,6 +83,9 @@
         margin: 0 auto;
         text-align: center;
         padding: 20px 0 20px 0;
+        @media (min-width: 240px) and (max-width: 499px) {
+            padding: 35px 0 20px 0;
+        }
     }
 
     &__button{
