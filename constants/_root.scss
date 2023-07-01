@@ -1,4 +1,3 @@
-
 html{
     font-size: 10px;
 }
@@ -28,6 +27,22 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     line-height: $h;
     color: $c
     // @include heading(Montserrat, 24px, 79px)
+}
+
+* {
+    scrollbar-color: rgba(grey, .8);
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(grey, .8);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color:  transparent;
 }
 
 .blue-button{
@@ -299,5 +314,136 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         left: 4%;
         fill: $color-white;
         transition: all .3s ease;
+    }
+}
+
+._active{
+    color: $color-hard-red;
+}
+
+// MOBILE LAYOUT
+
+.content-m{
+    width: 100%;
+    height: fit-content;
+    background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
+    background-size: contain;
+    position: relative;
+}
+
+.m_container {
+    width: 100%;
+    padding: 0 10px;
+}
+
+
+.button-dinamic-m{
+    padding: 9px 28px;
+    color: $color-light-red;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: transparent;
+    position: relative;
+    width: 118px;
+    height: 31px;
+    transition: all .3s ease;
+    line-height: 12px;
+    display: block;
+
+    div:nth-child(n) {
+        position: absolute;
+        transition: all .3s ease;
+        background-color: $color-light-red;
+    }
+
+    &:hover{
+        .button-dinamic__1{
+            width: 0;
+        }
+        .button-dinamic__2{
+            width: 38px;
+        }
+        .button-dinamic__3{
+            height: 31px;
+        }
+        .button-dinamic__4{
+            height: 0;
+        }
+        .button-dinamic__5{
+            width: 0;
+        }
+        .button-dinamic__6{
+            width: 38px;
+        }
+        .button-dinamic__7{
+            height: 31px;
+        }
+        .button-dinamic__8{
+            height: 0;
+        }
+    }
+
+    &__1 {
+        top: 0;
+        left: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__2 {
+        top: 0;
+        right: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__3 {
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &__4 {
+        bottom: 0;
+        right: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &__5 {
+        bottom: 0;
+        right: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__6 {
+        bottom: 0;
+        left: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__7 {
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &__8 {
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &_blue{
+        color: $color-light-blue !important;
+        text-align: center;
+        div:nth-child(n) {
+            background-color: $color-light-blue;
+        }
     }
 }

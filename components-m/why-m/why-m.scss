@@ -1,0 +1,193 @@
+.why-m {
+
+    &__body {
+    }
+
+    &__container {
+    }
+
+    &__title {
+        padding: 50px 0 28px 0;
+        @include heading('Arkhip', 24px, 29px, #3446EE);
+    }
+
+    &__box-items {
+        display: flex;
+        padding: 0 10px;
+        gap: 18px;
+        padding-bottom: 60px;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    &__item-wrapper-1 {
+        width: 54px; // 290px
+        height: 300px;
+        position: relative;
+        transition: all .5s;
+        overflow: hidden;
+    }
+
+    &__img-1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__number-item {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        // display: none;
+        @include heading('Montserrat', 14px, 140%, #EE3434);
+    }
+
+    &__wrapper-cross {
+        position: absolute;
+        bottom: 20px;
+        right: 50%;
+        transform:translateX(5px);
+        // display: none;
+    }
+
+    &__img-cross {
+    }
+
+    &__slogan-item {
+       position: absolute;
+       top: 40px;
+       right: 0;
+       writing-mode: vertical-rl;
+       @include heading('Montserrat', 14px, 140%, #fff);
+    }
+
+    &__box-text {
+        position: absolute;
+        top: 0;
+        // display: none;
+        margin: 50px 0 0 10px;
+        @include heading('Montserrat', 10px, 140%, #fff);
+        opacity: 1;
+        transition: opacity 1.5s;
+
+        & .why-m__subtitle-item {
+            font-size: 14px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__subtitle-item {
+    }
+
+    &__text {
+    }
+
+    &__item-wrapper-2 {
+        width: 94px; //290
+        height: 300px;
+        position: relative;
+        transition: all .5s;
+        overflow: hidden;
+    }
+
+    &__img-2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__arrows {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        gap: 50px;
+        padding-bottom: 60px;
+    }
+
+    &__arrow-left {
+    }
+
+    &__arrow-right {
+        transform: rotate(180deg);
+    }
+}
+
+//ANIMATION
+
+.active-item {
+    transition: all .5s;
+    width: 261px;
+}
+
+// .immutable-item {
+//     transition: all .5s;
+//     width: 15px;
+// }
+
+
+.box-text-submassive {
+    opacity: 0;
+    transition: all .01s;
+}
+
+.element-immutable {
+    top: 10px;
+    right: 10px;
+}
+
+.element-hidden {
+    display: none;
+}
+
+
+@media (min-width: 500px) {
+    
+    .why-m {
+
+        &__item-wrapper-1 {
+            width: 77px; // 290px
+        }
+    
+        &__item-wrapper-2 {
+            width: 128px; //290
+        }
+
+        .immutable-item {
+            width: 50px;
+        }
+    }
+
+}
+
+
+
+@media (min-width: 750px) {
+    
+    .why-m {
+
+        &__item-wrapper-1 {
+            width: 140px;
+            height: 350px; // 290px
+        }
+    
+        &__item-wrapper-2 {
+            width: 167px; //290
+            height: 350px;
+        }
+        
+        .immutable-item {
+            width: 122px;
+        }
+    }
+
+}
+
+.active-item {
+    transition: all .5s;
+    width: 261px;
+}
+
+.immutable-item {
+    transition: all .5s;
+    width: 15px;
+}

@@ -8,6 +8,7 @@ import Why from "./components/Why/why";
 import OurTeam from "./components/Our-team/ourTeam";
 import Cases from "./components/Cases/cases";
 import Footer from './components/Footer/footer';
+import whyM from "./components-m/why-m/why-m";
 document.addEventListener('DOMContentLoaded', () => {
     
     MenuBurger.clickOnBurger();
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     Cases.addEventListener();
     Cases.addELClick();
     Footer.addEventListener();
+    whyM.addEventListener();
 })
 
 

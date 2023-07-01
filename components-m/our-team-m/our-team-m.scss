@@ -1,0 +1,195 @@
+@media (min-width: 390px) {
+    
+    .our-team {
+
+		&__h2 {
+			font-size: 30px;
+			padding-top: 0;
+		}
+
+		&__text-box {
+            display: none;
+		}
+
+		&__items {
+		}
+
+		&__item-wrapper {
+			height: 268px;
+		}
+
+		
+
+		&__prev-info {
+            padding-top: 30px;
+		}
+
+		&__prev-name {
+            @include heading('Montserrat', 18px, 140%, #fff);
+            font-weight: 400;
+		}
+
+		&__prev-follows {
+            display: none;
+		}
+
+		&__img-wrapper {
+			width: 148px;
+			height: 229px;
+		}
+
+		&__img {
+		}
+
+		&__btn {
+
+			display: none;
+
+            & path {
+                fill: #fff;
+            }
+
+            & svg {
+                height: 30px;
+                width: 30px;
+            }
+
+            background-color: transparent;
+            top: 36px;
+		}
+
+		&__item-info {
+			padding-left: 0;
+		}
+
+		&__blogger-name {
+			font-size: 20px;
+			padding-left: 154px;
+			padding-top: 0;
+		}
+
+		&__blogger-info {
+			@include heading('Montserrat', 10px, 140%, #fff);
+			padding-left: 154px;
+		}
+
+		&__amount-followers {
+			@include heading('Montserrat', 12px, 140%, #fff);
+			padding-left: 154px;
+			padding-top: 4px;
+		}
+
+		&__amount-social {
+			@include heading('Montserrat', 12px, 140%, #fff);
+			padding-left: 154px;
+
+		}
+
+		&__social-labels {
+			display: none;
+		}
+
+		&__btn-items {
+		}
+
+		&__btn-detail {
+		}
+
+		&__item-wrapper-animation {
+            &__wrapper-item {
+                height: 100px;
+            }
+
+			&.position-alice {
+
+				& img {
+					object-position: 0 -298px;    
+				}
+			}
+
+			&.position-sofia {
+
+				& img {
+					object-position: 0 -269px;   
+				}
+			}
+
+			&.position-bogdan {
+
+				& img {
+					object-position: 0 -178px;    
+				}
+			}
+
+			&.position-yaroslav {
+
+				& img {
+					object-position: 0 -166px;    
+				}
+			}
+
+			width: 100%;
+		}
+}
+
+.hidden-loginova {
+
+		&__svg {
+		}
+}
+.svg {
+
+		&__top-right-line {
+		}
+
+		&__right-top-line {
+		}
+
+		&__bottom-left-line {
+		}
+
+		&__left-bottom-line {
+		}
+}
+.button-dinamic {
+
+		&_blue {
+		}
+
+		&__1 {
+		}
+
+		&__2 {
+		}
+
+		&__3 {
+		}
+
+		&__4 {
+		}
+
+		&__5 {
+		}
+
+		&__6 {
+		}
+
+		&__7 {
+		}
+
+		&__8 {
+		}
+	}
+
+	.our-team-m {
+
+		&__container {
+			padding-bottom: 50px;
+		}
+
+		&__btn {
+			margin: 20px 0 0 auto;
+		}
+	}
+
+}

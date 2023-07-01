@@ -1,0 +1,25 @@
+.header-m {
+
+    &_logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin: 0 auto;
+        width: fit-content;
+        padding: 38px 0;
+    }
+
+    &__text {
+        @include heading('Arkhip', 16px, 19px, #fff);
+    }
+}
+
+@media (min-width: 500px) {
+    
+    .header-m {
+    
+        &__text {
+            @include heading('Arkhip', 23px, 19px, #fff);
+        }
+    }
+}
