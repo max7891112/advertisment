@@ -1,0 +1,578 @@
+@media (min-width: 240px) and (max-width: 390px) {
+    
+    .our-team {
+
+		&__h2 {
+			font-size: 30px;
+			padding-top: 0;
+		}
+
+		&__text-box {
+            display: none;
+		}
+
+		&__items {
+		}
+
+		&__item-wrapper {
+			height: fit-content;
+		}
+
+		
+
+		&__prev-info {
+            padding-top: 30px;
+		}
+
+		&__prev-name {
+            @include heading('Montserrat', 18px, 140%, #fff);
+            font-weight: 400;
+		}
+
+		&__prev-follows {
+            display: none;
+		}
+
+		&__img-wrapper {
+			width: 104px;
+			height: 160px;
+		}
+
+		&__btn {
+
+			display: none;
+
+            & path {
+                fill: #fff;
+            }
+
+            & svg {
+                height: 30px;
+                width: 30px;
+            }
+
+            background-color: transparent;
+            top: 36px;
+		}
+
+		&__item-info {
+			padding-left: 0;
+		}
+
+		&__blogger-name {
+			font-size: 14px;
+			padding-left: 109px;
+			padding-top: 18px;
+			line-height: 140%;
+		}
+
+		&__blogger-info {
+			@include heading('Montserrat', 9px, 140%, #fff);
+			padding-left: 109px;
+		}
+
+		&__amount-followers {
+			@include heading('Montserrat', 9px, 140%, #fff);
+			padding-left: 109px;
+			padding-top: 4px;
+		}
+
+		&__amount-social {
+			@include heading('Montserrat', 9px, 140%, #fff);
+			padding-left: 109px;
+
+		}
+
+		&__social-labels {
+			
+		}
+
+		&__hidden {
+			display: none;
+		}
+
+		&__item-wrapper-animation {
+            &__wrapper-item {
+                height: 100px;
+            }
+
+			&.position-alice {
+
+				& img {
+					object-position: 0 -102px;    
+				}
+			}
+
+			&.position-sofia {
+
+				& img {
+					object-position: 0 -143px;   
+				}
+			}
+
+			&.position-bogdan {
+
+				& img {
+					object-position: 0 -83px;    
+				}
+			}
+
+			&.position-yaroslav {
+
+				& img {
+					object-position: 0 -94px;    
+				}
+			}
+
+			width: 100%;
+		}
+
+		&__btn-detail {
+			display: none;
+		}
+	}
+
+	.our-team-m {
+
+		&__container {
+			padding-bottom: 50px;
+		}
+
+		&__btn {
+			margin: 20px 0 0 auto;
+		}
+	}
+
+}
+
+@media (min-width: 390px) and (max-width: 840px) {
+    
+    .our-team {
+
+		&__h2 {
+			font-size: 30px;
+			padding-top: 0;
+		}
+
+		&__text-box {
+            display: none;
+		}
+
+		&__items {
+		}
+
+		&__item-wrapper {
+			height: 268px;
+		}
+
+		
+
+		&__prev-info {
+            padding-top: 30px;
+		}
+
+		&__prev-name {
+            @include heading('Montserrat', 18px, 140%, #fff);
+            font-weight: 400;
+		}
+
+		&__prev-follows {
+            display: none;
+		}
+
+		&__img-wrapper {
+			width: 148px;
+			height: 229px;
+		}
+
+		&__btn {
+
+			display: none;
+
+            & path {
+                fill: #fff;
+            }
+
+            & svg {
+                height: 30px;
+                width: 30px;
+            }
+
+            background-color: transparent;
+            top: 36px;
+		}
+
+		&__item-info {
+			padding-left: 0;
+		}
+
+		&__blogger-name {
+			font-size: 20px;
+			padding-left: 154px;
+			padding-top: 0;
+		}
+
+		&__blogger-info {
+			@include heading('Montserrat', 10px, 140%, #fff);
+			padding-left: 154px;
+		}
+
+		&__amount-followers {
+			@include heading('Montserrat', 12px, 140%, #fff);
+			padding-left: 154px;
+			padding-top: 4px;
+		}
+
+		&__amount-social {
+			@include heading('Montserrat', 12px, 140%, #fff);
+			padding-left: 154px;
+
+		}
+
+		&__social-labels {
+			
+		}
+
+		&__hidden {
+			display: none;
+		}
+
+		&__item-wrapper-animation {
+            &__wrapper-item {
+                height: 100px;
+            }
+
+			&.position-alice {
+
+				& img {
+					object-position: 0 -298px;    
+				}
+			}
+
+			&.position-sofia {
+
+				& img {
+					object-position: 0 -269px;   
+				}
+			}
+
+			&.position-bogdan {
+
+				& img {
+					object-position: 0 -178px;    
+				}
+			}
+
+			&.position-yaroslav {
+
+				& img {
+					object-position: 0 -166px;    
+				}
+			}
+
+			width: 100%;
+		}
+
+		&__btn-detail {
+			display: none;
+		}
+	}
+
+	.our-team-m {
+
+		&__container {
+			padding-bottom: 50px;
+		}
+
+		&__btn {
+			margin: 20px 0 0 auto;
+		}
+	}
+
+}
+
+@media (min-width: 500px) and (max-width: 840px) {
+    
+    .our-team {
+
+		&__h2 {
+			font-size: 40px;
+			padding-top: 0;
+		}
+
+
+		&__prev-name {
+            @include heading('Montserrat', 18px, 140%, #fff);
+            font-weight: 400;
+		}
+
+		&__blogger-name {
+			font-size: 30px;
+			padding-left: 154px;
+			padding-top: 0;
+		}
+
+		&__blogger-info {
+			@include heading('Montserrat', 12px, 140%, #fff);
+			padding-left: 154px;
+		}
+
+		&__amount-followers {
+			@include heading('Montserrat', 14px, 140%, #fff);
+			padding-left: 154px;
+			padding-top: 4px;
+		}
+
+		&__amount-social {
+			@include heading('Montserrat', 14px, 140%, #fff);
+			padding-left: 154px;
+
+		}
+
+		&__hidden {
+			display: none;
+		}
+
+		&__item-wrapper-animation {
+            &__wrapper-item {
+                height: 100px;
+            }
+
+			&.position-alice {
+
+				& img {
+					object-position: 0 -212px;    
+				}
+			}
+
+			&.position-sofia {
+
+				& img {
+					object-position: 0 -369px;   
+				}
+			}
+
+			&.position-bogdan {
+
+				& img {
+					object-position: 0 -257px;    
+				}
+			}
+
+			&.position-yaroslav {
+
+				& img {
+					object-position: 0 -217px;    
+				}
+			}
+
+			width: 100%;
+		}
+	}
+
+	.our-team-m {
+
+		&__container {
+			padding-bottom: 50px;
+		}
+
+		&__btn {
+			margin: 20px 0 0 auto;
+		}
+	}
+
+}
+
+@media (min-width: 500px) and (max-width: 840px) {
+    
+    .our-team {
+
+		&__item-wrapper-animation {
+
+			&.position-alice {
+
+				& img {
+					object-position: 0 -248px;    
+				}
+			}
+
+			&.position-sofia {
+
+				& img {
+					object-position: 0 -453px;   
+				}
+			}
+
+			&.position-bogdan {
+
+				& img {
+					object-position: 0 -309px;    
+				}
+			}
+
+			&.position-yaroslav {
+
+				& img {
+					object-position: 0 -254px;    
+				}
+			}
+
+			width: 100%;
+		}
+	}
+
+
+
+}
+
+@media (min-width: 700px) and (max-width: 840px) {
+    
+    .our-team {
+
+		&__h2 {
+			font-size: 50px;
+			padding-top: 0;
+		}
+
+		&__text-box {
+            display: none;
+		}
+
+		&__items {
+		}
+
+		&__item-wrapper {
+			height: 383px;
+		}
+
+		
+
+		&__prev-info {
+            padding-top: 30px;
+		}
+
+		&__prev-name {
+            @include heading('Montserrat', 27px, 140%, #fff);
+            font-weight: 400;
+		}
+
+		&__prev-follows {
+            display: none;
+		}
+
+		&__img-wrapper {
+			width: 227px;
+			height: 351px;
+		}
+
+		&__btn {
+
+			display: none;
+
+            & path {
+                fill: #fff;
+            }
+
+            & svg {
+                height: 30px;
+                width: 30px;
+            }
+
+            background-color: transparent;
+            top: 36px;
+		}
+
+		&__item-info {
+			padding-left: 0;
+		}
+
+		&__blogger-name {
+			font-size: 38px;
+			padding-left: 154px;
+			padding-top: 10px;
+		}
+
+		&__blogger-info {
+			@include heading('Montserrat', 17px, 140%, #fff);
+			padding-left: 154px;
+		}
+
+		&__amount-followers {
+			@include heading('Montserrat', 25px, 140%, #fff);
+			padding-left: 154px;
+			padding-top: 4px;
+		}
+
+		&__amount-social {
+			@include heading('Montserrat', 25px, 140%, #fff);
+			padding-left: 182px;
+
+		}
+
+		&__hidden {
+			display: none;
+		}
+
+		&__item-wrapper-animation {
+            &__wrapper-item {
+                height: 100px;
+            }
+
+			&.position-alice {
+
+				& img {
+					object-position: 0 -330px;    
+				}
+			}
+
+			&.position-sofia {
+
+				& img {
+					object-position: 0 -602px;   
+				}
+			}
+
+			&.position-bogdan {
+
+				& img {
+					object-position: 0 -414px;    
+				}
+			}
+
+			&.position-yaroslav {
+
+				& img {
+					object-position: 0 -344px;    
+				}
+			}
+
+			width: 100%;
+		}
+	}
+
+	.our-team-m {
+
+		&__container {
+			padding-bottom: 50px;
+		}
+
+		&__btn {
+			margin: 20px 0 0 auto;
+		}
+	}
+
+}
+
+@media (min-width: 817px) and (max-width: 840px) {
+	.our-team {
+		&__amount-social {
+			padding-left: 196px;
+		}
+	}
+}
+
+@media (min-width: 844px) {
+    .our-team-m {
+        display: none;
+    }
+}

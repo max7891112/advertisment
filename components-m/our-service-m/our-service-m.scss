@@ -1,0 +1,331 @@
+.our-service-m {
+
+    &__body {
+    }
+
+    &__container {
+    }
+
+    &__slogan {
+        @include heading('Arkhip', 24px, 29px, #3446EE);
+        padding-top: 50px;
+    }
+
+    &__main-box {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    &__l-p {
+        position: relative;
+    }
+
+    &__img-wrapper-l-p {
+        width: 202px;
+        height: 400px;
+        position: relative;
+    }
+
+    &__img-l-p {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__slogan-l-p {
+        @include heading('Arkhip', 20px, 24px, #fff);
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 40px;
+        right: 0;
+    }
+
+    &__r-p {
+        flex-basis: 128px;
+        padding-top: 80px;
+        position: relative;
+    }
+
+    &__img-wrapper-r-p {
+        width: 128px;
+        height: 400px;
+        position: relative;
+    }
+
+    &__img-r-p {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__slogan-r-p {
+        @include heading('Arkhip', 20px, 24px, #fff);
+        position: absolute;
+        writing-mode: vertical-rl;
+        top: 40px;
+        right: 0;
+    }
+
+    &__btn-l-p {
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        margin-left: -59px;
+        left: 50%;
+        margin-bottom: 10px;
+    } 
+
+    &__btn-r-p {
+        position: absolute;
+        bottom: 0;
+        margin-left: -59px;
+        left: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 240px) {
+    
+    .our-service-m {
+
+        &__body {
+        }
+    
+        &__container {
+        }
+    
+        &__slogan {
+            @include heading('Arkhip', 24px, 29px, #3446EE);
+            padding-top: 50px;
+        }
+    
+        &__main-box {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+    
+        &__l-p {
+            position: relative;
+        }
+    
+        &__img-wrapper-l-p {
+            width: 109px;
+            height: 400px;
+            position: relative;
+        }
+    
+        &__img-l-p {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        &__slogan-l-p {
+            @include heading('Arkhip', 20px, 24px, #fff);
+            position: absolute;
+            writing-mode: vertical-rl;
+            top: 40px;
+            right: 0;
+        }
+    
+        &__r-p {
+            flex-basis: 99px;
+            padding-top: 80px;
+            position: relative;
+        }
+    
+        &__img-wrapper-r-p {
+            width: 99px;
+            height: 400px;
+            position: relative;
+        }
+    
+        &__img-r-p {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        &__slogan-r-p {
+            @include heading('Arkhip', 20px, 24px, #fff);
+            position: absolute;
+            writing-mode: vertical-rl;
+            top: 40px;
+            right: 0;
+        }
+    
+        &__btn-l-p {
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
+            margin-left: -59px;
+            left: 50%;
+            margin-bottom: 10px;
+        } 
+    
+        &__btn-r-p {
+            position: absolute;
+            bottom: 0;
+            margin-left: -59px;
+            left: 50%;
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+@media (min-width: 320px) {
+    
+    .our-service-m {
+
+        &__body {
+        }
+    
+        &__container {
+        }
+    
+        &__slogan {
+            @include heading('Arkhip', 24px, 29px, #3446EE);
+            padding-top: 50px;
+        }
+    
+        &__main-box {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+    
+        &__l-p {
+            position: relative;
+        }
+    
+        &__img-wrapper-l-p {
+            width: 141px;
+            height: 400px;
+            position: relative;
+        }
+    
+        &__img-l-p {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        &__slogan-l-p {
+            @include heading('Arkhip', 20px, 24px, #fff);
+            position: absolute;
+            writing-mode: vertical-rl;
+            top: 40px;
+            right: 0;
+        }
+    
+        &__r-p {
+            flex-basis: 99px;
+            padding-top: 80px;
+            position: relative;
+        }
+    
+        &__img-wrapper-r-p {
+            width: 132px;
+            height: 400px;
+            position: relative;
+        }
+    
+        &__img-r-p {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        &__slogan-r-p {
+            @include heading('Arkhip', 20px, 24px, #fff);
+            position: absolute;
+            writing-mode: vertical-rl;
+            top: 40px;
+            right: 0;
+        }
+    
+        &__btn-l-p {
+            position: absolute;
+            bottom: 0;
+            margin: 0 auto;
+            margin-left: -59px;
+            left: 50%;
+            margin-bottom: 10px;
+        } 
+    
+        &__btn-r-p {
+            position: absolute;
+            bottom: 0;
+            margin-left: -59px;
+            left: 50%;
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+@media (min-width: 450px) {
+    
+    .our-service-m {
+
+        &__slogan {
+            @include heading('Arkhip', 30px, 29px, #3446EE);
+            padding-top: 50px;
+        }
+
+		&__img-wrapper-l-p {
+            width: 250px;
+            height: 497px;
+		}
+
+		&__img-wrapper-r-p { // 310 225
+            width: 162px;
+            height: 506px;
+		}
+
+    }
+
+}
+
+@media (min-width: 580px) {
+    
+    .our-service-m {
+
+		&__img-wrapper-l-p {
+            width: 310px;
+            height: 614px;
+		}
+
+		&__img-wrapper-r-p { // 310 225
+            width: 225px;
+            height: 703px;
+		}
+
+    }
+
+}
+
+@media (min-width: 700px) {
+    
+    .our-service-m {
+
+        &__slogan {
+            @include heading('Arkhip', 42px, 29px, #3446EE);
+            padding-top: 50px;
+        }
+
+		&__main-box {
+            justify-content: space-around;
+		}
+    }
+
+}
+
+@media (min-width: 844px) {
+    .our-service-m {
+        display: none;
+    }
+}

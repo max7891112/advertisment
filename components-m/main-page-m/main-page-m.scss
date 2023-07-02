@@ -1,0 +1,209 @@
+.main-page-m {
+
+    &__body {
+    }
+
+    &__container {
+        display: flex;
+    }
+
+    &__l-p {
+        flex-grow: 0;
+    }
+
+    &__img-wrapper {
+        width: 202px;
+        height: 309px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__r-p {
+        position: relative;
+        flex-grow: 1;
+    }
+
+    &__h2 {
+
+        position: absolute;
+        right: 0px;
+        width: 230px;
+
+        &, span {
+            @include heading('Arkhip', 32px, 38px, #3446EE);
+        }
+
+        & span {
+            width: 100%;
+            text-align: right;
+            display: inline-block;
+        }
+    }
+
+    &__btn-wrapper {
+        margin: 150px 0 0 auto;
+        width: 100%;
+        width: fit-content;
+    }
+
+    &__social-labels {
+        flex-direction: column;
+        width: fit-content;
+        position: absolute;
+        right: 0;
+        bottom: -140px;
+        margin-right: 5px;
+
+        & .svg {
+            margin: 0;
+        }
+    }
+
+    &__crosses-wrapper {
+        position: absolute;
+        left: 30px;
+        bottom: -106px;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 390px) {
+    
+    .main-page-m {
+
+        &__body {
+        }
+    
+        &__container {
+            display: flex;
+        }
+    
+        &__l-p {
+            flex-grow: 0;
+        }
+    
+        &__img-wrapper {
+            width: 106px;
+            height: 216px;
+        }
+    
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        &__r-p {
+            position: relative;
+            flex-grow: 1;
+        }
+    
+        &__h2 {
+    
+            position: absolute;
+            right: 0px;
+            width: 230px;
+    
+            &, span {
+                @include heading('Arkhip', 32px, 38px, #3446EE);
+            }
+    
+            & span {
+                width: 100%;
+                text-align: right;
+                display: inline-block;
+            }
+        }
+    
+        &__btn-wrapper {
+            margin: 150px 0 0 auto;
+            width: 100%;
+            width: fit-content;
+        }
+    
+        &__social-labels {
+            flex-direction: column;
+            width: fit-content;
+            position: absolute;
+            right: 0;
+            bottom: -140px;
+            margin-right: 5px;
+    
+            & .svg {
+                margin: 0;
+            }
+        }
+    
+        &__crosses-wrapper {
+            position: absolute;
+            left: 30px;
+            bottom: -106px;
+        }
+    }
+}
+
+@media (min-width: 525px) {
+    
+    .main-page-m {
+
+        &__img-wrapper {
+            width: 247px;
+            height: 378px;
+        }
+
+        &__h2 {
+            right: 105px;
+        }
+    }
+}
+
+@media (min-width: 680px) {
+    
+    .main-page-m {
+
+        &__img-wrapper {
+            width: 333px;
+            height: 510px;
+        }
+
+        &__h2 {
+            right: 105px;
+            width: 250px;
+
+            &, span {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 774px) {
+    
+    .main-page-m {
+
+        &__img-wrapper {
+            width: 333px;
+            height: 510px;
+        }
+
+        &__h2 {
+            padding-top: 20px;
+            right: 105px;
+            width: 433px;
+
+            &, span {
+                font-size: 60px;
+                letter-spacing: 6px;
+            }
+        }
+    }
+}
+
+@media (min-width: 844px) {
+    .main-page-m {
+        display: none;
+    }
+}
