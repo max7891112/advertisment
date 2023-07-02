@@ -1,6 +1,6 @@
 /* Parent element can be any width and height */
 .youtubelightbox{
-    z-index: 999;
+    z-index: 99;
 	position: absolute;
 	width: 100%; /* can be any width */
 	height: 100%;
@@ -35,9 +35,9 @@
 	z-index: 20; /* higher z-index than overlay */
 	display: inline-block;
 	vertical-align: middle;
-	width: 57%; /* can be any width */
-	top: 59%;
-	right: 0%;
+	width: 850px; /* can be any width */
+	top: 54%;
+	right: 10px;
 	transform: translateY(-50%);
 }
 
@@ -52,8 +52,8 @@
 /* Make Youtube IFRAME responsive */
 .youtubelightbox__videowrapper iframe {
 	position: absolute;
-	top: 0;
+	top: 0px;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 95%;
 }

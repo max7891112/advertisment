@@ -9,17 +9,20 @@ import OurTeam from "./components/Our-team/ourTeam";
 import Cases from "./components/Cases/cases";
 import Footer from './components/Footer/footer';
 import whyM from "./components-m/why-m/why-m";
+import MySmoothScroll from './libs/SmoothScroll.js'
 document.addEventListener('DOMContentLoaded', () => {
     
     MenuBurger.clickOnBurger();
     MenuBurger.removeBurger();
+    MenuBurger.changeImg()
+    MenuBurger.smoothNavigation()
 
     WorkWithUs.addListenerForChangingComponents()
     LoginovaDetail.addListenerForAnimationSlider()
     
     // work with youtube video
-    // WorkWithUs.addListenerForConnectLightBox()
     // youtubeLightbox.connect('youtubelightboxLoginova', 'youtubelightboxPlayerLoginova', '.youtubelightboxLoginova__centeredchild')
+    
     // add swiper
     MySwiper.open()
     MySwiper.close()
@@ -28,12 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     Feedback.addListenerDataClose()
     Feedback.addListenerForDataInput()
     Feedback.buttonInit()
+
     Why.searchElem();
     OurTeam.addEL();
     Cases.addEventListener();
     Cases.addELClick();
     Footer.addEventListener();
     whyM.addEventListener();
+
+    MySmoothScroll.render()
 })
 
 

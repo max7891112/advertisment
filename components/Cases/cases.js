@@ -1,5 +1,4 @@
 class Cases {
-    
     addEventListener() {
         const items = document.querySelectorAll('.cases__wrapper-block');
         const names = document.querySelectorAll('.cases__name');
