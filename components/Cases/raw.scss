@@ -62,3 +62,254 @@
         @include heading('Montserrat', 20px, 140%, #fff);
     }
 }
+
+@media (max-width: 1303px) {
+    .cases-child-raw {
+
+        &__container {
+            display: flex;
+            margin: 0 auto;
+            padding: 0 30px;
+            justify-content: space-between;
+        }
+
+    }
+}
+
+@media (max-width: 1049px) {
+    .cases-child-raw {
+
+        &__left-part {
+            padding-top: 50px;
+            max-width: 720px;
+            position: relative;
+        }
+    
+    
+        &__img-wrapper {
+            width: 296px;
+            height: 588px;
+        }
+    
+    
+        &__h2 {
+            @include heading('Arkhip', 128px, 154px, #fff);
+            writing-mode: vertical-rl;
+            text-align: end;
+        }
+    
+        &__l-text {
+            max-width: 720px;
+            @include heading('Montserrat', 20px, 140%, #fff);
+            font-weight: 400;
+            padding-top: 140px;
+            text-align: start;
+        }
+    
+        &__r-text {
+            padding-bottom: 180px;
+            @include heading('Montserrat', 20px, 140%, #fff);
+        }
+    }
+}
+
+@media (max-width: 797px) {
+    .cases-child-raw {
+
+        &__left-part {
+            padding-top: 50px;
+            max-width: 720px;
+            position: relative;
+        }
+    
+    
+        &__img-wrapper {
+            width: 194px;
+            height: 386px;
+        }
+    
+    
+        &__h2 {
+            @include heading('Arkhip', 60px, 154px, #fff);
+            writing-mode: vertical-rl;
+            text-align: end;
+        }
+    
+        &__l-text {
+            max-width: 720px;
+            @include heading('Montserrat', 16px, 140%, #fff);
+            font-weight: 400;
+            padding-top: 40px;
+            text-align: start;
+            padding-bottom: 100px;
+        }
+    
+        &__r-text {
+            padding-bottom: 28px;
+            @include heading('Montserrat', 16px, 140%, #fff);
+        }
+
+        &__right-part {
+            padding-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .cases-child-raw {
+
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__left-part {
+            padding-top: 50px;
+            max-width: 720px;
+            position: relative;
+        }
+    
+    
+        &__img-wrapper {
+            width: 100%;
+            height: 196px;
+            margin: 0 auto;
+        }
+    
+    
+        &__h2 {
+            @include heading('Arkhip', 60px, 154px, #fff);
+            writing-mode:horizontal-tb;
+            text-align: end;
+            text-align: center;
+        }
+    
+        &__l-text {
+            max-width: 720px;
+            @include heading('Montserrat', 15px, 140%, #fff);
+            font-weight: 400;
+            padding-top: 40px;
+            text-align: start;
+        }
+    
+        &__r-text {
+            padding-bottom: 10px;
+            @include heading('Montserrat', 15px, 140%, #fff);
+        }
+
+        &__right-part {
+            width: 100%;
+            max-width: none;
+            padding: 0 20px;
+        }
+
+        &__l-up {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media (max-width: 403px) {
+    .cases-child-raw {
+
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__left-part {
+            padding-top: 50px;
+            max-width: 720px;
+            position: relative;
+        }
+    
+    
+        &__img-wrapper {
+            width: 100%;
+            height: 196px;
+            margin: 0 auto;
+        }
+    
+    
+        &__h2 {
+            @include heading('Arkhip', 60px, 154px, #fff);
+            writing-mode:horizontal-tb;
+            text-align: end;
+            text-align: center;
+        }
+    
+        &__l-text {
+            max-width: 720px;
+            @include heading('Montserrat', 15px, 140%, #fff);
+            font-weight: 400;
+            padding-top: 40px;
+            text-align: start;
+        }
+    
+        &__r-text {
+            padding-bottom: 10px;
+            @include heading('Montserrat', 15px, 140%, #fff);
+        }
+
+        &__right-part {
+            width: 100%;
+            max-width: none;
+            padding: 0 20px;
+        }
+
+        &__l-up {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media (max-width: 403px) {
+    .cases-child-raw {
+
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__left-part {
+            padding-top: 50px;
+            max-width: 720px;
+            position: relative;
+        }
+    
+    
+        &__img-wrapper {
+            width: 100%;
+            height: 196px;
+            margin: 0 auto;
+        }
+    
+    
+        &__h2 {
+            @include heading('Arkhip', 60px, 154px, #fff);
+            writing-mode:horizontal-tb;
+            text-align: end;
+            text-align: center;
+        }
+    
+        &__l-text {
+            max-width: 720px;
+            @include heading('Montserrat', 15px, 140%, #fff);
+            font-weight: 400;
+            padding-top: 40px;
+            text-align: start;
+        }
+    
+        &__r-text {
+            padding-bottom: 10px;
+            @include heading('Montserrat', 15px, 140%, #fff);
+        }
+
+        &__right-part {
+            width: 100%;
+            max-width: none;
+            padding: 0 20px;
+        }
+
+        &__l-up {
+            flex-direction: column-reverse;
+        }
+    }
+}

@@ -55,3 +55,247 @@
         left: 3%;
     }
 }
+
+@media (max-width: 1550px) {
+
+    .our-service { 
+    
+        &__img-grek {
+
+            right: 0%;
+    
+            &.next {
+                transform: scale(-1, 1) translateX(-84%);
+            }
+        }
+    
+    }
+
+}
+
+@media (max-width: 1280px) {
+
+    .our-service { 
+
+        &__h2 {
+            padding-left: 20px;
+        }
+    
+        &__img-grek {
+            
+
+            right: 0%;
+    
+            &.next {
+                transform: scale(-1, 1) translateX(-84%);
+                display: none;
+            }
+        }
+    
+    }
+
+    .our-service-1 {
+
+        &__items{
+
+            &.bus {
+                padding: 25px 20px 75px 20px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1080px) {
+    
+    .our-service-1 {
+    
+        &__item {
+            &.first {
+              margin-left: 0;  
+            }
+    
+            &.third {
+                margin-left: 0;
+            }
+
+            &.fifth {
+                margin-left: 0;
+            }
+            
+        }
+    }
+
+}
+
+@media (max-width: 391px) {
+    
+    .our-service { 
+
+        &__h2 {
+            padding-left: 20px;
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        &.next {
+            padding-bottom: 0;
+        }
+    
+        &__img-grek {
+            &.next {
+                transform: scale(-1, 1) translate(3px, 314px);
+                display: block;
+            }
+        }
+    
+    }
+    
+    .our-service-1 {
+    
+        &__items {
+            padding-top: 50px;
+            padding-left: 20px;
+    
+            &.bus {
+                padding-top: 12px;
+                padding-bottom: 257px;
+            }
+        }
+    
+        &__item {
+            max-width: 775px;
+            padding-bottom: 50px;
+    
+            &.first {
+              margin-left: 0;
+              
+              &>:nth-child(3) {
+                display: none;
+              }
+            }
+
+            &.second {
+
+                &>:nth-child(3) {
+                    display: none;
+                  }
+            }
+    
+            &.third {
+                &>:nth-child(3) {
+                    display: none;
+                  }
+                margin-left: 0;
+            }
+            
+            &.fourth {
+                &>:nth-child(3) {
+                    display: none;
+                  }
+                margin-left: 0;
+            }
+        }
+    
+        &__subtitle-item {
+            @include heading('Arkhip', 14px, 140%, #fff);
+            font-weight: 700;
+        }
+    
+        &__text-item {
+            @include heading('Montserrat', 12px, 140%, #fff);
+        }
+    
+        &__arrow {
+            left: 3%;
+        }
+    }
+
+}
+
+@media (max-width: 390px) {
+    
+    .our-service { 
+
+        &__h2 {
+            // padding-left: 20px;
+            // font-size: 20px;
+            // line-height: 140%;
+        }
+
+        &.next {
+            padding-bottom: 0;
+        }
+    
+        &__img-grek {
+            &.next {
+                transform: scale(-1, 1) translate(3px, 314px);
+                display: none;
+            }
+        }
+    
+    }
+    
+    .our-service-1 {
+    
+        &__items {
+            padding-top: 50px;
+            padding-left: 20px;
+    
+            &.bus {
+                padding-top: 12px;
+                padding-bottom: 75px;
+            }
+        }
+    
+        &__item {
+            max-width: 775px;
+            padding-bottom: 50px;
+    
+            &.first {
+              margin-left: 0;
+              
+              &>:nth-child(3) {
+                display: none;
+              }
+            }
+
+            &.second {
+
+                &>:nth-child(3) {
+                    display: none;
+                  }
+            }
+    
+            &.third {
+                &>:nth-child(3) {
+                    display: none;
+                  }
+                margin-left: 0;
+            }
+            
+            &.fourth {
+                &>:nth-child(3) {
+                    display: none;
+                  }
+                margin-left: 0;
+            }
+        }
+    
+        &__subtitle-item {
+            @include heading('Arkhip', 14px, 140%, #fff);
+            font-weight: 700;
+        }
+    
+        &__text-item {
+            @include heading('Montserrat', 12px, 140%, #fff);
+        }
+    
+        &__arrow {
+            left: 3%;
+        }
+    }
+
+
+}
