@@ -150,6 +150,10 @@
             transform: scale(1) translate(0px, -50%);
         }
 	}
+
+    @media (min-width:240px) and (max-width:844px) {
+        display: none;
+    }
 }
 
 .visible{

@@ -1,5 +1,5 @@
 .cases-child-akva {
-
+    
     background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
     min-height: 100vh;
 
@@ -10,10 +10,9 @@
     }
 
     &__up-part {
-        width: 1430px;
+        max-width: 1430px;
         margin: 0 auto;
         position: relative;
-        padding-top: 36px;
     }
 
     &__wrapper-up-img {
@@ -30,10 +29,7 @@
         @include heading('Arkhip', 64px, 77px, #FFFFFF);
         position: absolute;
         display: block;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
+        inset: 0;
         margin: auto;
         width: fit-content;
         height: fit-content;
@@ -43,6 +39,9 @@
         display: flex;
         justify-content: space-between;
         padding-right: 158px;
+        @media (min-width: 845px) and (max-width:1199px) {
+            padding-right: 10px;
+        }
     }
 
     &__left-part {
@@ -50,10 +49,13 @@
         padding-left: 160px;
         padding-right: 90px;
         position: relative;
+        @media (min-width: 845px) and (max-width:1199px) {
+            padding: 100px 30px 0 100px;
+        }
     }
 
     &__img-wrapper {
-        width: 363px;
+        max-width: 363px;
         height: 615px;
     }
 
@@ -77,6 +79,9 @@
         @include heading('Arkhip', 128px, 154px, #FFFFFF);
         padding-top: 113px;  
         text-align: end;
+        @media (min-width: 845px) and (max-width:1199px) {
+            font-size: 96px;
+        }
     }
 
     &__r-p-up-text {
@@ -84,6 +89,11 @@
         max-width: 473px;
         padding-top: 38px;
         margin-left: 130px;
+        @media (min-width: 845px) and (max-width:1199px) {
+            margin-left: 20px;
+            line-height: normal;
+            font-size: 18px;
+        }
     }
 
     &__r-p-down-p {
@@ -97,15 +107,165 @@
         @include heading('Montserrat', 20px, 140%, #FFFFFF);
         padding-top: 43px;
         margin-right: 108px;
+        @media (min-width: 845px) and (max-width:1199px) {
+            margin-right: 20px;
+            line-height: normal;
+            font-size: 18px;
+        }
     }
 
     &__img-down-wrapper {
-        width: 316px;
+        max-width: 316px;
         height: 501px;
     }
 
     &__img-down {
         width: 100%;
         height: 100%;
+    }
+}
+
+.cases-child-akva-m {
+    
+
+    &__container {
+
+    }
+
+    &__up-part {
+        max-width: 844px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__wrapper-up-img {
+        max-width: 844px;
+        height: 190px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__h2 {
+        @include heading('Arkhip', 46px, 77px, #FFFFFF);
+        position: absolute;
+        display: block;
+        inset: 0;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+        @media (min-width: 350px) and (max-width: 500px) {
+            font-size: 36px;
+            line-height: normal;
+        }
+        @media (min-width: 240px) and (max-width: 350px) {
+            font-size: 30px;
+            line-height: normal;
+        }
+    }
+
+    &__main-box {
+        display: flex;
+        margin-top: 50px;
+        @media (min-width: 240px) and (max-width: 350px) {
+            flex-direction: column-reverse;
+
+        }
+    }
+
+    &__left-part {
+        width: 40%;
+        padding-left: 10px;
+        margin-right: 20px;
+        @media (min-width: 240px) and (max-width: 350px) {
+            width: 100%;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__img-wrapper {
+        max-width: 363px;
+        height: 615px;
+        @media (min-width: 350px) and (max-width: 500px) {
+            height: 450px;
+        }
+        @media (min-width: 240px) and (max-width: 350px) {
+            height: 200px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__bottom-text {
+        @include heading('Montserrat', 18px, normal, #FFFFFF);
+        margin-top: 20px;
+        @media (min-width: 350px) and (max-width: 500px) {
+            font-size: 12px;
+        }
+        @media (min-width: 240px) and (max-width: 350px) {
+            font-size: 10px;
+            margin: 20px 0;
+        }
+    }
+
+    &__right-part {
+        width: 60%;
+        padding-right: 10px;
+        @media (min-width: 240px) and (max-width: 350px) {
+            width: 100%;
+            padding: 0 10px;
+            
+        }
+    }
+
+    &__name {
+        @include heading('Arkhip', 84px, normal, #FFFFFF);
+        padding-bottom: 50px;  
+        text-align: end;
+        @media (min-width: 350px) and (max-width: 500px) {
+            font-size: 60px;
+        }
+        @media (min-width: 240px) and (max-width: 350px) {
+            font-size: 40px;
+            padding-bottom: 20px;  
+            text-align: center;
+        }
+    }
+
+    &__top-text {
+        @include heading('Montserrat', 18px, normal, #FFFFFF);
+        margin-bottom: 20px;
+        @media (min-width: 350px) and (max-width: 500px) {
+            font-size: 12px;
+        }
+        @media (min-width: 240px) and (max-width: 350px) {
+            font-size: 10px;
+        }
+    }
+    
+    &__img-down-wrapper {
+        height: 501px;
+        @media (min-width: 350px) and (max-width: 500px) {
+            height: 480px;
+        }
+        @media (min-width: 240px) and (max-width: 350px) {
+            height: 200px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__arrow-comeback{
+        padding: 20px 0;
     }
 }

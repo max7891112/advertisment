@@ -171,6 +171,117 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     }
 }
 
+.button-dinamic-m{
+    padding: 9px 28px;
+    color: $color-light-red;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: transparent;
+    position: relative;
+    width: 118px;
+    height: 31px;
+    transition: all .3s ease;
+    line-height: 12px;
+    display: block;
+
+    div:nth-child(n) {
+        position: absolute;
+        transition: all .3s ease;
+        background-color: $color-light-red;
+    }
+
+    &:hover{
+        .button-dinamic__1{
+            width: 0;
+        }
+        .button-dinamic__2{
+            width: 38px;
+        }
+        .button-dinamic__3{
+            height: 31px;
+        }
+        .button-dinamic__4{
+            height: 0;
+        }
+        .button-dinamic__5{
+            width: 0;
+        }
+        .button-dinamic__6{
+            width: 38px;
+        }
+        .button-dinamic__7{
+            height: 31px;
+        }
+        .button-dinamic__8{
+            height: 0;
+        }
+    }
+
+    &__1 {
+        top: 0;
+        left: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__2 {
+        top: 0;
+        right: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__3 {
+        top: 0;
+        right: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &__4 {
+        bottom: 0;
+        right: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &__5 {
+        bottom: 0;
+        right: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__6 {
+        bottom: 0;
+        left: 0;
+        width: 56px;
+        height: 3px;
+    }
+
+    &__7 {
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &__8 {
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 10px;
+    }
+
+    &_blue{
+        color: $color-light-blue !important;
+        text-align: center;
+        div:nth-child(n) {
+            background-color: $color-light-blue;
+        }
+    }
+}
+
 
 .hidden{
     display: none !important;
@@ -447,3 +558,17 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         }
     }
 }
+// .content-m{
+//     background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
+//     background-size: contain;
+//     position: relative;
+//     @media (min-width:845px) {
+//         display: none;
+//     }
+// }
+
+// .content{
+//     @media (min-width:1px) and (max-width:844px){
+//         display: none;
+//     }
+// }

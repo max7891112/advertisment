@@ -1,0 +1,92 @@
+.work-with-us-m {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 10px 0 10px;
+
+    &__title {
+        @include heading(Arkhip, 24px, 29px, $color-light-blue);
+        padding-bottom: 30px;
+        @media (min-width:651px) and (max-width: 844px) {
+            font-size: 30px;
+        }
+    }
+
+    &__cross{
+        transform: rotate(90deg);
+        position: absolute;
+        top: -5px;
+        right: 30px;
+        @media (min-width:240px) and (max-width: 350px) {
+            display: none;
+        }
+    }
+    
+    &__ul-container {
+        display: flex;
+        justify-content:space-around;
+
+    }
+
+    &__list {
+        @include heading(Montserrat, 14px, 140%, $color-white);
+        flex-grow: 0;
+        @media (min-width:500px) and (max-width: 844px) {
+            font-size: 20px;
+        }
+    }
+
+    &__item {
+        width: max-content;
+        position: relative;
+        span{
+            display: inline-block;
+            padding: 10px 10px 10px 20px;
+            transition: all .3s ease;
+        }
+    }
+
+    &__content-container{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__react-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        &._open{
+            animation: visible .5s linear forwards;
+        }
+    }
+
+    &__img-container {
+        width: 150px;
+        padding-bottom: 10px;
+        @media (min-width:240px) and (max-width: 350px) {
+            width: 110px;
+        }
+        @media (min-width:500px) and (max-width: 750px) {
+            width: 200px;
+        }
+        @media (min-width:751px) and (max-width: 844px) {
+            width: 250px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__p {
+        @include heading(Montserrat, 12px, 140%, $color-white);
+        text-align: center;
+        padding-bottom: 15px;
+        @media (min-width:500px) and (max-width: 844px) {
+            font-size: 16px;
+        }
+    }
+}

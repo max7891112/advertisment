@@ -10,6 +10,9 @@ import Cases from "./components/Cases/cases";
 import Footer from './components/Footer/footer';
 import whyM from "./components-m/why-m/why-m";
 import MySmoothScroll from './libs/SmoothScroll.js'
+import developM from "./components-m/develop-m/develop-m";
+import WorkWitsUsM from "./components-m/work-with-us-m/workWitsUsM";
+import HeaderM from "./components-m/header-m/header-m";
 document.addEventListener('DOMContentLoaded', () => {
     
     MenuBurger.clickOnBurger();
@@ -40,6 +43,11 @@ document.addEventListener('DOMContentLoaded', () => {
     whyM.addEventListener();
 
     MySmoothScroll.render()
+
+    // mobile code
+    HeaderM.clickOnBurger()
+    developM.addEvListener()
+    WorkWitsUsM.addListenerForChangingComponents()
 })
 
 

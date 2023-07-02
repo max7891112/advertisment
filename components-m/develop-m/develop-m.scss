@@ -1,0 +1,103 @@
+.develop-m {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 25px 10px 0 10px;
+    &__title {
+        @include heading(Arkhip, 24px, 29px, $color-light-blue);
+        padding-bottom: 30px;
+        @media (min-width:651px) and (max-width: 844px) {
+            font-size: 30px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-around;
+        @media (min-width:240px) and (max-width:330px) {
+            flex-direction: column;
+        }
+    }
+
+    &__menu-item {
+        transition: all .3s ease;
+        span{
+            @include heading(Arkhip, 14px, 29px, $color-white);
+            position: relative;
+            @media (min-width:500px) and (max-width: 650px) {
+                font-size: 20px;
+            }
+
+            @media (min-width:651px) and (max-width: 844px) {
+                font-size: 24px;
+            }
+            
+        }
+        svg{
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            fill: white;
+            transition: all .3s ease;
+            transform: translateY(-50%);
+        }
+        @media (min-width:500px) and (max-width: 650px) {
+            font-size: 20px;
+        }
+    }
+    &__card-container{
+        transform: translateY(20px);
+        min-height: 80px;
+        
+        @media (min-width:240px) and (max-width:330px) {
+            min-height: 40px;
+        }
+    }
+
+    &__wrapper{
+        &._open{
+            animation: visible .7s linear forwards;
+        }
+    }
+
+    &__card {
+        margin-bottom: 30px;
+        
+    }
+
+    &__card-title {
+        @include heading(Arkhip, 20px, 29px, $color-white);
+        margin-bottom: 10px;
+    }
+
+    &__card-p {
+        @include heading(Montserrat, 14px, 140%, $color-white);
+    }
+
+    &__hidden{
+        max-height: 0;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+
+    &__active{
+        max-height: 600px;
+        padding-bottom: 20px;
+        opacity: 1;
+        transition: all .3s ease;
+    }
+
+    &__item-active{
+        
+        span{
+            color: $color-light-blue;
+        }
+    }
+
+    .develop-m__menu-item.develop-m__item-active{
+        svg{
+            transform: rotate(90deg) translateX(-50%);
+            fill: $color-light-blue;
+        }
+    }
+}

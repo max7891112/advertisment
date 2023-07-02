@@ -1,7 +1,14 @@
 .cases-child-rusalka {
 
     background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
-    min-height: 100vh;
+    height: 1472px;
+    @media (min-width: 1000px) and (max-width:1350px) {
+        height: 1300px;
+    }
+    @media (min-width: 845px) and (max-width:999px) {
+        height: 1100px;
+    }
+    
 
     &__body {
         margin-left: 100px;
@@ -9,7 +16,10 @@
 
     &__container {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        @media (min-width: 650px) and (max-width:844px) {
+            display: block;
+        }
     }
 
     &__left-part {
@@ -18,15 +28,29 @@
 
     &__h2 {
         @include heading('Arkhip', 128px, 154px, #FFFFFF);
+        @media (min-width: 650px) and (max-width:1149px) {
+            font-size: 80px;
+            line-height: normal;
+            padding-top: 10px;
+            float: right;
+        }
     }
 
     &__box-text {
         @include heading('Montserrat', 20px, 140%, #FFFFFF);
+        @media (min-width: 845px) and (max-width:999px) {
+            font-size: 18px;
+            line-height: normal;
+        }
     }
 
     &__text-up {
         max-width: 517px;
         padding-top: 182px;
+        @media (min-width: 650px) and (max-width:844px) {
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     &__text-down {
@@ -37,16 +61,25 @@
 
     &__img {
         position: absolute;
-        bottom: 30px;
+        bottom: 0;
     }
 
     &__right-part {
         max-width: 582px;
+        overflow: hidden;
     }
 
     &__img-rusalka-wrapper {
         height: 1472px;
         width: 582px;
+        @media (min-width: 1000px) and (max-width:1350px) {
+            height: 1300px;
+            width: 410px;
+        }
+        @media (min-width: 845px) and (max-width:999px) {
+            height: 1100px;
+            width: 380px;
+        }
     }
 
     &__img-rusalka {
@@ -54,6 +87,89 @@
         height: 100%;
         border-radius: 500px 0px 0px 0px;
         object-fit: cover;
-        object-position: -10px 0;
+    }
+}
+
+.cases-child-rusalka-m {
+
+
+    &__title {
+        @include heading('Arkhip', 32px, 140%, #FFFFFF);
+        padding: 40px 20px 30px 0;
+        text-align: right;
+        @media (min-width:550px) and (max-width: 844px) {
+            font-size: 48px;
+        }
+    }
+
+    &__text-up {
+        @include heading('Montserrat', 10px, 140%, #FFFFFF);
+        max-width: 300px;
+        margin: 0 auto;
+        @media (min-width:240px) and (max-width: 389px) {
+            padding-bottom: 30px;
+        }
+        @media (min-width:550px) and (max-width: 844px) {
+            font-size: 16px;
+        }
+    }
+
+    &__bottom-container {
+        display: flex;
+        justify-content: space-between;
+        @media (min-width:240px) and (max-width: 389px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__left-part-inner-container {
+
+    }
+
+    &__text-down {
+        @include heading('Montserrat', 10px, 140%, #FFFFFF);
+        max-width: 500px;
+        padding: 120px 20px 0 10px;
+        @media (min-width:240px) and (max-width: 389px) {
+            padding-top: 20px;
+            text-align: center;
+        }
+        @media (min-width:550px) and (max-width: 844px) {
+            font-size: 16px;
+        }
+    }
+
+    &__img {
+
+    }
+
+    &__svg{
+        margin: 20px auto 20px auto;
+    }
+
+    &__right-part {
+        
+    }
+
+    &__img-rusalka-wrapper {
+        width: 222px;
+        height: 100%;
+        @media (min-width:240px) and (max-width: 389px) {
+            width: 100%;
+            height: 250px;
+        }
+        @media (min-width:550px) and (max-width: 844px) {
+            width: 350px;
+            height: 100%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 500px 0px 0px 0px;
+            object-fit: cover;
+            @media (min-width:240px) and (max-width: 389px) {
+                border-radius: 0px 0px 0px 0px;
+            }
+        }
     }
 }
