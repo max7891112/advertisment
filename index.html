@@ -799,15 +799,14 @@
     </div>
 
     <div class="content-m">
-
+        <div class="header-m__react-menu"></div>
         <header class="header-m">
-            <div class="header-m__body">
-                <div class="header-m__container m_container">
-                    <a href="#" class="header-m_logo">
-                        <img src="./components/Footer/img/label.svg" alt="" class="header-m__img">
-                        <p class="header-m__text">NFLUENCE</p>
-                    </a>
-                </div>
+            <div class="header-m__logo footer-m__logo">
+                <img src="./components/Footer/img/label.svg" alt="logo">
+                <p>NFLUENCE</p>
+            </div>
+            <div class="header-m__icon">
+                <span></span>
             </div>
         </header>
 
@@ -925,7 +924,25 @@
 
         </section>
 
-        <section class="about-project-m"></section>
+        <section class="about-project-m">
+            <h2 class="about-project-m__title">О проекте</h2>
+            <h3 class="about-project-m__sub-title">Инфлюенс-маркетинг</h3>
+            <div class="about-project-m__top-container">
+                <div class="about-project-m__top-img-container">
+                    <img src="./components-m/about-project-m/img/skate.png" alt="skate">
+                </div>
+                <p class="about-project-m__top-text">Это продвижение товаров и услуг через блогеров и селебрити с большой аудиторией
+                    в социальных сетях.</p>
+            </div>
+            <div class="about-project-m__bottom-container">
+                <div class="about-project-m__bottom-img-container">
+                    <img src="./components-m/about-project-m/img/funnyGirl.png" alt="skate">
+                </div>
+                <p class="about-project-m__bottom-text">С нашей помощью, эти лидеры мнений привлекут внимание к вашему бренду, повысят его узнаваемость,
+                    создадут положительное мнение и лояльную аудиторию.</p>
+            </div>
+            <img src="./components-m/about-project-m/img/text.svg" alt="cross" class="about-project-m__cross">
+        </section>
 
         <section class="why-m">
             <div class="why-m__body">
@@ -996,7 +1013,32 @@
             </div>
         </section>
 
-        <section class="develop-m"></section>
+        <section class="develop-m">
+            <h2 class="develop-m__title">Разработка</h2>
+            <ul class="develop-m__menu">
+                <li class="develop-m__menu-item">
+                    <span>Стратегия
+                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.67391 5.27654L1.84783 8.16085C1.50362 8.51214 1.10978 8.59053 0.666304 8.39603C0.222101 8.20226 0 7.85577 0 7.35657L0 1.64343C0 1.14423 0.222101 0.79774 0.666304 0.603974C1.10978 0.409469 1.50362 0.487862 1.84783 0.839156L4.67391 3.72346C4.78261 3.83439 4.86413 3.95457 4.91848 4.084C4.97283 4.21342 5 4.35209 5 4.5C5 4.64791 4.97283 4.78658 4.91848 4.91601C4.86413 5.04543 4.78261 5.16561 4.67391 5.27654Z"/>
+                        </svg>
+                    </span>
+                </li>
+                <li class="develop-m__menu-item"><span>Реализация
+                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.67391 5.27654L1.84783 8.16085C1.50362 8.51214 1.10978 8.59053 0.666304 8.39603C0.222101 8.20226 0 7.85577 0 7.35657L0 1.64343C0 1.14423 0.222101 0.79774 0.666304 0.603974C1.10978 0.409469 1.50362 0.487862 1.84783 0.839156L4.67391 3.72346C4.78261 3.83439 4.86413 3.95457 4.91848 4.084C4.97283 4.21342 5 4.35209 5 4.5C5 4.64791 4.97283 4.78658 4.91848 4.91601C4.86413 5.04543 4.78261 5.16561 4.67391 5.27654Z"/>
+                        </svg>
+                    </span> 
+                </li>
+                <li class="develop-m__menu-item"><span>Аналитика
+                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.67391 5.27654L1.84783 8.16085C1.50362 8.51214 1.10978 8.59053 0.666304 8.39603C0.222101 8.20226 0 7.85577 0 7.35657L0 1.64343C0 1.14423 0.222101 0.79774 0.666304 0.603974C1.10978 0.409469 1.50362 0.487862 1.84783 0.839156L4.67391 3.72346C4.78261 3.83439 4.86413 3.95457 4.91848 4.084C4.97283 4.21342 5 4.35209 5 4.5C5 4.64791 4.97283 4.78658 4.91848 4.91601C4.86413 5.04543 4.78261 5.16561 4.67391 5.27654Z"/>
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+            <div class="develop-m__card-container develop-m__hidden"></div>
+\
+        </section>
 
         <section class="our-team-m">
             <div class="our-team-m__body">
@@ -1271,65 +1313,19 @@
         
                     </div>
                     <button class="button-dinamic our-team__btn-detail" data-feedback-open="true">Оставить заявку
-        <div class="header-m__react-menu"></div>
-        <header class="header-m hidden">
-            <div class="header-m__logo footer-m__logo">
-                <img src="./components/Footer/img/label.svg" alt="logo">
-                <p>NFLUENCE</p>
-            </div>
-            <div class="header-m__icon">
-                <span></span>
-            </div>
-        </header>
-        <section class="main-page-m"></section>
-        <section class="our-service-m"></section>
-        <section class="about-project-m">
-            <h2 class="about-project-m__title">О проекте</h2>
-            <h3 class="about-project-m__sub-title">Инфлюенс-маркетинг</h3>
-            <div class="about-project-m__top-container">
-                <div class="about-project-m__top-img-container">
-                    <img src="./components-m/about-project-m/img/skate.png" alt="skate">
+                        <div class="button-dinamic__1"></div>
+                        <div class="button-dinamic__2"></div>
+                        <div class="button-dinamic__3"></div>
+                        <div class="button-dinamic__4"></div>
+                        <div class="button-dinamic__5"></div>
+                        <div class="button-dinamic__6"></div>
+                        <div class="button-dinamic__7"></div>
+                        <div class="button-dinamic__8"></div>
+                    </button>
                 </div>
-                <p class="about-project-m__top-text">Это продвижение товаров и услуг через блогеров и селебрити с большой аудиторией
-                    в социальных сетях.</p>
             </div>
-            <div class="about-project-m__bottom-container">
-                <div class="about-project-m__bottom-img-container">
-                    <img src="./components-m/about-project-m/img/funnyGirl.png" alt="skate">
-                </div>
-                <p class="about-project-m__bottom-text">С нашей помощью, эти лидеры мнений привлекут внимание к вашему бренду, повысят его узнаваемость,
-                    создадут положительное мнение и лояльную аудиторию.</p>
-            </div>
-            <img src="./components-m/about-project-m/img/text.svg" alt="cross" class="about-project-m__cross">
         </section>
-        <section class="why-m"></section>
-        <section class="develop-m">
-            <h2 class="develop-m__title">Разработка</h2>
-            <ul class="develop-m__menu">
-                <li class="develop-m__menu-item">
-                    <span>Стратегия
-                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.67391 5.27654L1.84783 8.16085C1.50362 8.51214 1.10978 8.59053 0.666304 8.39603C0.222101 8.20226 0 7.85577 0 7.35657L0 1.64343C0 1.14423 0.222101 0.79774 0.666304 0.603974C1.10978 0.409469 1.50362 0.487862 1.84783 0.839156L4.67391 3.72346C4.78261 3.83439 4.86413 3.95457 4.91848 4.084C4.97283 4.21342 5 4.35209 5 4.5C5 4.64791 4.97283 4.78658 4.91848 4.91601C4.86413 5.04543 4.78261 5.16561 4.67391 5.27654Z"/>
-                        </svg>
-                    </span>
-                </li>
-                <li class="develop-m__menu-item"><span>Реализация
-                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.67391 5.27654L1.84783 8.16085C1.50362 8.51214 1.10978 8.59053 0.666304 8.39603C0.222101 8.20226 0 7.85577 0 7.35657L0 1.64343C0 1.14423 0.222101 0.79774 0.666304 0.603974C1.10978 0.409469 1.50362 0.487862 1.84783 0.839156L4.67391 3.72346C4.78261 3.83439 4.86413 3.95457 4.91848 4.084C4.97283 4.21342 5 4.35209 5 4.5C5 4.64791 4.97283 4.78658 4.91848 4.91601C4.86413 5.04543 4.78261 5.16561 4.67391 5.27654Z"/>
-                        </svg>
-                    </span> 
-                </li>
-                <li class="develop-m__menu-item"><span>Аналитика
-                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M4.67391 5.27654L1.84783 8.16085C1.50362 8.51214 1.10978 8.59053 0.666304 8.39603C0.222101 8.20226 0 7.85577 0 7.35657L0 1.64343C0 1.14423 0.222101 0.79774 0.666304 0.603974C1.10978 0.409469 1.50362 0.487862 1.84783 0.839156L4.67391 3.72346C4.78261 3.83439 4.86413 3.95457 4.91848 4.084C4.97283 4.21342 5 4.35209 5 4.5C5 4.64791 4.97283 4.78658 4.91848 4.91601C4.86413 5.04543 4.78261 5.16561 4.67391 5.27654Z"/>
-                        </svg>
-                    </span>
-                </li>
-            </ul>
-            <div class="develop-m__card-container develop-m__hidden"></div>
-\
-        </section>
-        <section class="our-team-m"></section>
+
         <section class="work-with-us-m">
             <h2 class="work-with-us-m__title">С нами работают</h2>
             <img src="./components-m/about-project-m/img/text.svg" alt="" class="work-with-us-m__cross">
@@ -1351,7 +1347,8 @@
             </div>
            
         </section>
-        <section class="cases-m hidden">
+
+        <section class="cases-m">
             <h2 class="cases-m__title">Кейсы</h2>
             <div class="cases-m__img-container">
                 <a href="#" class="cases-m__item cases-m__item_1">
@@ -1372,6 +1369,7 @@
                 </a>
             </div>
         </section>
+
         <section class="why questions">
             <div class="why__body questions__body">
 
@@ -1444,9 +1442,6 @@
             </div>
         </section>
 
-        <section class="work-with-us-m"></section>
-        <section class="cases-m"></section>
-        <section class="questions-m"></section>
         <footer class="footer-m">
             <img src="./components-m/footer-m/img/text.svg" alt="cross" class="footer-m__cross">
             <a class="footer-m__logo">
