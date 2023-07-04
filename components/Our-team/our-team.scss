@@ -222,6 +222,184 @@
     }
 
     &__btn-detail {
-        margin: 50px 53px 0 auto;
+        margin: 50px 0 0 auto;
+        color: #EE3434;
+
+        & .blue-button__subdiv:nth-child(1) {
+            border-left: 3px solid #EE3434;
+            border-top: 3px solid #EE3434;
+        }
+
+        & .blue-button__subdiv:nth-child(2) {
+            border-right: 3px solid #EE3434;
+            border-top: 3px solid #EE3434;
+        }
+        & .blue-button__subdiv:nth-child(3) {
+            border-left: 3px solid #EE3434;
+            border-bottom: 3px solid #EE3434;
+        }
+
+        & .blue-button__subdiv:nth-child(4) {
+            border-right: 3px solid #EE3434;
+            border-bottom: 3px solid #EE3434;
+        }
+
+        &:hover {
+    
+            .blue-button__subdiv {
+            
+        
+                &:nth-child(3) {
+                    border-right: 3px solid #EE3434;
+                    border-bottom: 3px solid #EE3434;
+                }
+                
+                &:nth-child(2) {
+                    border-left: 3px solid #EE3434;
+                    border-top: 3px solid #EE3434;
+                }
+        
+            }
+        }
     }
+
+    &__btn-items {
+        margin: auto auto 0 0;
+    }
+}
+
+.svg {
+    fill: $color-hard-red;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+
+    :nth-child(n){
+        transition: all .6s ease 0s;
+    }
+
+    &__top-right-line {
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__right-top-line {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &__bottom-left-line {
+        position: absolute;
+        bottom: -3px;
+        right: 6px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+    }
+
+    &__left-bottom-line {
+        position: absolute;
+        bottom: 9px;
+        right: 20px;
+        width: 27px;
+        height: 3px;
+        background-color: $color-hard-red;
+        transform: rotate(90deg);
+    }
+
+    &:hover{
+
+        svg{
+            fill: $color-light-blue;
+
+            & path {
+                fill: $color-light-blue;
+            }
+        }
+
+        .svg__top-right-line,
+        .svg__right-top-line,
+        .svg__bottom-left-line,
+        .svg__left-bottom-line {
+            background-color: blue;
+        }
+
+        .svg__top-right-line{
+            top: 32px;
+        }
+
+        .svg__right-top-line{
+            transform: rotate(270deg);
+            top: 20px;
+        }
+
+        .svg__bottom-left-line{
+            bottom: 34px;
+        }
+
+        .svg__left-bottom-line{
+            bottom: 22px;
+        }
+    }
+}
+
+@media (max-width: 1212px) {
+    
+    .our-team {
+
+		&__blogger-name {
+            @include heading('Arkhip', 35px, 58px, #3446EE);
+            padding: 93px 0;
+		}
+
+		&__blogger-info {
+            @include heading('Montserrat', 18px, 140%, #000);
+            padding-bottom: 30px;
+		}
+
+		&__amount-followers {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+
+		&__amount-social {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+    }
+
+}
+
+@media (max-width: 972px) {
+    
+    .our-team {
+
+		&__blogger-name {
+            @include heading('Arkhip', 35px, 58px, #3446EE);
+            padding: 93px 0 0 0;
+		}
+
+		&__blogger-info {
+            @include heading('Montserrat', 17px, 140%, #000);
+            padding-bottom: 0;
+		}
+
+		&__amount-followers {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+
+		&__amount-social {
+            @include heading('Montserrat', 18px, 140%, #000);
+		}
+
+    }
+
 }
