@@ -16,13 +16,13 @@ class HeaderM {
                 </div>
                 <nav class="header-m__navigation">
                     <ul class="header-m__list">
-                        <li><a href="../../index.html#main-page" ><span class="_smooth-link" data-goto=".main-page-m">Главная</span></a></li>
-                        <li><a href="../../index.html#our-service"><span class="_smooth-link" data-goto=".our-service-m">Наши услуги</span></a></li>
-                        <li><a href="../../index.html#why"><span>Почему мы?</span class="_smooth-link" data-goto=".why"></a></li>
-                        <li><a href="../../index.html#work-with-us-m"><span class="_smooth-link" data-goto=".work-with-us-m">Рекламодатели</span></a></li>
-                        <li><a href="../../index.html#our-team"><span class="_smooth-link" data-goto=".our-team">Наша команда</span></a></li>
-                        <li><a href="../../index.html#cases"><span class="_smooth-link" data-goto=".cases">Кейсы</span></a></li>
-                        <li><a href="#"><span class="_smooth-link" data-goto=".footer-m">Контакты</span></a></li>
+                        <li><a href="../../index.html#main-page-m" ><span>Главная</span></a></li>
+                        <li><a href="../../index.html#our-service-m"><span>Наши услуги</span></a></li>
+                        <li><a href="../../index.html#why-m"><span>Почему мы?</span></a></li>
+                        <li><a href="../../index.html#work-with-us-m"><span>Рекламодатели</span></a></li>
+                        <li><a href="../../index.html#our-team-m"><span>Наша команда</span></a></li>
+                        <li><a href="../../index.html#cases-m"><span>Кейсы</span></a></li>
+                        <li><a href="../../index.html#footer-m""><span>Контакты</span></a></li>
                     </ul>
                 </nav>
                 <div class="header-m__copyright">
@@ -52,6 +52,7 @@ class HeaderM {
                     this.render()
                 }
                 let wrapper = document.querySelector('.header-m__wrapper')
+                wrapper.classList.remove('hidden')
                 wrapper.classList.add('_open')
                 burger.classList.add('_moving')
                 content.style.overflow = 'hidden'
@@ -64,7 +65,11 @@ class HeaderM {
                     setTimeout(() => {
                         this.REACT_MENU.innerHTML = ''
                     }, 300)
-                };
+                } else {
+                    setTimeout(() => {
+                        wrapper.classList.add('hidden')
+                    },300)
+                }
             };
         });
     };
@@ -83,10 +88,14 @@ class HeaderM {
                     setTimeout(() => {
                         this.REACT_MENU.innerHTML = ''
                     }, 300)
+                } else {
+                    setTimeout(() => {
+                        wrapper.classList.add('hidden')
+                    },300)
                 };
-            })
-        }
-    }
+            });
+        };
+    };
 };
 
 export default new HeaderM();
