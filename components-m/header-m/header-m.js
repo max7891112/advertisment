@@ -16,13 +16,13 @@ class HeaderM {
                 </div>
                 <nav class="header-m__navigation">
                     <ul class="header-m__list">
-                        <li><a href="../../index.html#main-page" ><span>Главная</span></a></li>
-                        <li><a href="../../index.html#our-service"><span>Наши услуги</span></a></li>
-                        <li><a href="../../index.html#why"><span>Почему мы?</span></a></li>
-                        <li><a href="../../index.html#work-with-us"><span>Рекламодатели</span></a></li>
-                        <li><a href="../../index.html#our-team"><span>Наша команда</span></a></li>
-                        <li><a href="../../index.html#cases"><span>Кейсы</span></a></li>
-                        <li><a href="../../index.html#footer"><span>Контакты</span></a></li>
+                        <li><a href="../../index.html#main-page" ><span class="_smooth-link" data-goto=".main-page-m">Главная</span></a></li>
+                        <li><a href="../../index.html#our-service"><span class="_smooth-link" data-goto=".our-service-m">Наши услуги</span></a></li>
+                        <li><a href="../../index.html#why"><span>Почему мы?</span class="_smooth-link" data-goto=".why"></a></li>
+                        <li><a href="../../index.html#work-with-us-m"><span class="_smooth-link" data-goto=".work-with-us-m">Рекламодатели</span></a></li>
+                        <li><a href="../../index.html#our-team"><span class="_smooth-link" data-goto=".our-team">Наша команда</span></a></li>
+                        <li><a href="../../index.html#cases"><span class="_smooth-link" data-goto=".cases">Кейсы</span></a></li>
+                        <li><a href="#"><span class="_smooth-link" data-goto=".footer-m">Контакты</span></a></li>
                     </ul>
                 </nav>
                 <div class="header-m__copyright">
@@ -48,7 +48,9 @@ class HeaderM {
         let burger = document.querySelector('.header-m__icon');
         burger.addEventListener('click', () => {
             if(!burger.classList.contains('_moving')) {
-                this.render()
+                if(document.querySelector('.header-m__react-menu')) {
+                    this.render()
+                }
                 let wrapper = document.querySelector('.header-m__wrapper')
                 wrapper.classList.add('_open')
                 burger.classList.add('_moving')
@@ -58,12 +60,33 @@ class HeaderM {
                 wrapper.classList.remove('_open')
                 burger.classList.remove('_moving')
                 content.style.overflow = 'visible'
-                setTimeout(() => {
-                    this.REACT_MENU.innerHTML = ''
-                }, 300)
+                if(document.querySelector('.header-m__react-menu')) {
+                    setTimeout(() => {
+                        this.REACT_MENU.innerHTML = ''
+                    }, 300)
+                };
             };
         });
     };
+
+    clickOnMenuItem() {
+        let menuItems = document.querySelector('.header-m__list').children
+        let burger = document.querySelector('.header-m__icon');
+        let content = document.querySelector('body')
+        for(let item of menuItems) {
+            item.addEventListener('click', () => {
+                let wrapper = document.querySelector('.header-m__wrapper')
+                wrapper.classList.remove('_open')
+                burger.classList.remove('_moving')
+                content.style.overflow = 'visible'
+                if(document.querySelector('.header-m__react-menu')) {
+                    setTimeout(() => {
+                        this.REACT_MENU.innerHTML = ''
+                    }, 300)
+                };
+            })
+        }
+    }
 };
 
 export default new HeaderM();

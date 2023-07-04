@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // mobile code
     HeaderM.clickOnBurger()
+    HeaderM.clickOnMenuItem()
     developM.addEvListener()
     WorkWitsUsM.addListenerForChangingComponents()
 })

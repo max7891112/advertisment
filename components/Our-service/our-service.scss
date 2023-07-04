@@ -1,11 +1,12 @@
 .our-service {
     position: relative;
-    overflow: hidden;
-    background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png');
+    overflow: hidden; 
+    // background-image: url('./components/why/img/first-bc.png'), url('./components/why/img/second-bc.png'); 
     padding-bottom: 153px;
+
     
     &__body {
-    
+  
     }
 
     &__img-grek {
