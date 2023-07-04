@@ -51,3 +51,14 @@
         padding-bottom: 15px;
     }
 }
+
+
+@media (min-width: 844px) {
+
+    .footer-m {
+ 
+        &__copyright {
+            font-size: 18px;
+        }
+    }
+}
