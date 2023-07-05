@@ -460,9 +460,6 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
     background-image: url('./components/develop/img/backgroundBlack.png'), url('./components/develop/img/backGrey.png');
     background-size: contain;
     position: relative;
-    // @media (min-width:845px) {
-    //     display: none;
-    // }
 }
 
 .m_container {
@@ -581,4 +578,3 @@ $color-gradient: 180deg, #D84343 0%, #605EE1 100%;
         }
     }
 }
-
