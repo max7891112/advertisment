@@ -124,6 +124,18 @@
             width: 200px;
 		}
 
+        & .submassive {
+            transition: all .5s; // для корректного анимирования флекс-элементов. Обратить внимание на transition .submassive и .&__wrapper-block
+            width: 80px;
+        }
+
+    }
+
+    .cases-animation {
+
+        &__wrapper-block-active { // cases-animation__wrapper-block-active
+            width: 320px;
+        }
     }
 
 }
@@ -140,6 +152,22 @@
             width: 150px;
 		}
 
+        & .submassive {
+            transition: all .5s; // для корректного анимирования флекс-элементов. Обратить внимание на transition .submassive и .&__wrapper-block
+            width: 70px;
+        }
+
+        &__name {
+            font-size: 40px;
+        }
+
+    }
+
+    .cases-animation {
+
+        &__wrapper-block-active { // cases-animation__wrapper-block-active
+            width: 200px;
+        }
     }
 
 }
