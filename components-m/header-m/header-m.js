@@ -16,13 +16,13 @@ class HeaderM {
                 </div>
                 <nav class="header-m__navigation">
                     <ul class="header-m__list">
-                        <li><a href="../../index.html#main-page" ><span>Главная</span></a></li>
-                        <li><a href="../../index.html#our-service"><span>Наши услуги</span></a></li>
-                        <li><a href="../../index.html#why"><span>Почему мы?</span></a></li>
-                        <li><a href="../../index.html#work-with-us"><span>Рекламодатели</span></a></li>
-                        <li><a href="../../index.html#our-team"><span>Наша команда</span></a></li>
-                        <li><a href="../../index.html#cases"><span>Кейсы</span></a></li>
-                        <li><a href="../../index.html#footer"><span>Контакты</span></a></li>
+                        <li><a href="../../index.html#main-page-m" ><span>Главная</span></a></li>
+                        <li><a href="../../index.html#our-service-m"><span>Наши услуги</span></a></li>
+                        <li><a href="../../index.html#why-m"><span>Почему мы?</span></a></li>
+                        <li><a href="../../index.html#work-with-us-m"><span>Рекламодатели</span></a></li>
+                        <li><a href="../../index.html#our-team-m"><span>Наша команда</span></a></li>
+                        <li><a href="../../index.html#cases-m"><span>Кейсы</span></a></li>
+                        <li><a href="../../index.html#footer-m""><span>Контакты</span></a></li>
                     </ul>
                 </nav>
                 <div class="header-m__copyright">
@@ -48,8 +48,11 @@ class HeaderM {
         let burger = document.querySelector('.header-m__icon');
         burger.addEventListener('click', () => {
             if(!burger.classList.contains('_moving')) {
-                this.render()
+                if(document.querySelector('.header-m__react-menu')) {
+                    this.render()
+                }
                 let wrapper = document.querySelector('.header-m__wrapper')
+                wrapper.classList.remove('hidden')
                 wrapper.classList.add('_open')
                 burger.classList.add('_moving')
                 content.style.overflow = 'hidden'
@@ -58,11 +61,40 @@ class HeaderM {
                 wrapper.classList.remove('_open')
                 burger.classList.remove('_moving')
                 content.style.overflow = 'visible'
-                setTimeout(() => {
-                    this.REACT_MENU.innerHTML = ''
-                }, 300)
+                if(document.querySelector('.header-m__react-menu')) {
+                    setTimeout(() => {
+                        this.REACT_MENU.innerHTML = ''
+                    }, 300)
+                } else {
+                    setTimeout(() => {
+                        wrapper.classList.add('hidden')
+                    },300)
+                }
             };
         });
+    };
+
+    clickOnMenuItem() {
+        let menuItems = document.querySelector('.header-m__list').children
+        let burger = document.querySelector('.header-m__icon');
+        let content = document.querySelector('body')
+        for(let item of menuItems) {
+            item.addEventListener('click', () => {
+                let wrapper = document.querySelector('.header-m__wrapper')
+                wrapper.classList.remove('_open')
+                burger.classList.remove('_moving')
+                content.style.overflow = 'visible'
+                if(document.querySelector('.header-m__react-menu')) {
+                    setTimeout(() => {
+                        this.REACT_MENU.innerHTML = ''
+                    }, 300)
+                } else {
+                    setTimeout(() => {
+                        wrapper.classList.add('hidden')
+                    },300)
+                };
+            });
+        };
     };
 };
 

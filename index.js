@@ -13,12 +13,16 @@ import MySmoothScroll from './libs/SmoothScroll.js'
 import developM from "./components-m/develop-m/develop-m";
 import WorkWitsUsM from "./components-m/work-with-us-m/workWitsUsM";
 import HeaderM from "./components-m/header-m/header-m";
+import Spinner from "./components/spinner/spinner";
+
 document.addEventListener('DOMContentLoaded', () => {
     
     MenuBurger.clickOnBurger();
     MenuBurger.removeBurger();
     MenuBurger.changeImg()
     MenuBurger.smoothNavigation()
+
+    Spinner.stop()
 
     WorkWithUs.addListenerForChangingComponents()
     LoginovaDetail.addListenerForAnimationSlider()
@@ -46,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // mobile code
     HeaderM.clickOnBurger()
+    HeaderM.clickOnMenuItem()
     developM.addEvListener()
     WorkWitsUsM.addListenerForChangingComponents()
 })

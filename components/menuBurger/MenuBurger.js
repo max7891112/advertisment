@@ -7,7 +7,8 @@ import mich4 from '../menuBurger/img/mich4.png';
 
 class MenuBurger {
     constructor() {
-        this.content = document.querySelector('.content');
+        // this.content = document.querySelector('.content');
+        // this.contentAnorherPage = document.querySelector('.content-another-page');
         this.michIsReady = false;
     }
 
@@ -62,9 +63,13 @@ class MenuBurger {
     }
     removeBurger() {
         let mainContainer = document.querySelector('.menu-burger__main-container');
-        this.content.addEventListener('mouseover', () => {
-            mainContainer.classList.remove('visible');
-        });
+        let content = ''
+        if(document.querySelector('.content')) {
+            content = document.querySelector('.content');
+            content.addEventListener('mouseover', () => {
+                mainContainer.classList.remove('visible');
+            });
+        }
     };
     changeImg() {  
         let startLinks = document.querySelectorAll('._startMich')

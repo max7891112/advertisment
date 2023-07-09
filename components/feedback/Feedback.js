@@ -1,5 +1,5 @@
 import close from '../feedback//img/close.svg';
-import { ROOT_MODALS } from '../../constants/var';
+import { ROOT_MODAL } from '../../constants/var';
 class Feedback {
     render() {
         let htmlContent = ` 
@@ -33,21 +33,21 @@ class Feedback {
                 </div>
             `;
 
-            for(let ROOT_MODAL of ROOT_MODALS ) {
-                ROOT_MODAL.innerHTML = htmlWrapper;
-            }
+
+            ROOT_MODAL.innerHTML = htmlWrapper;
+            
     }
     
     open() {
         this.render();
-        document.querySelector('.modal__body').classList.add('open'); // анимации появления окна
+        document.querySelector('.modal__body').classList.add('open')
         document.querySelector('.modal').classList.add('open');
     }
 
     close() {   
-        let modal = document.querySelector('.modal');
+        let modal = document.querySelector('.modal')
     
-        let modalWindow = document.querySelector('.modal__body');
+        let modalWindow = document.querySelector('.modal__body')
         if(modal) {
             modalWindow.classList.remove('open');
             modalWindow.parentElement.classList.remove('open');
@@ -56,9 +56,7 @@ class Feedback {
             setTimeout(() => {
                 modalWindow.classList.remove('disappearance');
                 modalWindow.parentElement.classList.remove('disappearance');
-                for(let ROOT_MODAL of ROOT_MODALS ) {
-                    ROOT_MODAL.innerHTML = '';
-                }
+                ROOT_MODAL.innerHTML = '';
             },300);
         };
     }; 
@@ -71,7 +69,6 @@ class Feedback {
 
             modalSubmit.addEventListener('click', formSend);
             function formSend (event){  // async
-
                 event.preventDefault();
 
                 let error = formValidate(form)
@@ -106,9 +103,7 @@ class Feedback {
                                 setTimeout(() => {
                                     modalWindow.classList.remove('disappearance');
                                     modalWindow.parentElement.classList.remove('disappearance');
-                                    for(let ROOT_MODAL of ROOT_MODALS ) {
-                                        ROOT_MODAL.innerHTML = '';
-                                    }
+                                    ROOT_MODAL.innerHTML = '';
                                 },300);
                             }; // дублирование кода
 
