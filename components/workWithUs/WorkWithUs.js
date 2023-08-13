@@ -70,12 +70,16 @@ class WorkWithUs {
         let prostor = document.querySelector('.prostor');
         let malina = document.querySelector('.malina');
         let dragon = document.querySelector('.dragon');
-        let allButtons = document.querySelectorAll('.work-with-us__item')
+        let allButtons = document.querySelectorAll('.work-with-us__item');
+        const wrappers = document.querySelectorAll('.work-with-us__wrapper');
         strata.addEventListener('click', () => {
             for(let button of allButtons) {
                 button.classList.remove('_active')
                 button.setAttribute('data-active', 'false')
-            }
+            };
+            for(let wrapper of wrappers) {
+                wrapper.classList.remove('work-with-us__anti-center');
+            };
             strata.classList.add('_active');
             strata.setAttribute('data-active', 'true')
             this.open(strataLogo, book, `Итальянский производитель и поставщик одежды, основанный в 1974 году. 
@@ -86,7 +90,10 @@ class WorkWithUs {
             for(let button of allButtons) {
                 button.classList.remove('_active')
                 button.setAttribute('data-active', 'false')
-            }
+            };
+            for(let wrapper of wrappers) {
+                wrapper.classList.remove('work-with-us__anti-center');
+            };
             manue.classList.add('_active');
             manue.setAttribute('data-active', 'true')
             this.open(dreamGirl, oldPhone, `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!`, 'https://www.youtube.com/watch?v=Z7wUyXJSHnk',
@@ -96,7 +103,10 @@ class WorkWithUs {
             for(let button of allButtons) {
                 button.classList.remove('_active')
                 button.setAttribute('data-active', 'false')
-            }
+            };
+            for(let wrapper of wrappers) {
+                wrapper.classList.remove('work-with-us__anti-center');
+            };
             serenity.classList.add('_active');
             serenity.setAttribute('data-active', 'true')
             this.open(skate, dreamingGuy, `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum
@@ -106,7 +116,10 @@ class WorkWithUs {
             for(let button of allButtons) {
                 button.classList.remove('_active')
                 button.setAttribute('data-active', 'false')
-            }
+            };
+            for(let wrapper of wrappers) {
+                wrapper.classList.remove('work-with-us__anti-center');
+            };
             prostor.classList.add('_active');
             prostor.setAttribute('data-active', 'true')
             this.open(crazyGuitar, playingGuitar, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk',
@@ -116,7 +129,10 @@ class WorkWithUs {
             for(let button of allButtons) {
                 button.classList.remove('_active')
                 button.setAttribute('data-active', 'false')
-            }
+            };
+            for(let wrapper of wrappers) {
+                wrapper.classList.remove('work-with-us__anti-center');
+            };
             malina.classList.add('_active');
             malina.setAttribute('data-active', 'true')
             this.open(ultrafioletGirl, jumpGuy, `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum voluptates 
@@ -126,7 +142,10 @@ class WorkWithUs {
             for(let button of allButtons) {
                 button.classList.remove('_active')
                 button.setAttribute('data-active', 'false')
-            }
+            };
+            for(let wrapper of wrappers) {
+                wrapper.classList.remove('work-with-us__anti-center');
+            };
             dragon.classList.add('_active');
             dragon.setAttribute('data-active', 'true')
             this.open(japan, eye, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "#")
