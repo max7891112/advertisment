@@ -207,9 +207,9 @@
             width: 122px;
         }
 
-        & .active-item {
-            width: 195px;
-        }
+        // & .active-item {
+        //     width: 195px;
+        // }
     }
 
 }
@@ -224,7 +224,7 @@
     width: 15px;
 }
 
-@media (min-width: 844px) {
+@media (min-width: 845px) {
     .why-m {
         display: none;
     }

@@ -134,7 +134,16 @@ class WorkWithUs {
     };
 
     addListenerForPrepareLightBox() {
-        let target = document.querySelector('.react-component__link')
+        let target = document.querySelector('.react-component__link');
+        let strata = document.querySelector('.strata');
+        let manue = document.querySelector('.manue');
+        let serenity = document.querySelector('.serenity');
+        let prostor = document.querySelector('.prostor');
+        let malina = document.querySelector('.malina');
+        let wrapper = document.querySelector('.work-with-us__wrapper');
+        // const reactComponentImg = document.querySelector('.react-component__img');
+
+
         target.addEventListener('click', () => {
             let container = document.querySelector('.react-component__dinamic-block-container')
             if(!container.getAttribute('data-open-elem')) {
@@ -142,26 +151,36 @@ class WorkWithUs {
                 container.setAttribute('data-open-elem', 'true')
                 document.querySelector('.work-with-us')
                     .classList.add('_increase');
+                console.log('CLICK 1');
+                wrapper.classList.add('work-with-us__anti-center');
             } else {
                 REACT_COMPONENT.innerHTML = "";
                 if(strata.getAttribute('data-active') == 'true') {
                     this.open(strataLogo, book, `Итальянский производитель и поставщик одежды, основанный в 1974 году. 
                         Является поставщиком дизайнерской одежды во всём мире. Штаб-квартира компании располагается в Барселоне.`, 'https://www.youtube.com/watch?v=jyetqrX2hYA',
-                        "./components/workWithUs/loginova/loginova.html")
+                        "./components/workWithUs/loginova/loginova.html");
+                    wrapper.classList.remove('work-with-us__anti-center');
+
+                    console.log('CLICK 2');
                 } else if(manue.getAttribute('data-active') == 'true') {
                         this.open(dreamGirl, oldPhone, `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!`, 'https://www.youtube.com/watch?v=Z7wUyXJSHnk',
-                        "./components/workWithUs/levina/levina.html")
+                        "./components/workWithUs/levina/levina.html");
+                        wrapper.classList.remove('work-with-us__anti-center');
                 } else if(serenity.getAttribute('data-active') == 'true') {
                         this.open(skate, dreamingGuy, `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum
-                        voluptates est eligendi possimus? Tempore!`, 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/larionov/larionov.html")
+                        voluptates est eligendi possimus? Tempore!`, 'https://www.youtube.com/watch?v=jyetqrX2hYA', "./components/workWithUs/larionov/larionov.html");
+                        wrapper.classList.remove('work-with-us__anti-center');
                 } else if(prostor.getAttribute('data-active') == 'true') {
                         this.open(crazyGuitar, playingGuitar, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk',
-                        "./components/workWithUs/belov/belov.html")
+                        "./components/workWithUs/belov/belov.html");
+                        wrapper.classList.remove('work-with-us__anti-center');
                 } else if(malina.getAttribute('data-active') == 'true') {
                         this.open(ultrafioletGirl, jumpGuy, `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi officia harum corporis explicabo laborum voluptates 
-                        est eligendi possimus? Tempore!`, 'https://www.youtube.com/watch?v=jyetqrX2hYA', '#')
+                        est eligendi possimus? Tempore!`, 'https://www.youtube.com/watch?v=jyetqrX2hYA', '#');
+                        wrapper.classList.remove('work-with-us__anti-center');
                 } else {
-                    this.open(japan, eye, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "#")
+                    this.open(japan, eye, 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, minima!', 'https://www.youtube.com/watch?v=Z7wUyXJSHnk', "#");
+                    wrapper.classList.remove('work-with-us__anti-center');
                 };
             };
         });

@@ -56,7 +56,6 @@
             }
         }
     }
-
    
 }
 .work-with-us._increase{
@@ -87,7 +86,7 @@
         }
 
         .react-component__btn{
-            transform: translate(135px, 237px);
+            transform: translate(60px, 237px);
             z-index: 100;
         }
 
@@ -189,7 +188,7 @@
 
 
 
-@media (max-width: 1270px) {
+@media (max-width: 1274px) {
     
     .work-with-us {
 
@@ -231,13 +230,16 @@
         }
     
         &__video-container {
+            width: 100%;
         }
     
         &__link {
         }
     
         &__img {
-            width: 350px;
+            // width: 100%;
+            // height: 100%;
+            // object-fit: cover;
         }
     
         &__text {
@@ -246,8 +248,42 @@
     
         &__btn {
             margin: 50px auto;
+            display: none;
+        }
+
+        &__dinamic-block-container._increase{
+
+            .react-component__img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
+}
 
+@media (max-width: 905px) {
+    .react-component {
 
+        &__img {
+            width: 100%;
+            height: 100%;
+            
+        }
+    }
+}
+
+// addition for animation before sharomizhinya Movicha
+
+.work-with-us {
+
+    &__anti-center {
+        margin: 0 0 0 auto;
+        width: 100%;
+    }
+
+    // &__img-sizer {
+    //     width: 100%;
+    //     height: 100%;
+    // }
 }
